@@ -1,0 +1,29 @@
+{
+  "id": "bedok-reservoir-loop",
+  "name": "Bedok Reservoir Loop",
+  "region": "east",
+  "type": "pcn",
+  "distance_km": 4.3,
+  "elevation_gain_m": 18,
+  "elevation_profile": [5, 8, 12, 10, 5],
+  "difficulty": "easy",
+  "surface": { "tarmac": 0.60, "boardwalk": 0.10, "trail": 0.30 },
+  "lighting": "well-lit",
+  "loop": true,
+  "description": "A popular 4.3km loop around Bedok Reservoir. Well-lit paths, regular water points, and a consistently flat route make this a favourite for evening runs.",
+  "tags": ["pcn", "reservoir", "loop", "flat", "evening", "water-points"],
+  "source": "nparks",
+  "images": [],
+  "bounds": [1.3380, 103.9210, 1.3530, 103.9390],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.9300, 1.3400],
+      [103.9220, 1.3440],
+      [103.9250, 1.3520],
+      [103.9360, 1.3500],
+      [103.9380, 1.3430],
+      [103.9300, 1.3400]
+    ]
+  }
+}

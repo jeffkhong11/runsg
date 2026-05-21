@@ -1,0 +1,29 @@
+{
+  "id": "bukit-timah-trail",
+  "name": "Bukit Timah Summit Trail",
+  "region": "central",
+  "type": "trail",
+  "distance_km": 6.5,
+  "elevation_gain_m": 290,
+  "elevation_profile": [15, 60, 110, 163, 110, 60, 15],
+  "difficulty": "hard",
+  "surface": { "tarmac": 0.05, "boardwalk": 0.10, "trail": 0.85 },
+  "lighting": "dark",
+  "loop": true,
+  "description": "The hardest short trail in Singapore. Steep, technical paths up to Singapore's highest peak (163.63m). Dense primary rainforest with macaques and hornbills.",
+  "tags": ["trail", "hill", "summit", "forest", "hard", "wildlife"],
+  "source": "osm",
+  "images": [],
+  "bounds": [1.3450, 103.7690, 1.3620, 103.7870],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.7780, 1.3480],
+      [103.7710, 1.3530],
+      [103.7690, 1.3600],
+      [103.7790, 1.3620],
+      [103.7870, 1.3550],
+      [103.7780, 1.3480]
+    ]
+  }
+}

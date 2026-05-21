@@ -1,0 +1,28 @@
+{
+  "id": "southern-ridges",
+  "name": "Southern Ridges",
+  "region": "south",
+  "type": "trail",
+  "distance_km": 9.0,
+  "elevation_gain_m": 180,
+  "elevation_profile": [10, 35, 60, 95, 110, 80, 45, 10],
+  "difficulty": "moderate",
+  "surface": { "tarmac": 0.15, "boardwalk": 0.45, "trail": 0.40 },
+  "lighting": "partial",
+  "loop": false,
+  "description": "A connected ridgeline trail linking HortPark to VivoCity via the iconic Henderson Waves bridge and Forest Walk. Stunning city skyline views.",
+  "tags": ["trail", "henderson-waves", "forest-walk", "scenic", "city-views"],
+  "source": "osm",
+  "images": [],
+  "bounds": [1.2730, 103.8050, 1.2950, 103.8310],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.8050, 1.2820],
+      [103.8110, 1.2800],
+      [103.8170, 1.2750],
+      [103.8230, 1.2830],
+      [103.8310, 1.2730]
+    ]
+  }
+}

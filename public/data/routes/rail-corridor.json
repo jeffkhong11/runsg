@@ -1,0 +1,28 @@
+{
+  "id": "rail-corridor",
+  "name": "Rail Corridor (Full)",
+  "region": "central",
+  "type": "trail",
+  "distance_km": 24.0,
+  "elevation_gain_m": 85,
+  "elevation_profile": [15, 20, 25, 30, 20, 25, 35, 45],
+  "difficulty": "moderate",
+  "surface": { "tarmac": 0.05, "boardwalk": 0.15, "trail": 0.80 },
+  "lighting": "dark",
+  "loop": false,
+  "description": "The former KTM railway corridor, now a 24km green spine running through Singapore's heartland. A unique urban escape through kampung landscapes and secondary forest.",
+  "tags": ["trail", "railway", "heritage", "nature", "long-distance"],
+  "source": "osm",
+  "images": [],
+  "bounds": [1.2520, 103.7680, 1.4230, 103.8100],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.7900, 1.2520],
+      [103.7850, 1.2900],
+      [103.7750, 1.3400],
+      [103.7680, 1.3700],
+      [103.8100, 1.4230]
+    ]
+  }
+}

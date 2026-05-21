@@ -1,0 +1,27 @@
+{
+  "id": "west-coast-pcn",
+  "name": "West Coast Park Connector",
+  "region": "west",
+  "type": "pcn",
+  "distance_km": 8.4,
+  "elevation_gain_m": 15,
+  "elevation_profile": [2, 3, 2, 4, 3],
+  "difficulty": "easy",
+  "surface": { "tarmac": 0.80, "boardwalk": 0.10, "trail": 0.10 },
+  "lighting": "partial",
+  "loop": false,
+  "description": "A coastal route from West Coast Park to Labrador Nature Reserve, with sea views and a quieter crowd than East Coast. Great for sunset runs.",
+  "tags": ["pcn", "coastal", "sunset", "west", "labrador"],
+  "source": "nparks",
+  "images": [],
+  "bounds": [1.2680, 103.7690, 1.2920, 103.8040],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.7690, 1.2920],
+      [103.7800, 1.2850],
+      [103.7920, 1.2740],
+      [103.8040, 1.2680]
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "macritchie-loop",
+  "name": "MacRitchie Reservoir Loop",
+  "region": "central",
+  "type": "trail",
+  "distance_km": 11.0,
+  "elevation_gain_m": 220,
+  "elevation_profile": [12, 25, 45, 30, 60, 85, 40, 15],
+  "difficulty": "moderate",
+  "surface": { "tarmac": 0.10, "boardwalk": 0.20, "trail": 0.70 },
+  "lighting": "dark",
+  "loop": true,
+  "description": "Singapore's most iconic trail run. Undulating forest paths around MacRitchie Reservoir with the famous Treetop Walk suspension bridge as a highlight.",
+  "tags": ["trail", "forest", "reservoir", "treetop-walk", "loop", "nature"],
+  "source": "osm",
+  "images": [],
+  "bounds": [1.3380, 103.8150, 1.3630, 103.8380],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.8300, 1.3420],
+      [103.8200, 1.3450],
+      [103.8160, 1.3520],
+      [103.8220, 1.3600],
+      [103.8320, 1.3610],
+      [103.8370, 1.3530],
+      [103.8300, 1.3420]
+    ]
+  }
+}

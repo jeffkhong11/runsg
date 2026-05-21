@@ -1,0 +1,29 @@
+{
+  "id": "east-coast-pcn",
+  "name": "East Coast Park Connector",
+  "region": "east",
+  "type": "pcn",
+  "distance_km": 15.2,
+  "elevation_gain_m": 12,
+  "elevation_profile": [2, 3, 2, 4, 3, 2],
+  "difficulty": "easy",
+  "surface": { "tarmac": 0.85, "boardwalk": 0.10, "trail": 0.05 },
+  "lighting": "well-lit",
+  "loop": false,
+  "description": "A scenic 15km stretch along the East Coast, passing by the beach, BBQ pits, and lagoons. Mostly flat tarmac — ideal for beginners and families.",
+  "tags": ["pcn", "beach", "flat", "family-friendly", "east-coast"],
+  "source": "nparks",
+  "images": [],
+  "bounds": [1.2937, 103.8532, 1.3141, 103.9907],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [103.8532, 1.2937],
+      [103.8800, 1.2980],
+      [103.9100, 1.3010],
+      [103.9400, 1.3060],
+      [103.9700, 1.3100],
+      [103.9907, 1.3141]
+    ]
+  }
+}
