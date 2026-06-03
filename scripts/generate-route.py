@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-generate-route.py — Generate custom routes from waypoints using ORS Directions API.
+generate-route.py — Generate road/mixed custom routes from waypoints using ORS Directions API.
 
 Tasks: T-039, T-040
-Usage: python scripts/generate-route.py
+Usage:  python scripts/generate-route.py
+        Set ORS_API_KEY env var (free at openrouteservice.org) for snapped geometries.
+        Without key: straight-line fallback coordinates are written (basic accuracy).
 
-Requires ORS_API_KEY environment variable (free at openrouteservice.org).
-Generates snapped geometry + elevation data.
+Output: public/data/routes/<route-id>.json + public/data/routes/index.json
 """
 
 import json
@@ -20,7 +21,8 @@ import requests
 # ── Config ────────────────────────────────────────────────────────────────────
 
 ORS_URL = "https://api.openrouteservice.org/v2/directions/foot-walking/geojson"
-OUTPUT_DIR = Path(__file__).parent.parent / "public" / "data" / "routes"
+WORKSPACE_DIR = Path(__file__).parent.parent
+OUTPUT_DIR = WORKSPACE_DIR / "public" / "data" / "routes"
 INDEX_PATH = OUTPUT_DIR / "index.json"
 
 # ── Custom Route Definitions (T-040) ─────────────────────────────────────────

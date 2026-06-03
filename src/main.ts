@@ -1,14 +1,27 @@
 // main.ts — RunSG entry point
 // Phase 2: Wire up filters, route cards, detail panel, hash router
+// Phase 4: Amenity metrics (T-069–T-071)
+// Phase 5: Near Me shelf (T-074–T-076), zoom render guard (T-087a), quick pills
 
 import './style.css'
-import { initMap, fitBounds, resetView } from './map/map.ts'
-import { renderRoutes, onRouteSelected, selectRoute, updateRouteGeometry, deselectRoute, filterVisibleRoutes, showAllRoutes } from './map/route-layer.ts'
+import { initMap, fitBounds, resetView, setMapTheme } from './map/map.ts'
+import {
+  renderRoutes, onRouteSelected, selectRoute, updateRouteGeometry,
+  deselectRoute, filterVisibleRoutes, showAllRoutes, initZoomRenderGuard,
+  updateRouteStartPin, reapplyRouteLayers,
+} from './map/route-layer.ts'
+import {
+  initAmenityControls, setAmenityActiveRoute, getCachedAmenities, ensureAmenityLoaded,
+} from './map/amenity-layer.ts'
 import { loadRouteIndex, loadRoute } from './services/data-loader.ts'
-import { initFilters, renderFilters, getActiveFilterCount } from './ui/filters.ts'
-import { renderRouteCards, setActiveCard, scrollToCard } from './ui/route-card.ts'
+import { initFilters, renderFilters, getActiveFilterCount, applyFilters } from './ui/filters.ts'
+import {
+  renderRouteCards, setActiveCard, scrollToCard, initRouteCards, initNearMeShelf,
+} from './ui/route-card.ts'
 import { renderDetailPanel, closeDetail } from './ui/route-detail.ts'
+import { renderElevationChart } from './ui/elevation-chart.ts'
 import { initRouter, onHashRoute, onHashHome, setRouteHash, clearRouteHash } from './ui/router.ts'
+import { computeAmenityMetrics, renderAmenityMetrics } from './services/amenity-metrics.ts'
 import type { RouteIndexEntry } from './types/route.ts'
 
 // ─── DOM Setup ───────────────────────────────────────────────────────────────
@@ -24,22 +37,33 @@ appEl.innerHTML = `
     </a>
     <div class="header-spacer"></div>
     <div class="header-actions">
+      <button class="btn-icon" id="btn-near-me" title="Find runs near me" aria-label="Find runs near me">📍</button>
       <button class="btn-icon" id="btn-theme" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
+
+  <!-- Quick Filter Pills (FR-05, T-025) -->
+  <div class="quick-pills" id="quick-pills" role="group" aria-label="Quick route filters">
+    <button class="pill" data-pill="trail" id="pill-trail">🌲 Trails</button>
+    <button class="pill" data-pill="pcn"   id="pill-pcn">🏙️ Paved PCN</button>
+    <button class="pill" data-pill="night" id="pill-night">🌙 Night Running</button>
+    <button class="pill" data-pill="long"  id="pill-long">🏃 Long Runs</button>
+    <button class="pill" data-pill="easy"  id="pill-easy">⚡ Quick Runs</button>
+    <button class="pill" data-pill="hilly" id="pill-hilly">⛰️ Hilly</button>
+  </div>
 
   <!-- Main -->
   <main class="app-main">
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <div class="sidebar-title-row">
-          <div class="sidebar-title">🗺️ Routes</div>
-          <button class="btn-icon sidebar-filter-toggle" id="btn-toggle-filters" title="Toggle filters" aria-label="Toggle filters">
+      <div class="sidebar-title-row">
+          <div class="sidebar-title">Explore Routes</div>
+          <button class="btn-icon sidebar-filter-toggle" id="btn-toggle-filters" title="Filters" aria-label="Toggle filters">
             <span id="filter-icon">⚙️</span>
           </button>
         </div>
-        <div class="sidebar-route-count" id="route-count">Loading…</div>
+        <div class="sidebar-route-count" id="route-count">Loading routes…</div>
       </div>
 
       <!-- Filter panel (collapsible) -->
@@ -47,7 +71,7 @@ appEl.innerHTML = `
         <div id="filters-container"></div>
       </div>
 
-      <!-- Route list -->
+      <!-- Route shelves -->
       <div class="route-list" id="route-list">
         <div class="skeleton skeleton-card"></div>
         <div class="skeleton skeleton-card"></div>
@@ -67,9 +91,10 @@ appEl.innerHTML = `
 
     <!-- Route detail panel -->
     <div class="route-detail" id="route-detail">
+      <div class="route-detail-accent"></div>
       <div class="route-detail-header">
         <div id="detail-title" class="route-detail-title"></div>
-        <button class="route-detail-close" id="btn-detail-close" title="Close" aria-label="Close detail panel">✕</button>
+        <button class="route-detail-close" id="btn-detail-close" title="Close" aria-label="Close detail panel">&times;</button>
       </div>
       <div class="route-detail-body" id="detail-body"></div>
     </div>
@@ -84,6 +109,7 @@ appEl.innerHTML = `
 let allRoutes: RouteIndexEntry[] = []
 let selectedRouteId: string | null = null
 let filtersVisible = false
+let activePill: string | null = null
 
 // ─── DOM Refs ────────────────────────────────────────────────────────────────
 
@@ -93,7 +119,7 @@ const filtersContainerEl = document.getElementById('filters-container')!
 const sidebarFiltersEl = document.getElementById('sidebar-filters')!
 const detailPanelEl = document.getElementById('route-detail')!
 
-// ─── Theme ───────────────────────────────────────────────────────────────────
+// ─── Theme (T-077–T-080) ─────────────────────────────────────────────────────
 
 function initTheme(): void {
   const saved = localStorage.getItem('runsg-theme')
@@ -109,6 +135,17 @@ function toggleTheme(): void {
   document.documentElement.setAttribute('data-theme', next)
   localStorage.setItem('runsg-theme', next)
   updateThemeButton(next)
+
+  // Switch Mapbox style — setStyle() destroys all custom sources/layers
+  setMapTheme(next as 'light' | 'dark')
+
+  // Re-add route layers + amenity markers after the new style fully loads
+  const map = initMap('map')
+  map.once('style.load', () => {
+    reapplyRouteLayers()
+    // Re-trigger amenity markers if a route was selected
+    setAmenityActiveRoute(null)
+  })
 }
 
 function updateThemeButton(theme: string): void {
@@ -139,24 +176,69 @@ function toggleFilters(): void {
 
 function updateRouteCount(showing: number, total: number): void {
   const filterCount = getActiveFilterCount()
-  if (filterCount > 0) {
-    routeCountEl.textContent = `${showing} of ${total} routes (${filterCount} filter${filterCount !== 1 ? 's' : ''} active)`
+  if (filterCount > 0 || activePill) {
+    routeCountEl.textContent = `${showing} of ${total} routes`
   } else {
     routeCountEl.textContent = `${total} route${total !== 1 ? 's' : ''}`
   }
 }
 
+// ─── Quick Filter Pills (FR-05, T-025, T-026) ─────────────────────────────────
+
+function getPillFilteredRoutes(pill: string | null): RouteIndexEntry[] {
+  const base = applyFilters(allRoutes)
+  if (!pill) return base
+  switch (pill) {
+    case 'trail': return base.filter((r) => r.type === 'trail')
+    case 'pcn': return base.filter((r) => r.type === 'pcn')
+    case 'night': return base.filter((r) => r.lighting === 'well-lit')
+    case 'long': return base.filter((r) => r.distance_km >= 10)
+    case 'easy': return base.filter((r) => r.distance_km < 5)
+    case 'hilly': return base.filter((r) => r.elevation_gain_m >= 80)
+    default: return base
+  }
+}
+
+function initQuickPills(): void {
+  document.querySelectorAll('.pill').forEach((pill) => {
+    pill.addEventListener('click', () => {
+      const key = (pill as HTMLElement).dataset['pill']!
+      if (activePill === key) {
+        // Deactivate
+        activePill = null
+        pill.classList.remove('active')
+      } else {
+        // Activate this pill, deactivate others
+        document.querySelectorAll('.pill').forEach((p) => p.classList.remove('active'))
+        activePill = key
+        pill.classList.add('active')
+      }
+      const filtered = getPillFilteredRoutes(activePill)
+      updateRouteCount(filtered.length, allRoutes.length)
+      renderRouteCards(routeListEl, filtered, selectedRouteId, handleRouteSelect)
+
+      const visibleIds = new Set(filtered.map((r) => r.id))
+      if (filtered.length === allRoutes.length) {
+        showAllRoutes()
+      } else {
+        filterVisibleRoutes(visibleIds)
+      }
+    })
+  })
+}
+
 // ─── Filter Change Handler ───────────────────────────────────────────────────
 
 function handleFilterChange(filtered: RouteIndexEntry[]): void {
-  updateRouteCount(filtered.length, allRoutes.length)
-  renderRouteCards(routeListEl, filtered, selectedRouteId, handleRouteSelect)
+  const withPill = getPillFilteredRoutes(activePill)
+  const final = activePill ? withPill.filter((r) => filtered.includes(r)) : filtered
+  updateRouteCount(final.length, allRoutes.length)
+  renderRouteCards(routeListEl, final, selectedRouteId, handleRouteSelect)
 
-  // Update map visibility
-  if (filtered.length === allRoutes.length) {
+  if (final.length === allRoutes.length) {
     showAllRoutes()
   } else {
-    const visibleIds = new Set(filtered.map((r) => r.id))
+    const visibleIds = new Set(final.map((r) => r.id))
     filterVisibleRoutes(visibleIds)
   }
 }
@@ -166,30 +248,54 @@ function handleFilterChange(filtered: RouteIndexEntry[]): void {
 async function handleRouteSelect(routeId: string): Promise<void> {
   selectedRouteId = routeId
 
-  // Update card active state
   setActiveCard(routeId)
   scrollToCard(routeId)
-
-  // Highlight polyline on map
   selectRoute(routeId)
-
-  // Update URL hash (T-035)
   setRouteHash(routeId)
 
-  // Find index entry + open detail panel
   const indexEntry = allRoutes.find((r) => r.id === routeId)
   if (indexEntry) {
     renderDetailPanel(indexEntry, detailPanelEl, handleRouteDeselect)
   }
 
-  // Load full geometry
   try {
     const route = await loadRoute(routeId)
     const map = initMap('map')
-    map.invalidateSize()
+    map.resize()
+
+    const routeColor = { pcn: '#22c55e', trail: '#ca8a04', road: '#6366f1', mixed: '#06b6d4' }[route.type] ?? '#22c55e'
+
+    // T-069–T-071: Guarantee amenity files are fully loaded before computing proximity metrics
+    await Promise.all([
+      ensureAmenityLoaded('water'),
+      ensureAmenityLoaded('toilet'),
+    ])
+
     updateRouteGeometry(routeId, route.geometry.coordinates)
+    updateRouteStartPin(routeId, route.geometry.coordinates, routeColor)
+    setAmenityActiveRoute(route.geometry.coordinates)
+
     if (indexEntry?.bounds) fitBounds(indexEntry.bounds)
     showStatus(`${route.name} — ${route.distance_km} km`)
+
+    if (route.elevation_profile && route.elevation_profile.length > 0) {
+      const elevSlot = detailPanelEl.querySelector('#detail-elevation-slot') as HTMLElement
+      if (elevSlot) {
+        renderElevationChart(elevSlot, route.elevation_profile, route.distance_km, route.elevation_gain_m)
+      }
+    }
+
+    const amenitySlot = detailPanelEl.querySelector('#detail-amenity-slot') as HTMLElement
+    if (amenitySlot) {
+      const { water, toilet } = getCachedAmenities()
+      const metrics = computeAmenityMetrics(
+        route.geometry.coordinates,
+        water,
+        toilet,
+        route.distance_km,
+      )
+      renderAmenityMetrics(amenitySlot, metrics)
+    }
   } catch (err) {
     console.warn('[RunSG] Could not load route geometry:', err)
   }
@@ -198,6 +304,7 @@ async function handleRouteSelect(routeId: string): Promise<void> {
 function handleRouteDeselect(): void {
   closeDetail(detailPanelEl)
   deselectRoute()
+  setAmenityActiveRoute(null)
   selectedRouteId = null
   setActiveCard(null)
   clearRouteHash()
@@ -231,23 +338,27 @@ function showRouteNotFound(routeId: string): void {
 async function bootstrap(): Promise<void> {
   initTheme()
 
-  // Init map
   const map = initMap('map')
+  initAmenityControls(map)
 
-  // Load route index
   try {
     allRoutes = await loadRouteIndex()
 
-    // Init filters (T-025, T-026)
+    initRouteCards(allRoutes)
     initFilters(allRoutes, handleFilterChange)
     renderFilters(filtersContainerEl)
 
-    // Render initial route list (T-028)
     updateRouteCount(allRoutes.length, allRoutes.length)
     renderRouteCards(routeListEl, allRoutes, selectedRouteId, handleRouteSelect)
 
-    // Render polylines on map (T-019)
     renderRoutes(allRoutes)
+
+    // T-087a: Init zoom render guard after routes are rendered
+    initZoomRenderGuard()
+
+    // T-074–T-076: Init Near Me shelf asynchronously (non-blocking)
+    initNearMeShelf(routeListEl, allRoutes, selectedRouteId, handleRouteSelect)
+      .catch(() => { /* graceful silence if geolocation denied */ })
   } catch {
     routeListEl.innerHTML = `
       <div class="empty-state">
@@ -258,12 +369,11 @@ async function bootstrap(): Promise<void> {
     routeCountEl.textContent = '0 routes'
   }
 
-  // Hide loading overlay
   const loadingEl = document.getElementById('map-loading')
   if (loadingEl) {
     setTimeout(() => {
       loadingEl.classList.add('hidden')
-      map.invalidateSize()
+      map.resize()
     }, 500)
   }
 
@@ -276,6 +386,15 @@ async function bootstrap(): Promise<void> {
   // Filter toggle
   document.getElementById('btn-toggle-filters')?.addEventListener('click', toggleFilters)
 
+  // Quick pills
+  initQuickPills()
+
+  // Near Me button in header
+  document.getElementById('btn-near-me')?.addEventListener('click', async () => {
+    showStatus('Finding runs near you…')
+    await initNearMeShelf(routeListEl, allRoutes, selectedRouteId, handleRouteSelect)
+  })
+
   // Logo → reset view
   document.getElementById('logo-home')?.addEventListener('click', (e) => {
     e.preventDefault()
@@ -283,7 +402,7 @@ async function bootstrap(): Promise<void> {
     resetView()
   })
 
-  // Theme toggle
+  // Theme toggle (T-077–T-080)
   document.getElementById('btn-theme')?.addEventListener('click', toggleTheme)
 
   // Hash router (T-034, T-035, T-036)

@@ -1,0 +1,58 @@
+{
+  "id": "upper-seletar-loop",
+  "name": "Upper Seletar Reservoir Loop",
+  "region": "north",
+  "type": "mixed",
+  "distance_km": 3.81,
+  "elevation_gain_m": 55,
+  "elevation_profile": [],
+  "difficulty": "moderate",
+  "surface": {
+    "tarmac": 0.4,
+    "boardwalk": 0.1,
+    "trail": 0.5
+  },
+  "lighting": "partial",
+  "loop": true,
+  "description": "A peaceful reservoir loop in the north. Mix of paved paths and forest trails, with views of the rocket tower and surrounding nature reserve.",
+  "tags": [
+    "reservoir",
+    "mixed",
+    "nature",
+    "loop",
+    "quiet"
+  ],
+  "source": "ors",
+  "images": [],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        103.805,
+        1.401
+      ],
+      [
+        103.81,
+        1.408
+      ],
+      [
+        103.818,
+        1.405
+      ],
+      [
+        103.813,
+        1.398
+      ],
+      [
+        103.805,
+        1.401
+      ]
+    ]
+  },
+  "bounds": [
+    1.398,
+    103.805,
+    1.408,
+    103.818
+  ]
+}

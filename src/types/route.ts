@@ -5,7 +5,7 @@ export type Region = 'east' | 'west' | 'north' | 'south' | 'central'
 export type RouteType = 'pcn' | 'trail' | 'road' | 'mixed'
 export type Difficulty = 'easy' | 'moderate' | 'hard'
 export type Lighting = 'well-lit' | 'partial' | 'dark'
-export type DataSource = 'nparks' | 'osm' | 'ors'
+export type DataSource = 'nparks' | 'osm' | 'ors' | 'gpx'
 
 export interface SurfaceBreakdown {
   tarmac: number     // 0.0–1.0
@@ -54,6 +54,7 @@ export interface RouteIndexEntry {
   description: string
   tags: string[]
   source: DataSource
+  elevation_profile?: number[]  // Elevation samples for chart rendering
   images?: string[]
   // Bounding box for map fitting [south, west, north, east]
   bounds?: [number, number, number, number]

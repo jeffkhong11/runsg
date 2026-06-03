@@ -1,0 +1,62 @@
+{
+  "id": "marina-bay-loop",
+  "name": "Marina Bay Loop",
+  "region": "central",
+  "type": "road",
+  "distance_km": 4.31,
+  "elevation_gain_m": 15,
+  "elevation_profile": [],
+  "difficulty": "easy",
+  "surface": {
+    "tarmac": 0.9,
+    "boardwalk": 0.1
+  },
+  "lighting": "well-lit",
+  "loop": true,
+  "description": "A flat, scenic 5km loop around Marina Bay. Pass the Merlion, Helix Bridge, ArtScience Museum, and Gardens by the Bay. Ideal for evening runs with iconic skyline views.",
+  "tags": [
+    "urban",
+    "flat",
+    "scenic",
+    "night-run",
+    "marina-bay",
+    "loop"
+  ],
+  "source": "ors",
+  "images": [],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        103.8543,
+        1.2866
+      ],
+      [
+        103.8613,
+        1.2834
+      ],
+      [
+        103.8694,
+        1.2816
+      ],
+      [
+        103.8653,
+        1.2773
+      ],
+      [
+        103.856,
+        1.2795
+      ],
+      [
+        103.8543,
+        1.2866
+      ]
+    ]
+  },
+  "bounds": [
+    1.2773,
+    103.8543,
+    1.2866,
+    103.8694
+  ]
+}

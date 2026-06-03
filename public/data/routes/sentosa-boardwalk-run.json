@@ -1,0 +1,49 @@
+{
+  "id": "sentosa-boardwalk-run",
+  "name": "Sentosa Boardwalk Run",
+  "region": "south",
+  "type": "road",
+  "distance_km": 2.04,
+  "elevation_gain_m": 25,
+  "elevation_profile": [],
+  "difficulty": "easy",
+  "surface": {
+    "tarmac": 0.5,
+    "boardwalk": 0.5
+  },
+  "lighting": "well-lit",
+  "loop": false,
+  "description": "From VivoCity across the Sentosa Boardwalk to Palawan Beach and back. A unique run with harbour views and a beach finish.",
+  "tags": [
+    "boardwalk",
+    "beach",
+    "sentosa",
+    "coastal",
+    "scenic"
+  ],
+  "source": "ors",
+  "images": [],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        103.8215,
+        1.2642
+      ],
+      [
+        103.8301,
+        1.2558
+      ],
+      [
+        103.8285,
+        1.2497
+      ]
+    ]
+  },
+  "bounds": [
+    1.2497,
+    103.8215,
+    1.2642,
+    103.8301
+  ]
+}

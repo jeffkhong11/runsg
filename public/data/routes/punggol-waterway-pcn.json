@@ -1,0 +1,57 @@
+{
+  "id": "punggol-waterway-pcn",
+  "name": "Punggol Waterway PCN",
+  "region": "north",
+  "type": "pcn",
+  "distance_km": 3.83,
+  "elevation_gain_m": 10,
+  "elevation_profile": [],
+  "difficulty": "easy",
+  "surface": {
+    "tarmac": 0.85,
+    "boardwalk": 0.15
+  },
+  "lighting": "well-lit",
+  "loop": true,
+  "description": "A popular HDB-town running loop along the Punggol Waterway. Flat, well-lit, with multiple water points. A favourite for weeknight group runs.",
+  "tags": [
+    "pcn",
+    "waterway",
+    "flat",
+    "well-lit",
+    "family-friendly"
+  ],
+  "source": "ors",
+  "images": [],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        103.9057,
+        1.4059
+      ],
+      [
+        103.9131,
+        1.4083
+      ],
+      [
+        103.92,
+        1.403
+      ],
+      [
+        103.915,
+        1.399
+      ],
+      [
+        103.9057,
+        1.4059
+      ]
+    ]
+  },
+  "bounds": [
+    1.399,
+    103.9057,
+    1.4083,
+    103.92
+  ]
+}

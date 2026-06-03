@@ -1,11 +1,18 @@
 // route-detail.ts — Route detail panel component (T-031, T-032, T-033)
+// Phase 3: Elevation chart, pace estimator
+// Phase 4: Weather widget, amenity metrics (T-069–T-071)
+// Phase 5: Image carousel (T-081)
 
 import type { RouteIndexEntry } from '../types/route.ts'
+import { renderElevationChart } from './elevation-chart.ts'
+import { renderPaceEstimator } from './pace-estimator.ts'
+import { renderWeatherWidget } from './weather-widget.ts'
+import { renderAmenityMetrics } from '../services/amenity-metrics.ts'
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
 const ROUTE_COLORS: Record<string, string> = {
-  pcn: '#22c55e', trail: '#ca8a04', road: '#6366f1', mixed: '#06b6d4',
+  pcn: '#16c95d', trail: '#d97706', road: '#6366f1', mixed: '#0891b2',
 }
 
 const SURFACE_COLORS: Record<string, { color: string; label: string }> = {
@@ -23,6 +30,9 @@ function regionLabel(r: string): string {
   return r.charAt(0).toUpperCase() + r.slice(1)
 }
 
+// Track cleanup functions for chart disposal
+let cleanupChart: (() => void) | null = null
+
 // ─── Render ──────────────────────────────────────────────────────────────────
 
 export function renderDetailPanel(
@@ -36,9 +46,21 @@ export function renderDetailPanel(
 
   if (!titleEl || !bodyEl) return
 
+  // Cleanup previous chart
+  if (cleanupChart) {
+    cleanupChart()
+    cleanupChart = null
+  }
+
   titleEl.textContent = route.name
 
-  const color = ROUTE_COLORS[route.type] ?? '#22c55e'
+  const color = ROUTE_COLORS[route.type] ?? '#16c95d'
+
+  // Set accent bar color on the panel
+  const accentEl = panelEl.querySelector('.route-detail-accent') as HTMLElement
+  if (accentEl) accentEl.style.background = color
+  panelEl.style.setProperty('--route-detail-color', color)
+
   const lightingIcon = { 'well-lit': '💡', partial: '🕯️', dark: '🌑' }[route.lighting] ?? '💡'
   const lightingClass = `lighting-${route.lighting}`
 
@@ -53,19 +75,19 @@ export function renderDetailPanel(
       <div class="detail-stats-grid">
         <div class="detail-stat">
           <div class="detail-stat-label">Distance</div>
-          <div class="detail-stat-value">${route.distance_km} <span style="font-size:0.75rem;font-weight:500;color:var(--text-muted)">km</span></div>
+          <div class="detail-stat-value">${route.distance_km}<span class="detail-stat-unit">km</span></div>
         </div>
         <div class="detail-stat">
           <div class="detail-stat-label">Elevation Gain</div>
-          <div class="detail-stat-value">${route.elevation_gain_m} <span style="font-size:0.75rem;font-weight:500;color:var(--text-muted)">m</span></div>
+          <div class="detail-stat-value">${route.elevation_gain_m}<span class="detail-stat-unit">m</span></div>
         </div>
         <div class="detail-stat">
           <div class="detail-stat-label">Type</div>
-          <div class="detail-stat-value" style="font-size:1rem;color:${color}">${routeTypeLabel(route.type)}</div>
+          <div class="detail-stat-value" style="font-size:1.1rem;color:${color}">${routeTypeLabel(route.type)}</div>
         </div>
         <div class="detail-stat">
           <div class="detail-stat-label">Region</div>
-          <div class="detail-stat-value" style="font-size:1rem">${regionLabel(route.region)}</div>
+          <div class="detail-stat-value" style="font-size:1.1rem">${regionLabel(route.region)}</div>
         </div>
       </div>
     </div>
@@ -80,15 +102,21 @@ export function renderDetailPanel(
 
     <!-- Surface breakdown -->
     <div class="detail-section">
-      <div class="detail-section-title">Surface</div>
+      <div class="detail-section-title">Surface Breakdown</div>
       ${surfaceBar}
       ${surfaceLegend}
     </div>
 
+    <!-- Elevation profile (Phase 3) -->
+    <div class="detail-section" id="detail-elevation-slot"></div>
+
+    <!-- Estimated time (Phase 3) -->
+    <div class="detail-section" id="detail-pace-slot"></div>
+
     <!-- Description -->
     <div class="detail-section">
-      <div class="detail-section-title">Description</div>
-      <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.6">${route.description}</p>
+      <div class="detail-section-title">About This Route</div>
+      <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.65">${route.description}</p>
     </div>
 
     <!-- Tags -->
@@ -100,34 +128,35 @@ export function renderDetailPanel(
       </div>
     </div>` : ''}
 
+    <!-- Weather (Phase 4) -->
+    <div class="detail-section" id="detail-weather-slot"></div>
+
+    <!-- Amenity Metrics (Phase 4, T-069–T-071) -->
+    <div class="detail-section" id="detail-amenity-slot"></div>
+
+    <!-- Images (Phase 5, T-081) -->
+    ${(route.images && route.images.length > 0) ? `
+    <div class="detail-section">
+      <div class="detail-section-title">Photos</div>
+      <div class="route-image-carousel">
+        ${route.images.map((img, i) => `
+          <div class="route-image-slide${i === 0 ? ' active' : ''}">
+            <img src="${img}" alt="${route.name} photo ${i + 1}" loading="lazy" class="route-image"/>
+          </div>
+        `).join('')}
+        ${route.images.length > 1 ? `
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carousel-prev" aria-label="Previous photo">‹</button>
+            <span class="carousel-counter" id="carousel-counter">1 / ${route.images.length}</span>
+            <button class="carousel-btn" id="carousel-next" aria-label="Next photo">›</button>
+          </div>` : ''}
+      </div>
+    </div>` : ''}
+
     <!-- Source -->
     <div class="detail-section">
       <div class="detail-section-title">Data Source</div>
       <span class="badge badge-source">${route.source.toUpperCase()}</span>
-    </div>
-
-    <!-- Phase 3: Elevation profile -->
-    <div class="detail-section" id="detail-elevation-slot">
-      <div class="placeholder-card">
-        <span class="placeholder-icon">📈</span>
-        <span class="placeholder-text">Elevation profile — Phase 3</span>
-      </div>
-    </div>
-
-    <!-- Phase 4: Weather widget -->
-    <div class="detail-section" id="detail-weather-slot">
-      <div class="placeholder-card">
-        <span class="placeholder-icon">🌤️</span>
-        <span class="placeholder-text">Weather — Phase 4</span>
-      </div>
-    </div>
-
-    <!-- Phase 4: Amenity summary -->
-    <div class="detail-section" id="detail-amenity-slot">
-      <div class="placeholder-card">
-        <span class="placeholder-icon">💧</span>
-        <span class="placeholder-text">Amenities — Phase 4</span>
-      </div>
     </div>
   `
 
@@ -136,10 +165,76 @@ export function renderDetailPanel(
 
   // Close button
   closeBtn?.addEventListener('click', onClose, { once: true })
+
+  // --- Phase 3: Render elevation chart ---
+  const elevSlot = bodyEl.querySelector('#detail-elevation-slot') as HTMLElement
+  if (elevSlot) {
+    const profile = route.elevation_profile ?? []
+    cleanupChart = renderElevationChart(elevSlot, profile, route.distance_km, route.elevation_gain_m)
+  }
+
+  // --- Phase 3: Render pace estimator ---
+  const paceSlot = bodyEl.querySelector('#detail-pace-slot') as HTMLElement
+  if (paceSlot) {
+    renderPaceEstimator(paceSlot, route.distance_km)
+  }
+
+  // --- Phase 4: Render weather widget ---
+  const weatherSlot = bodyEl.querySelector('#detail-weather-slot') as HTMLElement
+  if (weatherSlot) {
+    renderWeatherWidget(weatherSlot, route.region)
+  }
+
+  // --- Phase 4 T-069–T-071: Render amenity metrics placeholder ---
+  // Metrics are populated by main.ts after route geometry and amenity data are loaded
+  const amenitySlot = bodyEl.querySelector('#detail-amenity-slot') as HTMLElement
+  if (amenitySlot) {
+    amenitySlot.innerHTML = `
+      <div class="detail-section-title">Amenities Along Route</div>
+      <div class="amenity-metrics-loading">
+        <div class="spinner-sm"></div>
+        <span>Computing amenity data…</span>
+      </div>`
+  }
+
+  // --- Phase 5 T-081: Wire image carousel ---
+  _initCarousel(panelEl)
 }
+
+function _initCarousel(panelEl: HTMLElement): void {
+  const slides = panelEl.querySelectorAll('.route-image-slide')
+  if (slides.length <= 1) return
+
+  let currentIdx = 0
+
+  const update = () => {
+    slides.forEach((s, i) => s.classList.toggle('active', i === currentIdx))
+    const counter = panelEl.querySelector('#carousel-counter')
+    if (counter) counter.textContent = `${currentIdx + 1} / ${slides.length}`
+  }
+
+  panelEl.querySelector('#carousel-prev')?.addEventListener('click', () => {
+    currentIdx = (currentIdx - 1 + slides.length) % slides.length
+    update()
+  })
+  panelEl.querySelector('#carousel-next')?.addEventListener('click', () => {
+    currentIdx = (currentIdx + 1) % slides.length
+    update()
+  })
+}
+
+/**
+ * Called from main.ts after route geometry + amenity data are loaded.
+ * Injects computed amenity metrics into the detail panel slot.
+ */
+export { renderAmenityMetrics }
 
 export function closeDetail(panelEl: HTMLElement): void {
   panelEl.classList.remove('open')
+  if (cleanupChart) {
+    cleanupChart()
+    cleanupChart = null
+  }
 }
 
 // ─── Surface Helpers ─────────────────────────────────────────────────────────

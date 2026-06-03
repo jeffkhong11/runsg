@@ -1,0 +1,58 @@
+{
+  "id": "bishan-amk-pcn",
+  "name": "Bishan–Ang Mo Kio Park PCN",
+  "region": "central",
+  "type": "pcn",
+  "distance_km": 2.42,
+  "elevation_gain_m": 12,
+  "elevation_profile": [],
+  "difficulty": "easy",
+  "surface": {
+    "tarmac": 0.8,
+    "boardwalk": 0.15,
+    "trail": 0.05
+  },
+  "lighting": "well-lit",
+  "loop": true,
+  "description": "A lush riverside loop through the naturalized Kallang River section of Bishan-AMK Park. Flat tarmac paths, playground stops, and dog-watching opportunities.",
+  "tags": [
+    "pcn",
+    "park",
+    "flat",
+    "family-friendly",
+    "riverside"
+  ],
+  "source": "ors",
+  "images": [],
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        103.8476,
+        1.36
+      ],
+      [
+        103.8472,
+        1.365
+      ],
+      [
+        103.849,
+        1.37
+      ],
+      [
+        103.851,
+        1.365
+      ],
+      [
+        103.8476,
+        1.36
+      ]
+    ]
+  },
+  "bounds": [
+    1.36,
+    103.8472,
+    1.37,
+    103.851
+  ]
+}
