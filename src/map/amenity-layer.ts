@@ -4,6 +4,7 @@
 import mapboxgl from 'mapbox-gl'
 import { loadAmenities } from '../services/data-loader.ts'
 import type { Amenity } from '../types/amenity.ts'
+import { svg } from '../ui/icon-system.ts'
 
 // Only support water and toilets (completely excluded shelters as requested)
 export type SelectedAmenityType = 'water' | 'toilet'
@@ -30,13 +31,13 @@ export function getCachedAmenities(): { water: Amenity[]; toilet: Amenity[] } {
 // UI configuration
 const AMENITY_CONFIG = {
   water: {
-    emoji: '💧',
+    emoji: svg('Droplets', 13),
     color: '#0284c7',
     label: 'Water Points',
     fileName: 'water-points' as const,
   },
   toilet: {
-    emoji: '🚻',
+    emoji: svg('Compass', 13),
     color: '#7c3aed',
     label: 'Toilets',
     fileName: 'toilets' as const,
@@ -100,7 +101,19 @@ function updatePanelMessage(): void {
   const warning = document.getElementById('zoom-warning')
   if (!warning) return
 
-  if (!activeRouteCoords) {
+  const hasRoute = activeRouteCoords !== null
+
+  // Disable/enable checkboxes and add/remove disabled class on labels
+  Object.keys(AMENITY_CONFIG).forEach((type) => {
+    const checkbox = document.getElementById(`toggle-${type}`) as HTMLInputElement | null
+    const label = document.getElementById(`toggle-label-${type}`) as HTMLElement | null
+    if (checkbox && label) {
+      checkbox.disabled = !hasRoute
+      label.classList.toggle('disabled', !hasRoute)
+    }
+  })
+
+  if (!hasRoute) {
     warning.textContent = 'Select a route to view amenities'
     warning.style.color = 'var(--text-muted)'
     warning.style.background = 'transparent'
@@ -122,7 +135,7 @@ export function initAmenityControls(map: mapboxgl.Map): void {
   controlDiv.className = 'amenity-control-panel'
   controlDiv.innerHTML = `
     <div class="amenity-panel-header">
-      <span class="panel-icon">🗺️</span>
+      <span class="panel-icon">${svg('Layers', 15)}</span>
       <span class="panel-title">Map Layers</span>
     </div>
     <div class="amenity-toggles">

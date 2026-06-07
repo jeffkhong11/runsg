@@ -2,12 +2,16 @@
 // Phase 3: Elevation chart, pace estimator
 // Phase 4: Weather widget, amenity metrics (T-069–T-071)
 // Phase 5: Image carousel (T-081)
+// Chunk 5: GPX export, Share, PSI air quality
 
 import type { RouteIndexEntry } from '../types/route.ts'
+import type { Route } from '../types/route.ts'
 import { renderElevationChart } from './elevation-chart.ts'
 import { renderPaceEstimator } from './pace-estimator.ts'
 import { renderWeatherWidget } from './weather-widget.ts'
 import { renderAmenityMetrics } from '../services/amenity-metrics.ts'
+import { svg } from './icon-system.ts'
+import { getPsiForRegion } from '../services/psi.ts'
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -30,8 +34,10 @@ function regionLabel(r: string): string {
   return r.charAt(0).toUpperCase() + r.slice(1)
 }
 
-// Track cleanup functions for chart disposal
+// Track cleanup functions
 let cleanupChart: (() => void) | null = null
+// Track current route for GPX/Share actions
+let _currentRoute: Route | null = null
 
 // ─── Render ──────────────────────────────────────────────────────────────────
 
@@ -61,7 +67,11 @@ export function renderDetailPanel(
   if (accentEl) accentEl.style.background = color
   panelEl.style.setProperty('--route-detail-color', color)
 
-  const lightingIcon = { 'well-lit': '💡', partial: '🕯️', dark: '🌑' }[route.lighting] ?? '💡'
+  const lightingIcon = {
+    'well-lit': svg('Lamp', 15),
+    partial: svg('MoonStar', 15),
+    dark: svg('Moon', 15),
+  }[route.lighting] ?? svg('Lamp', 15)
   const lightingClass = `lighting-${route.lighting}`
 
   // Surface breakdown bar
@@ -70,6 +80,18 @@ export function renderDetailPanel(
   const surfaceLegend = buildSurfaceLegend(surfaceData)
 
   bodyEl.innerHTML = `
+    <!-- Action buttons row (GPX export + Share) -->
+    <div class="detail-actions">
+      <button class="detail-action-btn" id="btn-gpx-export" title="Download GPX file">
+        ${svg('Download', 14)}
+        <span>GPX</span>
+      </button>
+      <button class="detail-action-btn" id="btn-share-route" title="Share this route">
+        ${svg('Share2', 14)}
+        <span>Share</span>
+      </button>
+    </div>
+
     <!-- Stats grid -->
     <div class="detail-section">
       <div class="detail-stats-grid">
@@ -96,7 +118,10 @@ export function renderDetailPanel(
     <div class="detail-section">
       <div style="display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap">
         <span class="lighting-tag ${lightingClass}">${lightingIcon} ${route.lighting.charAt(0).toUpperCase() + route.lighting.slice(1)}</span>
-        ${route.loop ? '<span class="badge badge-loop" style="font-size:0.8rem;padding:4px 10px">🔄 Loop Route</span>' : '<span class="badge badge-source" style="font-size:0.8rem;padding:4px 10px">➡️ Point-to-Point</span>'}
+        ${route.loop
+          ? `<span class="badge badge-loop" style="font-size:0.8rem;padding:4px 10px">${svg('RotateCcw', 13)} Loop Route</span>`
+          : `<span class="badge badge-source" style="font-size:0.8rem;padding:4px 10px">${svg('ChevronRight', 13)} Point-to-Point</span>`
+        }
       </div>
     </div>
 
@@ -130,6 +155,9 @@ export function renderDetailPanel(
 
     <!-- Weather (Phase 4) -->
     <div class="detail-section" id="detail-weather-slot"></div>
+
+    <!-- PSI Air Quality (Chunk 5) -->
+    <div class="detail-section" id="detail-psi-slot"></div>
 
     <!-- Amenity Metrics (Phase 4, T-069–T-071) -->
     <div class="detail-section" id="detail-amenity-slot"></div>
@@ -185,6 +213,12 @@ export function renderDetailPanel(
     renderWeatherWidget(weatherSlot, route.region)
   }
 
+  // --- Chunk 5: Render PSI air quality ---
+  const psiSlot = bodyEl.querySelector('#detail-psi-slot') as HTMLElement
+  if (psiSlot) {
+    renderPsiBanner(psiSlot, route.region)
+  }
+
   // --- Phase 4 T-069–T-071: Render amenity metrics placeholder ---
   // Metrics are populated by main.ts after route geometry and amenity data are loaded
   const amenitySlot = bodyEl.querySelector('#detail-amenity-slot') as HTMLElement
@@ -197,8 +231,100 @@ export function renderDetailPanel(
       </div>`
   }
 
+  // --- Chunk 5: Wire action buttons ---
+  _wireActionButtons(bodyEl, route)
+
   // --- Phase 5 T-081: Wire image carousel ---
   _initCarousel(panelEl)
+}
+
+// ─── Chunk 5: Action Buttons (GPX + Share) ───────────────────────────────────
+
+/**
+ * Called by main.ts once the full Route (with geometry) is loaded.
+ * Enables the GPX export button.
+ */
+export function setDetailRoute(route: Route): void {
+  _currentRoute = route
+  const btn = document.getElementById('btn-gpx-export') as HTMLButtonElement | null
+  if (btn) {
+    btn.disabled = false
+    btn.title = `Download ${route.name} as GPX`
+  }
+}
+
+function _wireActionButtons(bodyEl: HTMLElement, indexEntry: RouteIndexEntry): void {
+  // GPX Export — requires full geometry, enable once setDetailRoute() is called
+  const gpxBtn = bodyEl.querySelector('#btn-gpx-export') as HTMLButtonElement | null
+  if (gpxBtn) {
+    gpxBtn.disabled = true // enabled by setDetailRoute() once geometry loads
+    gpxBtn.addEventListener('click', async () => {
+      if (!_currentRoute) return
+      const { downloadGpx } = await import('../services/gpx-export.ts')
+      downloadGpx(_currentRoute)
+      gpxBtn.textContent = ''
+      gpxBtn.appendChild(Object.assign(document.createElement('span'), { textContent: '✓ Downloaded' }))
+      setTimeout(() => {
+        gpxBtn.innerHTML = `${svg('Download', 14)} <span>GPX</span>`
+      }, 2500)
+    })
+  }
+
+  // Share — Web Share API with clipboard fallback
+  const shareBtn = bodyEl.querySelector('#btn-share-route') as HTMLButtonElement | null
+  if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+      const url = `${window.location.origin}${window.location.pathname}#/route/${indexEntry.id}`
+      const shareData = {
+        title: `${indexEntry.name} — RunSG`,
+        text: `${indexEntry.distance_km}km ${indexEntry.type.toUpperCase()} route in ${indexEntry.region} Singapore`,
+        url,
+      }
+      try {
+        if (navigator.share && navigator.canShare?.(shareData)) {
+          await navigator.share(shareData)
+        } else {
+          await navigator.clipboard.writeText(url)
+          shareBtn.innerHTML = `${svg('Check', 14)} <span>Copied!</span>`
+          setTimeout(() => { shareBtn.innerHTML = `${svg('Share2', 14)} <span>Share</span>` }, 2500)
+        }
+      } catch {
+        // User cancelled or API unsupported — silent fail
+      }
+    })
+  }
+}
+
+// ─── Chunk 5: PSI Air Quality Banner ─────────────────────────────────────────
+
+async function renderPsiBanner(containerEl: HTMLElement, region: string): Promise<void> {
+  // Placeholder while fetching
+  containerEl.innerHTML = `
+    <div class="psi-loading">
+      <div class="spinner-sm"></div>
+      <span>Fetching air quality…</span>
+    </div>`
+
+  const psi = await getPsiForRegion(region)
+
+  if (!psi) {
+    containerEl.innerHTML = '' // hide slot if data unavailable
+    return
+  }
+
+  const pm25Str = psi.pm25 !== undefined ? `<span class="psi-pm25">PM2.5 · ${psi.pm25} µg/m³</span>` : ''
+
+  containerEl.innerHTML = `
+    <div class="psi-banner" style="--psi-color:${psi.color}">
+      <div class="psi-header">
+        <div class="psi-dot" style="background:${psi.color}"></div>
+        <span class="psi-title">Air Quality</span>
+        <span class="psi-level" style="color:${psi.color}">${psi.label}</span>
+        <span class="psi-value">PSI ${psi.psi}</span>
+        ${pm25Str}
+      </div>
+      <div class="psi-advice">${psi.advice}</div>
+    </div>`
 }
 
 function _initCarousel(panelEl: HTMLElement): void {

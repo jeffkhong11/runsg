@@ -3,6 +3,8 @@
 
 import type { RouteIndexEntry } from '../types/route.ts'
 import { getUserLocation, sortByProximity, formatProximity } from '../services/geolocation.ts'
+import { svg } from './icon-system.ts'
+import { buildIndexThumbnailUrl } from '../services/thumbnail-url.ts'
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -31,9 +33,26 @@ function buildCard(r: RouteIndexEntry, selectedId: string | null, distStr?: stri
   const gradient = ROUTE_GRADIENT[r.type] ?? ''
   const isActive = r.id === selectedId
   const distBadge = distStr ? `<span class="card-distance-badge">${distStr}</span>` : ''
-  const imageBg = r.images && r.images.length > 0
-    ? `background-image: url('${r.images[0]}'); background-size: cover; background-position: center;`
-    : `background: ${gradient};`
+
+  // Use pre-generated thumbnail if in index, else Mapbox Static URL, else gradient
+  const prebuilt = (r as RouteIndexEntry & { thumbnail?: string }).thumbnail
+  const thumbUrl = prebuilt || buildIndexThumbnailUrl(r)
+  const cardImg = thumbUrl
+    ? `<img
+        src="${thumbUrl}"
+        alt="${r.name} route map"
+        loading="lazy"
+        class="route-card-thumb"
+        onerror="this.style.display='none'"
+      />`
+    : ''
+  const imgStyle = thumbUrl ? '' : `background: ${gradient};`
+
+  const lightingIcon = {
+    'well-lit': svg('Lamp', 13),
+    partial: svg('MoonStar', 13),
+    dark: svg('Moon', 13),
+  }[r.lighting] ?? svg('Lamp', 13)
 
   return `
     <div class="route-card${isActive ? ' active' : ''}"
@@ -42,20 +61,21 @@ function buildCard(r: RouteIndexEntry, selectedId: string | null, distStr?: stri
          role="button"
          tabindex="0"
          aria-label="View route: ${r.name}">
-      <div class="route-card-img" style="${imageBg}">
+      <div class="route-card-img" style="${imgStyle}">
+        ${cardImg}
         <span class="badge badge-type-${r.type} card-type-badge">${routeTypeLabel(r.type)}</span>
         ${distBadge}
       </div>
       <div class="route-card-body">
         <div class="route-card-name">${r.name}</div>
         <div class="route-card-meta">
-          <span class="stat-pill"><span class="stat-icon">📏</span>${r.distance_km} km</span>
+          <span class="stat-pill">${svg('Ruler', 12)} ${r.distance_km} km</span>
           <span class="badge badge-difficulty-${r.difficulty}">${difficultyLabel(r.difficulty)}</span>
-          ${r.loop ? '<span class="badge badge-loop">🔄 Loop</span>' : ''}
+          ${r.loop ? `<span class="badge badge-loop">${svg('RotateCcw', 11)} Loop</span>` : ''}
         </div>
         <div class="route-card-footer">
           <span class="card-region">${r.region.charAt(0).toUpperCase() + r.region.slice(1)}</span>
-          <span class="card-lighting ${r.lighting === 'well-lit' ? 'lit' : ''}">${r.lighting === 'well-lit' ? '💡' : r.lighting === 'partial' ? '🕯️' : '🌑'}</span>
+          <span class="card-lighting ${r.lighting === 'well-lit' ? 'lit' : ''}">${lightingIcon}</span>
         </div>
       </div>
     </div>`
@@ -137,7 +157,7 @@ export function renderRouteCards(
   if (routes.length === 0) {
     containerEl.innerHTML = `
       <div class="empty-state">
-        <div class="empty-state-icon">🔍</div>
+        <div class="empty-state-icon">${svg('Search', 36)}</div>
         <div class="empty-state-title">No routes found</div>
         <div class="empty-state-desc">Try adjusting your filters or search terms.</div>
       </div>`
@@ -149,7 +169,7 @@ export function renderRouteCards(
     containerEl.innerHTML = `
       <div class="route-shelf">
         <div class="shelf-header">
-          <span class="shelf-emoji">🔎</span>
+          <span class="shelf-emoji">${svg('Filter', 16)}</span>
           <span class="shelf-title">Filtered Results</span>
           <span class="shelf-count">${routes.length}</span>
         </div>
@@ -170,12 +190,12 @@ function _renderShelves(containerEl: HTMLElement, routes: RouteIndexEntry[], sel
 
   containerEl.innerHTML = `
     ${_nearMeShelfHtml}
-    ${buildShelf('Top Curated Trails', '🌲', curated, selectedId)}
-    ${buildShelf('Waterfront & Scenic', '🌊', waterfront, selectedId)}
-    ${buildShelf('Night Running (Well-Lit)', '🌙', nightRuns, selectedId)}
-    ${buildShelf('Long Run Sunday (10km+)', '🏃', longRuns, selectedId)}
-    ${buildShelf('Paved Park Connectors', '🏙️', pcn, selectedId)}
-    ${buildShelf('Quick Runs (<5km)', '⚡', shortRuns, selectedId)}
+    ${buildShelf('Top Curated Trails', svg('TreePine', 16), curated, selectedId)}
+    ${buildShelf('Waterfront & Scenic', svg('Waves', 16), waterfront, selectedId)}
+    ${buildShelf('Night Running (Well-Lit)', svg('Moon', 16), nightRuns, selectedId)}
+    ${buildShelf('Long Run Sunday (10km+)', svg('Activity', 16), longRuns, selectedId)}
+    ${buildShelf('Paved Park Connectors', svg('Building2', 16), pcn, selectedId)}
+    ${buildShelf('Quick Runs (<5km)', svg('Zap', 16), shortRuns, selectedId)}
   `
 }
 
@@ -194,11 +214,11 @@ export async function initNearMeShelf(
   routes: RouteIndexEntry[],
   selectedId: string | null,
   onSelect: (routeId: string) => void,
-): Promise<void> {
+): Promise<boolean> {
   const pos = await getUserLocation()
   if (!pos) {
     // T-076: gracefully hide if denied — no error, no shelf
-    return
+    return false
   }
 
   const { latitude, longitude } = pos.coords
@@ -207,13 +227,14 @@ export async function initNearMeShelf(
   _distMap = new Map(sorted.map((r) => [r.route.id, formatProximity(r.distanceKm)]))
 
   const nearMeRoutes = sorted.map((r) => r.route)
-  _nearMeShelfHtml = buildShelf('Nearest Runs to You 📍', '📍', nearMeRoutes, selectedId, _distMap)
+  _nearMeShelfHtml = buildShelf('Nearest Runs to You', svg('MapPin', 16), nearMeRoutes, selectedId, _distMap)
 
   // Re-render shelves with the near-me shelf injected at the top
   if (!_isFiltered && containerEl) {
     _renderShelves(containerEl, routes, selectedId)
     wireCardEvents(containerEl, onSelect)
   }
+  return true
 }
 
 // ─── Active Card State ────────────────────────────────────────────────────────

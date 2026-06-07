@@ -25,7 +25,10 @@ export async function getUserLocation(): Promise<GeolocationPosition | null> {
         cachedPosition = pos
         resolve(pos)
       },
-      () => resolve(null),
+      (err) => {
+        console.warn('[RunSG] Geolocation error:', err.message, err.code)
+        resolve(null)
+      },
       { timeout: 8000, maximumAge: 60_000 },
     )
   })

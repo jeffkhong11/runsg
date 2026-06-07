@@ -2,6 +2,7 @@
 // Renders filter UI and applies filter logic to route list + map
 
 import type { RouteIndexEntry } from '../types/route.ts'
+import { svg } from './icon-system.ts'
 
 // ─── Filter State ────────────────────────────────────────────────────────────
 
@@ -115,7 +116,7 @@ export function renderFilters(containerEl: HTMLElement): void {
   containerEl.innerHTML = `
     <!-- Search (T-027) -->
     <div class="filter-search-wrap">
-      <span class="filter-search-icon">🔍</span>
+      <span class="filter-search-icon">${svg('Search', 14)}</span>
       <input
         type="text"
         class="filter-search"

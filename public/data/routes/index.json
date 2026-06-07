@@ -30,7 +30,8 @@
       103.8543,
       1.2866,
       103.8694
-    ]
+    ],
+    "thumbnail": "data/images/routes/marina-bay-loop.png"
   },
   {
     "id": "sentosa-boardwalk-run",
@@ -62,7 +63,8 @@
       103.8215,
       1.2642,
       103.8301
-    ]
+    ],
+    "thumbnail": "data/images/routes/sentosa-boardwalk-run.png"
   },
   {
     "id": "upper-seletar-loop",
@@ -95,7 +97,8 @@
       103.805,
       1.408,
       103.818
-    ]
+    ],
+    "thumbnail": "data/images/routes/upper-seletar-loop.png"
   },
   {
     "id": "pcn-coastal-park-connector",
@@ -170,7 +173,8 @@
       103.97525070133528,
       1.3730211256001754,
       104.03164774177479
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-coastal-park-connector.png"
   },
   {
     "id": "pcn-east-coast-park",
@@ -246,7 +250,8 @@
       103.91478591607765,
       1.3169313477993103,
       103.97525069055482
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-east-coast-park.png"
   },
   {
     "id": "pcn-punggol-waterway",
@@ -1028,7 +1033,8 @@
       103.96660982407526,
       1.391751601298911,
       103.9884675228971
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-loyang-park-connector.png"
   },
   {
     "id": "pcn-rowers-bay-to-tpe",
@@ -1253,7 +1259,8 @@
       103.88928879223519,
       1.3619523246536656,
       103.89577270846509
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-hougang-avenue-3-pc.png"
   },
   {
     "id": "pcn-serangoon-park-connector",
@@ -2158,7 +2165,8 @@
       103.79524230958538,
       1.4451315764882997,
       103.81198711108784
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-woodlands-ave-12-pc.png"
   },
   {
     "id": "pcn-play-corridor",
@@ -2215,7 +2223,8 @@
       103.92645947544102,
       1.329406099698333,
       103.93451121162563
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-play-corridor.png"
   },
   {
     "id": "pcn-yishun-park-connector",
@@ -3537,7 +3546,8 @@
       103.80039282478783,
       1.2969254699328532,
       103.8052453441069
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-alexandra-queensway-pc.png"
   },
   {
     "id": "pcn-simei-park-connector",
@@ -4079,7 +4089,8 @@
       103.9248134958737,
       1.3657478396751312,
       103.93120120406455
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-tampines-park-connector-east---section-2.png"
   },
   {
     "id": "pcn-choa-chu-kang-pc-kje-to-brickland-rd\r\nchoa-chu-k",
@@ -4232,7 +4243,8 @@
       103.8939171224409,
       1.3208255089690026,
       103.91284073691851
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-sims-avenue-pc.png"
   },
   {
     "id": "pcn-henderson-park-connector",
@@ -5146,7 +5158,8 @@
       103.91896213844014,
       1.336611490129983,
       103.93384128214427
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-bedok-town-park.png"
   },
   {
     "id": "pcn-sengkang-riverside-park-2",
@@ -5457,7 +5470,8 @@
       103.74588142365748,
       1.40509609566533,
       103.75254171646195
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-pang-sua-pc-stagmont-ring---choa-chu-kang-way.png"
   },
   {
     "id": "pcn-kallang-riverside-park",
@@ -5860,7 +5874,8 @@
       103.75998983899852,
       1.3632856971074578,
       103.76781306655556
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-hillview-pc.png"
   },
   {
     "id": "pcn-bishan-ang-mo-kio-park-pond-gardens",
@@ -6629,7 +6644,8 @@
       103.81751445870687,
       1.4026863256790194,
       103.82777702239576
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-springleaf-park-connector.png"
   },
   {
     "id": "pcn-west-coast-park-connector-west---section-2",
@@ -7898,7 +7914,8 @@
       103.94804128611244,
       1.3818790479049474,
       103.9532583719392
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-pasir-ris-park-4.png"
   },
   {
     "id": "pcn-choa-chu-kang-park-connector",
@@ -8265,7 +8282,8 @@
       103.7438178459696,
       1.3924337593534486,
       103.74954612256842
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-chua-chu-kang-north-pc.png"
   },
   {
     "id": "pcn-adam-pc",
@@ -8806,7 +8824,8 @@
       103.85030391457221,
       1.3689514799332763,
       103.85327392500541
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-ang-mo-kio-ave-8-pc.png"
   },
   {
     "id": "pcn-punggol-promenade-punggol-point-walk",
@@ -8943,7 +8962,8 @@
       103.88498211958438,
       1.3339156066736464,
       103.88926847882136
-    ]
+    ],
+    "thumbnail": "data/images/routes/pcn-balam-pc.png"
   },
   {
     "id": "pcn-ang-mo-kio-park-connector",
@@ -9171,7 +9191,8 @@
       103.80595,
       1.35729,
       103.8365
-    ]
+    ],
+    "thumbnail": "data/images/routes/macritchie-loop.png"
   },
   {
     "id": "bukit-timah-trail",
@@ -9422,7 +9443,8 @@
       103.75214,
       1.42582,
       103.83241
-    ]
+    ],
+    "thumbnail": "data/images/routes/rail-corridor.png"
   },
   {
     "id": "coney-island-loop",

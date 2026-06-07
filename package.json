@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "chart.js": "^4.5.1",
+    "lucide": "^1.17.0",
     "mapbox-gl": "^3.24.0"
   }
 }

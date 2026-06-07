@@ -2,8 +2,10 @@
 // Phase 2: Wire up filters, route cards, detail panel, hash router
 // Phase 4: Amenity metrics (T-069–T-071)
 // Phase 5: Near Me shelf (T-074–T-076), zoom render guard (T-087a), quick pills
+// Chunk 1: Map-first floating layout, header search, sidebar toggle
 
 import './style.css'
+import { svg } from './ui/icon-system.ts'
 import { initMap, fitBounds, resetView, setMapTheme } from './map/map.ts'
 import {
   renderRoutes, onRouteSelected, selectRoute, updateRouteGeometry,
@@ -18,10 +20,11 @@ import { initFilters, renderFilters, getActiveFilterCount, applyFilters } from '
 import {
   renderRouteCards, setActiveCard, scrollToCard, initRouteCards, initNearMeShelf,
 } from './ui/route-card.ts'
-import { renderDetailPanel, closeDetail } from './ui/route-detail.ts'
+import { renderDetailPanel, closeDetail, setDetailRoute } from './ui/route-detail.ts'
 import { renderElevationChart } from './ui/elevation-chart.ts'
 import { initRouter, onHashRoute, onHashHome, setRouteHash, clearRouteHash } from './ui/router.ts'
 import { computeAmenityMetrics, renderAmenityMetrics } from './services/amenity-metrics.ts'
+import { initSearchDropdown } from './ui/search-dropdown.ts'
 import type { RouteIndexEntry } from './types/route.ts'
 
 // ─── DOM Setup ───────────────────────────────────────────────────────────────
@@ -31,36 +34,46 @@ const appEl = document.getElementById('app')!
 appEl.innerHTML = `
   <!-- Header -->
   <header class="app-header">
+    <!-- Sidebar toggle (hamburger) -->
+    <button class="btn-sidebar-toggle" id="btn-sidebar-toggle" title="Toggle sidebar" aria-label="Toggle sidebar" aria-expanded="true">
+      ${svg('Menu', 20)}
+    </button>
+
     <a href="#" class="app-logo" id="logo-home">
-      <div class="app-logo-icon">🏃</div>
+      <div class="app-logo-icon">${svg('Activity', 18, 'logo-run-icon')}</div>
       <span class="app-logo-text">Run<span>SG</span></span>
     </a>
-    <div class="header-spacer"></div>
+
+    <!-- Always-visible search bar -->
+    <div class="header-search-wrap">
+      <span class="header-search-icon">
+        ${svg('Search', 15)}
+      </span>
+      <input
+        type="text"
+        class="header-search"
+        id="header-search"
+        placeholder="Search routes, tags, region…"
+        aria-label="Search routes"
+        autocomplete="off"
+      />
+    </div>
+
     <div class="header-actions">
-      <button class="btn-icon" id="btn-near-me" title="Find runs near me" aria-label="Find runs near me">📍</button>
-      <button class="btn-icon" id="btn-theme" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+      <button class="btn-icon" id="btn-near-me" title="Find runs near me" aria-label="Find runs near me">${svg('MapPin', 18)}</button>
+      <button class="btn-icon" id="btn-theme" title="Toggle dark mode" aria-label="Toggle dark mode">${svg('Moon', 18)}</button>
     </div>
   </header>
 
-  <!-- Quick Filter Pills (FR-05, T-025) -->
-  <div class="quick-pills" id="quick-pills" role="group" aria-label="Quick route filters">
-    <button class="pill" data-pill="trail" id="pill-trail">🌲 Trails</button>
-    <button class="pill" data-pill="pcn"   id="pill-pcn">🏙️ Paved PCN</button>
-    <button class="pill" data-pill="night" id="pill-night">🌙 Night Running</button>
-    <button class="pill" data-pill="long"  id="pill-long">🏃 Long Runs</button>
-    <button class="pill" data-pill="easy"  id="pill-easy">⚡ Quick Runs</button>
-    <button class="pill" data-pill="hilly" id="pill-hilly">⛰️ Hilly</button>
-  </div>
-
-  <!-- Main -->
+  <!-- Main —map fills 100%, sidebar + detail float over it -->
   <main class="app-main">
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-      <div class="sidebar-title-row">
+        <div class="sidebar-title-row">
           <div class="sidebar-title">Explore Routes</div>
           <button class="btn-icon sidebar-filter-toggle" id="btn-toggle-filters" title="Filters" aria-label="Toggle filters">
-            <span id="filter-icon">⚙️</span>
+            <span id="filter-icon">${svg('SlidersHorizontal', 17)}</span>
           </button>
         </div>
         <div class="sidebar-route-count" id="route-count">Loading routes…</div>
@@ -80,12 +93,24 @@ appEl.innerHTML = `
       </div>
     </aside>
 
-    <!-- Map container -->
+    <!-- Map container (full width/height) -->
     <div class="map-wrapper">
       <div id="map"></div>
       <div class="map-loading" id="map-loading">
         <div class="spinner"></div>
         <div class="map-loading-text">Loading Singapore routes…</div>
+      </div>
+
+      <!-- Quick Filter Pills — floating overlay at map bottom -->
+      <div class="map-pills-overlay" id="map-pills-overlay">
+        <div class="quick-pills" id="quick-pills" role="group" aria-label="Quick route filters">
+          <button class="pill" data-pill="trail" id="pill-trail">${svg('TreePine', 14)} Trails</button>
+          <button class="pill" data-pill="pcn"   id="pill-pcn">${svg('Building2', 14)} Paved PCN</button>
+          <button class="pill" data-pill="night" id="pill-night">${svg('Moon', 14)} Night Running</button>
+          <button class="pill" data-pill="long"  id="pill-long">${svg('Activity', 14)} Long Runs</button>
+          <button class="pill" data-pill="easy"  id="pill-easy">${svg('Zap', 14)} Quick Runs</button>
+          <button class="pill" data-pill="hilly" id="pill-hilly">${svg('Mountain', 14)} Hilly</button>
+        </div>
       </div>
     </div>
 
@@ -94,7 +119,7 @@ appEl.innerHTML = `
       <div class="route-detail-accent"></div>
       <div class="route-detail-header">
         <div id="detail-title" class="route-detail-title"></div>
-        <button class="route-detail-close" id="btn-detail-close" title="Close" aria-label="Close detail panel">&times;</button>
+        <button class="route-detail-close" id="btn-detail-close" title="Close" aria-label="Close detail panel">${svg('X', 18)}</button>
       </div>
       <div class="route-detail-body" id="detail-body"></div>
     </div>
@@ -110,6 +135,7 @@ let allRoutes: RouteIndexEntry[] = []
 let selectedRouteId: string | null = null
 let filtersVisible = false
 let activePill: string | null = null
+let sidebarCollapsed = false
 
 // ─── DOM Refs ────────────────────────────────────────────────────────────────
 
@@ -150,7 +176,7 @@ function toggleTheme(): void {
 
 function updateThemeButton(theme: string): void {
   const btn = document.getElementById('btn-theme')
-  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙'
+  if (btn) btn.innerHTML = theme === 'dark' ? svg('Sun', 18) : svg('Moon', 18)
 }
 
 // ─── Status Toast ────────────────────────────────────────────────────────────
@@ -169,7 +195,19 @@ function toggleFilters(): void {
   filtersVisible = !filtersVisible
   sidebarFiltersEl.classList.toggle('open', filtersVisible)
   const icon = document.getElementById('filter-icon')
-  if (icon) icon.textContent = filtersVisible ? '✕' : '⚙️'
+  if (icon) icon.innerHTML = filtersVisible ? svg('X', 17) : svg('SlidersHorizontal', 17)
+}
+
+// ─── Sidebar Toggle ───────────────────────────────────────────────────────────
+
+function toggleSidebar(): void {
+  sidebarCollapsed = !sidebarCollapsed
+  const sidebar = document.getElementById('sidebar')!
+  const btn = document.getElementById('btn-sidebar-toggle')!
+  sidebar.classList.toggle('collapsed', sidebarCollapsed)
+  btn.setAttribute('aria-expanded', String(!sidebarCollapsed))
+  // Resize map after transition so Mapbox knows the new viewport
+  setTimeout(() => { initMap('map').resize() }, 520)
 }
 
 // ─── Route Count ─────────────────────────────────────────────────────────────
@@ -274,6 +312,7 @@ async function handleRouteSelect(routeId: string): Promise<void> {
     updateRouteGeometry(routeId, route.geometry.coordinates)
     updateRouteStartPin(routeId, route.geometry.coordinates, routeColor)
     setAmenityActiveRoute(route.geometry.coordinates)
+    setDetailRoute(route)  // enables GPX export button
 
     if (indexEntry?.bounds) fitBounds(indexEntry.bounds)
     showStatus(`${route.name} — ${route.distance_km} km`)
@@ -362,7 +401,7 @@ async function bootstrap(): Promise<void> {
   } catch {
     routeListEl.innerHTML = `
       <div class="empty-state">
-        <div class="empty-state-icon">⚠️</div>
+        <div class="empty-state-icon">${svg('CircleAlert', 36)}</div>
         <div class="empty-state-title">Could not load routes</div>
         <div class="empty-state-desc">Route data is not available yet. Run the data pipeline scripts first.</div>
       </div>`
@@ -386,13 +425,50 @@ async function bootstrap(): Promise<void> {
   // Filter toggle
   document.getElementById('btn-toggle-filters')?.addEventListener('click', toggleFilters)
 
+  // Sidebar toggle (hamburger)
+  document.getElementById('btn-sidebar-toggle')?.addEventListener('click', toggleSidebar)
+
+  // Header search bar: fuzzy dropdown + sidebar filter
+  const headerSearchEl = document.getElementById('header-search') as HTMLInputElement | null
+  if (headerSearchEl) {
+    // Init fuzzy dropdown — fires handleRouteSelect on pick
+    initSearchDropdown(headerSearchEl, allRoutes, (id) => {
+      handleRouteSelect(id)
+      // Expand sidebar if collapsed so card becomes visible
+      if (sidebarCollapsed) toggleSidebar()
+    })
+
+    // Also filter sidebar list as user types (same as before)
+    headerSearchEl.addEventListener('input', () => {
+      const q = headerSearchEl.value.trim()
+      const filtered = allRoutes.filter((r) => {
+        if (!q) return true
+        const haystack = `${r.name} ${r.description ?? ''} ${r.tags.join(' ')} ${r.region}`.toLowerCase()
+        return haystack.includes(q.toLowerCase())
+      })
+      updateRouteCount(filtered.length, allRoutes.length)
+      renderRouteCards(routeListEl, filtered, selectedRouteId, handleRouteSelect)
+      if (filtered.length === allRoutes.length) {
+        showAllRoutes()
+      } else {
+        filterVisibleRoutes(new Set(filtered.map((r) => r.id)))
+      }
+      if (sidebarCollapsed && q) toggleSidebar()
+    })
+  }
+
   // Quick pills
   initQuickPills()
 
   // Near Me button in header
   document.getElementById('btn-near-me')?.addEventListener('click', async () => {
     showStatus('Finding runs near you…')
-    await initNearMeShelf(routeListEl, allRoutes, selectedRouteId, handleRouteSelect)
+    const success = await initNearMeShelf(routeListEl, allRoutes, selectedRouteId, handleRouteSelect)
+    if (!success) {
+      showStatus('Location permission denied or unavailable.')
+    } else {
+      showStatus('Found runs near you!')
+    }
   })
 
   // Logo → reset view
