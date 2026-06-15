@@ -445,7 +445,8 @@ body {
   z-index: 500; display: flex; flex-direction: column;
   box-shadow: var(--shadow-xl);
   transform: translateX(100%);
-  transition: transform 320ms cubic-bezier(0.4,0,0.2,1);
+  /* Chunk 8: spring slide-in */
+  transition: transform var(--transition-spring);
   overflow: hidden;
 }
 .route-detail.open { transform: translateX(0); }
@@ -483,11 +484,80 @@ body {
 
 .route-detail-body {
   flex: 1; overflow-y: auto;
-  padding: var(--space-5);
+  /* Tab bar is sticky within this scroll container */
+  padding: 0;
 }
 .route-detail-body::-webkit-scrollbar { width: 4px; }
 .route-detail-body::-webkit-scrollbar-thumb {
   background: var(--border-color); border-radius: var(--radius-full);
+}
+
+/* ====== CHUNK 7: DETAIL TABS ====== */
+.detail-tab-bar {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  flex-shrink: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.detail-tab-bar::-webkit-scrollbar { display: none; }
+
+.detail-tab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: var(--space-3) var(--space-3);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+  position: relative;
+  flex-shrink: 0;
+  letter-spacing: 0.01em;
+}
+.detail-tab:hover {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.04);
+}
+.detail-tab.active {
+  color: var(--route-detail-color, var(--color-brand));
+  border-bottom-color: var(--route-detail-color, var(--color-brand));
+}
+
+.detail-tab-content {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+/* Chunk 7: Tab panels — only active one is visible, with crossfade */
+.detail-tab-panel {
+  display: none;
+  padding: var(--space-5);
+  animation: tabFadeIn 0.18s ease;
+}
+.detail-tab-panel.active {
+  display: block;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ====== DETAIL SECTIONS ====== */
@@ -1258,13 +1328,54 @@ body {
 }
 .card-lighting.lit { opacity: 1; }
 
+/* ====== CHUNK 8: CARD ENTRANCE ANIMATION ====== */
+/* Set --i via JS on each card for staggered delay */
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.route-card.card-enter {
+  animation: cardEnter 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+
 /* ====== REDUCED MOTION ====== */
 @media (prefers-reduced-motion: reduce) {
-  .route-card {
+  /* Cards — remove stagger entrance and hover lift */
+  .route-card,
+  .route-card.card-enter {
+    animation: none;
     transition: box-shadow var(--transition-fast), border-color var(--transition-fast), opacity var(--transition-fast);
   }
   .route-card:hover { transform: none; }
+
+  /* Sidebar — instant toggle (no slide) */
+  .sidebar {
+    transition: opacity var(--transition-fast);
+  }
+
+  /* Detail panel — instant slide-in */
+  .route-detail {
+    transition: transform var(--transition-fast);
+  }
+
+  /* Tabs — no fade-in animation */
+  .detail-tab-panel {
+    animation: none;
+  }
+
+  /* Pills */
   .pill:hover, .pill.active { transform: none; }
+
+  /* Map markers */
+  @keyframes marker-pulse { from, to { transform: none; } }
 }
 
 /* ====== AMENITY METRICS (T-069–T-071) ====== */
@@ -1601,3 +1712,214 @@ body {
   color: var(--text-secondary);
   line-height: 1.5;
 }
+
+/* ─── Chunk 6: Singapore-Specific Features (Best Time & Rain Window) ──────── */
+
+.best-time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 480px) {
+  .best-time-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.best-time-chip {
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.best-time-chip:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.best-time-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.best-time-name {
+  color: var(--text-primary);
+}
+
+.best-time-time {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.best-time-badge {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+.best-time-best .best-time-badge {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.best-time-good .best-time-badge {
+  background: rgba(2, 132, 199, 0.15);
+  color: #0284c7;
+}
+
+.best-time-avoid .best-time-badge {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.best-time-reason {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+}
+
+.rain-window-banner {
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rain-window-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rain-window-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.rain-window-level {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rain-window-advice {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* ─── Chunk 6: Getting There (Nearest MRT) ─────────────────────────────────── */
+
+.mrt-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.mrt-card {
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mrt-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mrt-card-icon {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.mrt-card-title-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mrt-card-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mrt-card-exit {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.mrt-card-lines {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.mrt-line-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 4px;
+  min-width: 24px;
+  text-align: center;
+  display: inline-block;
+}
+
+.mrt-card-distance {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: var(--space-2);
+}
+
+.mrt-loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: var(--space-2) 0;
+}
+
+/* ====== CHUNK 8: SIDEBAR SLIDE-IN ENTRANCE ====== */
+/* On initial page load — sidebar animates in from the left */
+@keyframes sidebarEnter {
+  from { transform: translateX(-24px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+.sidebar {
+  animation: sidebarEnter 0.5s var(--transition-spring) both;
+}
+/* Collapsed override takes priority via the existing .sidebar.collapsed rule */
+.sidebar.collapsed {
+  animation: none;
+}
+

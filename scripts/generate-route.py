@@ -31,27 +31,6 @@ INDEX_PATH = OUTPUT_DIR / "index.json"
 
 CUSTOM_ROUTES = [
     {
-        "id": "marina-bay-loop",
-        "name": "Marina Bay Loop",
-        "region": "central",
-        "type": "road",
-        "difficulty": "easy",
-        "lighting": "well-lit",
-        "loop": True,
-        "elevation_gain_m": 15,
-        "surface": {"tarmac": 0.90, "boardwalk": 0.10},
-        "description": "A flat, scenic 5km loop around Marina Bay. Pass the Merlion, Helix Bridge, ArtScience Museum, and Gardens by the Bay. Ideal for evening runs with iconic skyline views.",
-        "tags": ["urban", "flat", "scenic", "night-run", "marina-bay", "loop"],
-        "waypoints": [
-            [103.8543, 1.2866],  # Merlion Park
-            [103.8613, 1.2834],  # Helix Bridge
-            [103.8694, 1.2816],  # Marina Bay Sands
-            [103.8653, 1.2773],  # Gardens by the Bay
-            [103.8560, 1.2795],  # Marina Barrage
-            [103.8543, 1.2866],  # Back to Merlion
-        ],
-    },
-    {
         "id": "punggol-waterway-pcn",
         "name": "Punggol Waterway PCN",
         "region": "north",

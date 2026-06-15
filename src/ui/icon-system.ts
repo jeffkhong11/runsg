@@ -69,8 +69,20 @@ export function svg(name: string, size = 18, cls = ''): string {
       return `${o}<path d="m9 18 6-6-6-6"/>${C}`
     case 'ChevronLeft':
       return `${o}<path d="m15 18-6-6 6-6"/>${C}`
+    case 'Train':
+      return `${o}<path d="M8 3.1c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v2.8c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2V3.1Z"/><path d="M18 13.5V9a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v4.5"/><path d="M21 16.5V11a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v5.5"/><path d="M6 19h12"/><path d="M5 22h14"/>${C}`
+    case 'Check':
+      return `${o}<path d="M20 6 9 17l-5-5"/>${C}`
+    case 'Info':
+      return `${o}<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>${C}`
+    case 'TrendingUp':
+      return `${o}<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>${C}`
+    case 'Cloud':
+      return `${o}<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>${C}`
+    case 'LayoutGrid':
+      return `${o}<rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/>${C}`
     default:
-      console.warn(`[RunSG] Unknown icon: "${name}"`)
+      console.warn(`[RunSG] Unknown icon: "${name}"`)      
       return ''
   }
 }

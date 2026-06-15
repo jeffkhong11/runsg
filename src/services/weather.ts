@@ -85,6 +85,8 @@ export async function getWeatherForRegion(region: string): Promise<{
   temperature?: { low: number; high: number }
   humidity?: { low: number; high: number }
   heatIndex: { level: string; color: string; advice: string }
+  isRainy: boolean
+  rainAdvice: string
 } | null> {
   const data = await fetchNowcast()
   if (!data || data.forecasts.length === 0) return null
@@ -101,12 +103,19 @@ export async function getWeatherForRegion(region: string): Promise<{
   const humAtPeak = 65 // Peak daily temperature occurs at minimum relative humidity
   const heatIndex = computeHeatIndex(tempHigh, humAtPeak)
 
+  const isRainy = /rain|shower|thunderstorm|storm/i.test(forecast.forecast)
+  const rainAdvice = isRainy
+    ? 'Wet weather expected. Take caution on slippery paths and watch out for lightning risk.'
+    : 'Enjoy a rain-free window! Perfect time to head out.'
+
   return {
     forecast: forecast.forecast,
     area: forecast.area,
     temperature: data.temperature,
     humidity: data.humidity,
     heatIndex,
+    isRainy,
+    rainAdvice,
   }
 }
 

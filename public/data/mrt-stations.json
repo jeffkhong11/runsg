@@ -1,0 +1,7152 @@
+[
+  {
+    "stationName": "Admiralty",
+    "exitCode": "Exit A",
+    "lat": 1.4403456612830383,
+    "lng": 103.80098952191813,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS10"
+    ]
+  },
+  {
+    "stationName": "Admiralty",
+    "exitCode": "Exit B",
+    "lat": 1.440152396746762,
+    "lng": 103.80053346325835,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS10"
+    ]
+  },
+  {
+    "stationName": "Admiralty",
+    "exitCode": "Exit C",
+    "lat": 1.4405962856579384,
+    "lng": 103.80054245816031,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS10"
+    ]
+  },
+  {
+    "stationName": "Admiralty",
+    "exitCode": "Exit D",
+    "lat": 1.4405333880722966,
+    "lng": 103.80136453445112,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS10"
+    ]
+  },
+  {
+    "stationName": "Aljunied",
+    "exitCode": "Exit A",
+    "lat": 1.316238485344709,
+    "lng": 103.88249665045747,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW9"
+    ]
+  },
+  {
+    "stationName": "Aljunied",
+    "exitCode": "Exit B",
+    "lat": 1.3164879303040784,
+    "lng": 103.88247288778244,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW9"
+    ]
+  },
+  {
+    "stationName": "Ang Mo Kio",
+    "exitCode": "Exit A",
+    "lat": 1.369464706505095,
+    "lng": 103.84993900074095,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS16"
+    ]
+  },
+  {
+    "stationName": "Ang Mo Kio",
+    "exitCode": "Exit B",
+    "lat": 1.3696853221997212,
+    "lng": 103.84959610065526,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS16"
+    ]
+  },
+  {
+    "stationName": "Ang Mo Kio",
+    "exitCode": "Exit C",
+    "lat": 1.3694405305965007,
+    "lng": 103.84934327370465,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS16"
+    ]
+  },
+  {
+    "stationName": "Ang Mo Kio",
+    "exitCode": "Exit D",
+    "lat": 1.3698823752681695,
+    "lng": 103.84982457247968,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS16"
+    ]
+  },
+  {
+    "stationName": "Bakau",
+    "exitCode": "Exit A",
+    "lat": 1.3881853854521522,
+    "lng": 103.9054456307135,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bakau",
+    "exitCode": "Exit B",
+    "lat": 1.3878407992569977,
+    "lng": 103.90548212404298,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bangkit",
+    "exitCode": "Exit A",
+    "lat": 1.3798533467645455,
+    "lng": 103.77259057420869,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bartley",
+    "exitCode": "Exit A",
+    "lat": 1.342248749216091,
+    "lng": 103.88025589326459,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC12"
+    ]
+  },
+  {
+    "stationName": "Bartley",
+    "exitCode": "Exit B",
+    "lat": 1.3435010615293341,
+    "lng": 103.8789086939245,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC12"
+    ]
+  },
+  {
+    "stationName": "Bayfront",
+    "exitCode": "Exit A",
+    "lat": 1.2809674239716435,
+    "lng": 103.8587319247403,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CE1",
+      "DT16"
+    ]
+  },
+  {
+    "stationName": "Bayfront",
+    "exitCode": "Exit B",
+    "lat": 1.2827052247082797,
+    "lng": 103.85975918022659,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CE1",
+      "DT16"
+    ]
+  },
+  {
+    "stationName": "Bayfront",
+    "exitCode": "Exit C",
+    "lat": 1.2828349086889401,
+    "lng": 103.85959687218748,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CE1",
+      "DT16"
+    ]
+  },
+  {
+    "stationName": "Bayfront",
+    "exitCode": "Exit D",
+    "lat": 1.2828343544709762,
+    "lng": 103.85949384661112,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CE1",
+      "DT16"
+    ]
+  },
+  {
+    "stationName": "Bayfront",
+    "exitCode": "Exit E",
+    "lat": 1.2811046370918653,
+    "lng": 103.85844100365208,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CE1",
+      "DT16"
+    ]
+  },
+  {
+    "stationName": "Bayshore",
+    "exitCode": "Exit 1",
+    "lat": 1.3118987186917346,
+    "lng": 103.94126172566517,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bayshore",
+    "exitCode": "Exit 2",
+    "lat": 1.3121838590996928,
+    "lng": 103.94067346766076,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bayshore",
+    "exitCode": "Exit 3",
+    "lat": 1.31356798026815,
+    "lng": 103.94072100418352,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bayshore",
+    "exitCode": "Exit 4",
+    "lat": 1.3135263973574927,
+    "lng": 103.94267591982259,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Bayshore",
+    "exitCode": "Exit 5",
+    "lat": 1.3128967114776557,
+    "lng": 103.94258441308978,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Beauty World",
+    "exitCode": "Exit A",
+    "lat": 1.3416961499328006,
+    "lng": 103.7759842962261,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT5"
+    ]
+  },
+  {
+    "stationName": "Beauty World",
+    "exitCode": "Exit B",
+    "lat": 1.341582214549837,
+    "lng": 103.77545067944088,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT5"
+    ]
+  },
+  {
+    "stationName": "Beauty World",
+    "exitCode": "Exit C",
+    "lat": 1.3399818737845794,
+    "lng": 103.7757615456262,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT5"
+    ]
+  },
+  {
+    "stationName": "Bedok",
+    "exitCode": "Exit A",
+    "lat": 1.3235686361563497,
+    "lng": 103.92915714309531,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW5"
+    ]
+  },
+  {
+    "stationName": "Bedok",
+    "exitCode": "Exit B",
+    "lat": 1.3242683427611412,
+    "lng": 103.92967308999474,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW5"
+    ]
+  },
+  {
+    "stationName": "Bedok",
+    "exitCode": "Exit C",
+    "lat": 1.3240746458654598,
+    "lng": 103.92940427968887,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW5"
+    ]
+  },
+  {
+    "stationName": "Bedok North",
+    "exitCode": "Exit A",
+    "lat": 1.3351262662136352,
+    "lng": 103.91804982398726,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT29"
+    ]
+  },
+  {
+    "stationName": "Bedok North",
+    "exitCode": "Exit B",
+    "lat": 1.3341660744472075,
+    "lng": 103.91906282344867,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT29"
+    ]
+  },
+  {
+    "stationName": "Bedok North",
+    "exitCode": "Exit B",
+    "lat": 1.3343724902032656,
+    "lng": 103.91913430266187,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT29"
+    ]
+  },
+  {
+    "stationName": "Bedok North",
+    "exitCode": "Exit C",
+    "lat": 1.3344225765515134,
+    "lng": 103.9178105260292,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT29"
+    ]
+  },
+  {
+    "stationName": "Bedok Reservoir",
+    "exitCode": "Exit A",
+    "lat": 1.336347760899778,
+    "lng": 103.93288682250619,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT30"
+    ]
+  },
+  {
+    "stationName": "Bedok Reservoir",
+    "exitCode": "Exit B",
+    "lat": 1.3365549033286315,
+    "lng": 103.93348718985506,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT30"
+    ]
+  },
+  {
+    "stationName": "Bencoolen",
+    "exitCode": "Exit A",
+    "lat": 1.2991951960301853,
+    "lng": 103.85084338471715,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT21"
+    ]
+  },
+  {
+    "stationName": "Bencoolen",
+    "exitCode": "Exit B",
+    "lat": 1.2981994004556694,
+    "lng": 103.84956047759098,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT21"
+    ]
+  },
+  {
+    "stationName": "Bencoolen",
+    "exitCode": "Exit C",
+    "lat": 1.2976991176544332,
+    "lng": 103.8492717038725,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT21"
+    ]
+  },
+  {
+    "stationName": "Bendemeer",
+    "exitCode": "Exit A",
+    "lat": 1.3138525056222503,
+    "lng": 103.86307400593707,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT23"
+    ]
+  },
+  {
+    "stationName": "Bendemeer",
+    "exitCode": "Exit B",
+    "lat": 1.3134807250255989,
+    "lng": 103.86321923143063,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT23"
+    ]
+  },
+  {
+    "stationName": "Bishan",
+    "exitCode": "Exit A",
+    "lat": 1.350579598712016,
+    "lng": 103.8483049917219,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS17",
+      "CC15"
+    ]
+  },
+  {
+    "stationName": "Bishan",
+    "exitCode": "Exit B",
+    "lat": 1.3510644392737419,
+    "lng": 103.84831225598012,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS17",
+      "CC15"
+    ]
+  },
+  {
+    "stationName": "Bishan",
+    "exitCode": "Exit C",
+    "lat": 1.3505849115398918,
+    "lng": 103.84820928129376,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS17",
+      "CC15"
+    ]
+  },
+  {
+    "stationName": "Bishan",
+    "exitCode": "Exit D",
+    "lat": 1.3510532199332945,
+    "lng": 103.85020108196488,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS17",
+      "CC15"
+    ]
+  },
+  {
+    "stationName": "Bishan",
+    "exitCode": "Exit E",
+    "lat": 1.3510348377710364,
+    "lng": 103.84843292387485,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS17",
+      "CC15"
+    ]
+  },
+  {
+    "stationName": "Boon Keng",
+    "exitCode": "Exit A",
+    "lat": 1.3201068759913108,
+    "lng": 103.86150235706886,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE9"
+    ]
+  },
+  {
+    "stationName": "Boon Keng",
+    "exitCode": "Exit B",
+    "lat": 1.3192351959974773,
+    "lng": 103.86190367551879,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE9"
+    ]
+  },
+  {
+    "stationName": "Boon Keng",
+    "exitCode": "Exit C",
+    "lat": 1.317914816472307,
+    "lng": 103.86070683328751,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE9"
+    ]
+  },
+  {
+    "stationName": "Boon Lay",
+    "exitCode": "Exit A",
+    "lat": 1.3382799880819698,
+    "lng": 103.7054089949691,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW27"
+    ]
+  },
+  {
+    "stationName": "Boon Lay",
+    "exitCode": "Exit B",
+    "lat": 1.338420695657893,
+    "lng": 103.70614554796673,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW27"
+    ]
+  },
+  {
+    "stationName": "Boon Lay",
+    "exitCode": "Exit C",
+    "lat": 1.3387381087333912,
+    "lng": 103.70595515261101,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW27"
+    ]
+  },
+  {
+    "stationName": "Boon Lay",
+    "exitCode": "Exit D",
+    "lat": 1.3386295077959716,
+    "lng": 103.70565003803485,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW27"
+    ]
+  },
+  {
+    "stationName": "Boon Lay",
+    "exitCode": "Exit E",
+    "lat": 1.338514120931197,
+    "lng": 103.70535335319977,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW27"
+    ]
+  },
+  {
+    "stationName": "Boon Lay",
+    "exitCode": "Exit F",
+    "lat": 1.3382732219770168,
+    "lng": 103.70579503136489,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW27"
+    ]
+  },
+  {
+    "stationName": "Botanic Gardens",
+    "exitCode": "Exit A",
+    "lat": 1.3225346329493606,
+    "lng": 103.81497690573431,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC19",
+      "DT9"
+    ]
+  },
+  {
+    "stationName": "Botanic Gardens",
+    "exitCode": "Exit B",
+    "lat": 1.3226846123363898,
+    "lng": 103.81591414579154,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC19",
+      "DT9"
+    ]
+  },
+  {
+    "stationName": "Braddell",
+    "exitCode": "Exit A",
+    "lat": 1.341068992069514,
+    "lng": 103.84642954072108,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS18"
+    ]
+  },
+  {
+    "stationName": "Braddell",
+    "exitCode": "Exit B",
+    "lat": 1.3407443190144652,
+    "lng": 103.84640649723127,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS18"
+    ]
+  },
+  {
+    "stationName": "Braddell",
+    "exitCode": "Exit C",
+    "lat": 1.3406721639431691,
+    "lng": 103.84744083059097,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS18"
+    ]
+  },
+  {
+    "stationName": "Bras Basah",
+    "exitCode": "Exit A",
+    "lat": 1.296858921771042,
+    "lng": 103.85132725338609,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC2"
+    ]
+  },
+  {
+    "stationName": "Bras Basah",
+    "exitCode": "Exit B",
+    "lat": 1.2960462130772386,
+    "lng": 103.85047427550748,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC2"
+    ]
+  },
+  {
+    "stationName": "Bras Basah",
+    "exitCode": "Exit C",
+    "lat": 1.2970144329639453,
+    "lng": 103.85024985270456,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC2"
+    ]
+  },
+  {
+    "stationName": "Bras Basah",
+    "exitCode": "Exit D",
+    "lat": 1.2975514851835557,
+    "lng": 103.8501575209801,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC2"
+    ]
+  },
+  {
+    "stationName": "Bras Basah",
+    "exitCode": "Exit E",
+    "lat": 1.297535451717088,
+    "lng": 103.85042319251075,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC2"
+    ]
+  },
+  {
+    "stationName": "Bright Hill",
+    "exitCode": "Exit 1",
+    "lat": 1.3640371821656152,
+    "lng": 103.83363541399386,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Bright Hill",
+    "exitCode": "Exit 2",
+    "lat": 1.3632827623551678,
+    "lng": 103.83351063156859,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Bright Hill",
+    "exitCode": "Exit 3",
+    "lat": 1.3621838048498118,
+    "lng": 103.83237571105509,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Bright Hill",
+    "exitCode": "Exit 4",
+    "lat": 1.3631639565255047,
+    "lng": 103.83195382945166,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Buangkok",
+    "exitCode": "A",
+    "lat": 1.3834097909898952,
+    "lng": 103.89288383673062,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE15"
+    ]
+  },
+  {
+    "stationName": "Buangkok",
+    "exitCode": "Exit B",
+    "lat": 1.382649722820209,
+    "lng": 103.89346315223678,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE15"
+    ]
+  },
+  {
+    "stationName": "Bugis",
+    "exitCode": "Exit A",
+    "lat": 1.3012040895646393,
+    "lng": 103.85592408146064,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW12",
+      "DT14"
+    ]
+  },
+  {
+    "stationName": "Bugis",
+    "exitCode": "Exit B",
+    "lat": 1.3007821987656956,
+    "lng": 103.85633662767292,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW12",
+      "DT14"
+    ]
+  },
+  {
+    "stationName": "Bugis",
+    "exitCode": "Exit C",
+    "lat": 1.3000069406998658,
+    "lng": 103.85568570391386,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW12",
+      "DT14"
+    ]
+  },
+  {
+    "stationName": "Bugis",
+    "exitCode": "Exit D",
+    "lat": 1.2990788488867298,
+    "lng": 103.85689065486714,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW12",
+      "DT14"
+    ]
+  },
+  {
+    "stationName": "Bukit Batok",
+    "exitCode": "Exit A",
+    "lat": 1.3495610753524367,
+    "lng": 103.7499739902577,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS2"
+    ]
+  },
+  {
+    "stationName": "Bukit Batok",
+    "exitCode": "Exit B",
+    "lat": 1.349389587768077,
+    "lng": 103.7499369555793,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS2"
+    ]
+  },
+  {
+    "stationName": "Bukit Batok",
+    "exitCode": "Exit C",
+    "lat": 1.3495200607327413,
+    "lng": 103.74976656493072,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS2"
+    ]
+  },
+  {
+    "stationName": "Bukit Batok",
+    "exitCode": "Exit D",
+    "lat": 1.3484053759049566,
+    "lng": 103.74911839418894,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS2"
+    ]
+  },
+  {
+    "stationName": "Bukit Gombak",
+    "exitCode": "Exit A",
+    "lat": 1.359069846241564,
+    "lng": 103.75207638937478,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS3"
+    ]
+  },
+  {
+    "stationName": "Bukit Gombak",
+    "exitCode": "Exit B",
+    "lat": 1.3586952612690937,
+    "lng": 103.75209299569798,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS3"
+    ]
+  },
+  {
+    "stationName": "Bukit Gombak",
+    "exitCode": "Exit C",
+    "lat": 1.3590649797518373,
+    "lng": 103.75172661484677,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS3"
+    ]
+  },
+  {
+    "stationName": "Bukit Gombak",
+    "exitCode": "Exit D",
+    "lat": 1.3592978528191881,
+    "lng": 103.75195099052644,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS3"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit A",
+    "lat": 1.3807451173057772,
+    "lng": 103.75959784357276,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit A",
+    "lat": 1.3787662376388572,
+    "lng": 103.76203436087093,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit A",
+    "lat": 1.378020383749656,
+    "lng": 103.76306355524726,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit A",
+    "lat": 1.379007969740763,
+    "lng": 103.76192293420945,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit B",
+    "lat": 1.3786188940125126,
+    "lng": 103.76137050495701,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit B",
+    "lat": 1.3778632485675977,
+    "lng": 103.76317852054554,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit C",
+    "lat": 1.3779279277525465,
+    "lng": 103.76272252355642,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Bukit Panjang",
+    "exitCode": "Exit D",
+    "lat": 1.378024102648342,
+    "lng": 103.76325185195583,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT1"
+    ]
+  },
+  {
+    "stationName": "Buona Vista",
+    "exitCode": "Exit A",
+    "lat": 1.3073094507702407,
+    "lng": 103.79044917530257,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW21",
+      "CC22"
+    ]
+  },
+  {
+    "stationName": "Buona Vista",
+    "exitCode": "Exit B",
+    "lat": 1.3071972570585428,
+    "lng": 103.79065661943288,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW21",
+      "CC22"
+    ]
+  },
+  {
+    "stationName": "Buona Vista",
+    "exitCode": "Exit C",
+    "lat": 1.3069128886104584,
+    "lng": 103.79059939037006,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW21",
+      "CC22"
+    ]
+  },
+  {
+    "stationName": "Buona Vista",
+    "exitCode": "Exit D",
+    "lat": 1.3062981416247745,
+    "lng": 103.79093006515394,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW21",
+      "CC22"
+    ]
+  },
+  {
+    "stationName": "Caldecott",
+    "exitCode": "Exit 1",
+    "lat": 1.337105316695643,
+    "lng": 103.83940673122467,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC17"
+    ]
+  },
+  {
+    "stationName": "Caldecott",
+    "exitCode": "Exit 2",
+    "lat": 1.3382597299418082,
+    "lng": 103.84038749923758,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC17"
+    ]
+  },
+  {
+    "stationName": "Caldecott",
+    "exitCode": "Exit 3",
+    "lat": 1.3378320231792558,
+    "lng": 103.84046474529944,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC17"
+    ]
+  },
+  {
+    "stationName": "Caldecott",
+    "exitCode": "Exit 4",
+    "lat": 1.3367508751106454,
+    "lng": 103.83988242975174,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC17"
+    ]
+  },
+  {
+    "stationName": "Canberra",
+    "exitCode": "Exit A",
+    "lat": 1.443630141060561,
+    "lng": 103.82952797586145,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS12"
+    ]
+  },
+  {
+    "stationName": "Canberra",
+    "exitCode": "Exit B",
+    "lat": 1.4429351481829502,
+    "lng": 103.82996174120925,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS12"
+    ]
+  },
+  {
+    "stationName": "Canberra",
+    "exitCode": "Exit C",
+    "lat": 1.4428044654120509,
+    "lng": 103.82970029333653,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS12"
+    ]
+  },
+  {
+    "stationName": "Canberra",
+    "exitCode": "Exit D",
+    "lat": 1.443511338844814,
+    "lng": 103.82925464394748,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS12"
+    ]
+  },
+  {
+    "stationName": "Canberra",
+    "exitCode": "Exit E",
+    "lat": 1.4432559135570144,
+    "lng": 103.83011623317348,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS12"
+    ]
+  },
+  {
+    "stationName": "Cashew",
+    "exitCode": "Exit A",
+    "lat": 1.3698333185962925,
+    "lng": 103.76423448071098,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT2"
+    ]
+  },
+  {
+    "stationName": "Cc9",
+    "exitCode": "E",
+    "lat": 1.318287499415408,
+    "lng": 103.89323439978084,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Cc9",
+    "exitCode": "F",
+    "lat": 1.3167375002646893,
+    "lng": 103.89260940023549,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Changi Airport",
+    "exitCode": "Exit A",
+    "lat": 1.3563414210048035,
+    "lng": 103.98927664241383,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "CG2"
+    ]
+  },
+  {
+    "stationName": "Changi Airport",
+    "exitCode": "Exit B",
+    "lat": 1.3572202560601727,
+    "lng": 103.98730457979791,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "CG2"
+    ]
+  },
+  {
+    "stationName": "Cheng Lim",
+    "exitCode": "Exit A",
+    "lat": 1.3963732182354105,
+    "lng": 103.89368487427694,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Cheng Lim",
+    "exitCode": "Exit B",
+    "lat": 1.3961869711232995,
+    "lng": 103.89392033157345,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Chinatown",
+    "exitCode": "Exit A",
+    "lat": 1.2837127704301896,
+    "lng": 103.84379788809954,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE4",
+      "DT19"
+    ]
+  },
+  {
+    "stationName": "Chinatown",
+    "exitCode": "Exit C",
+    "lat": 1.284674897368101,
+    "lng": 103.8428128535836,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE4",
+      "DT19"
+    ]
+  },
+  {
+    "stationName": "Chinatown",
+    "exitCode": "Exit D",
+    "lat": 1.285406459986675,
+    "lng": 103.84347621052814,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE4",
+      "DT19"
+    ]
+  },
+  {
+    "stationName": "Chinatown",
+    "exitCode": "Exit E",
+    "lat": 1.2850440806089183,
+    "lng": 103.84442811940502,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE4",
+      "DT19"
+    ]
+  },
+  {
+    "stationName": "Chinatown",
+    "exitCode": "Exit F",
+    "lat": 1.2842747760727764,
+    "lng": 103.84546253179646,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE4",
+      "DT19"
+    ]
+  },
+  {
+    "stationName": "Chinatown",
+    "exitCode": "Exit G",
+    "lat": 1.284736083637029,
+    "lng": 103.8444585417297,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE4",
+      "DT19"
+    ]
+  },
+  {
+    "stationName": "Chinese Garden",
+    "exitCode": "Exit A",
+    "lat": 1.3424387432399767,
+    "lng": 103.73222015482936,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW25"
+    ]
+  },
+  {
+    "stationName": "Chinese Garden",
+    "exitCode": "Exit B",
+    "lat": 1.3419820895649266,
+    "lng": 103.73274182554528,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW25"
+    ]
+  },
+  {
+    "stationName": "Chinese Garden",
+    "exitCode": "Exit C",
+    "lat": 1.3415658263325776,
+    "lng": 103.73339313576297,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW25"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit A",
+    "lat": 1.385431280875975,
+    "lng": 103.7445571353678,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit A",
+    "lat": 1.3853999999695223,
+    "lng": 103.744560000291,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit B",
+    "lat": 1.3849796641871803,
+    "lng": 103.7445951430258,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit B",
+    "lat": 1.3845999997090193,
+    "lng": 103.74447000005159,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit C",
+    "lat": 1.3857361854031247,
+    "lng": 103.74451779877056,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit C",
+    "lat": 1.385729999564578,
+    "lng": 103.74447000018996,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit D",
+    "lat": 1.3853699997077467,
+    "lng": 103.74411000039194,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit D",
+    "lat": 1.3857053906700119,
+    "lng": 103.7442235839257,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "Choa Chu Kang",
+    "exitCode": "Exit E",
+    "lat": 1.3849999997274485,
+    "lng": 103.74462000044716,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS4"
+    ]
+  },
+  {
+    "stationName": "City Hall",
+    "exitCode": "Exit A",
+    "lat": 1.2932271103418318,
+    "lng": 103.85302041355058,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS25",
+      "EW13"
+    ]
+  },
+  {
+    "stationName": "City Hall",
+    "exitCode": "Exit B",
+    "lat": 1.2930999185799508,
+    "lng": 103.8519602177464,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS25",
+      "EW13"
+    ]
+  },
+  {
+    "stationName": "City Hall",
+    "exitCode": "Exit C",
+    "lat": 1.2930418479082573,
+    "lng": 103.85298028770758,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS25",
+      "EW13"
+    ]
+  },
+  {
+    "stationName": "City Hall",
+    "exitCode": "Exit D",
+    "lat": 1.2934548259513226,
+    "lng": 103.85180233380913,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS25",
+      "EW13"
+    ]
+  },
+  {
+    "stationName": "Clarke Quay",
+    "exitCode": "Exit A",
+    "lat": 1.2868987878357088,
+    "lng": 103.84606454377302,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE5"
+    ]
+  },
+  {
+    "stationName": "Clarke Quay",
+    "exitCode": "Exit B",
+    "lat": 1.2878057526558389,
+    "lng": 103.84590343273553,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE5"
+    ]
+  },
+  {
+    "stationName": "Clarke Quay",
+    "exitCode": "Exit C",
+    "lat": 1.289383851872467,
+    "lng": 103.84666583385501,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE5"
+    ]
+  },
+  {
+    "stationName": "Clarke Quay",
+    "exitCode": "Exit E",
+    "lat": 1.2890001830713862,
+    "lng": 103.84703264329924,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE5"
+    ]
+  },
+  {
+    "stationName": "Clarke Quay",
+    "exitCode": "Exit F",
+    "lat": 1.2894055668026585,
+    "lng": 103.84712974273279,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE5"
+    ]
+  },
+  {
+    "stationName": "Clarke Quay",
+    "exitCode": "Exit G",
+    "lat": 1.2891992578180935,
+    "lng": 103.84659390916543,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE5"
+    ]
+  },
+  {
+    "stationName": "Clementi",
+    "exitCode": "Exit A",
+    "lat": 1.3153735578744434,
+    "lng": 103.76498210259511,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW23"
+    ]
+  },
+  {
+    "stationName": "Clementi",
+    "exitCode": "Exit B",
+    "lat": 1.3154691294316818,
+    "lng": 103.76518556672941,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW23"
+    ]
+  },
+  {
+    "stationName": "Clementi",
+    "exitCode": "Exit C",
+    "lat": 1.3141622981069079,
+    "lng": 103.76574981571945,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW23"
+    ]
+  },
+  {
+    "stationName": "Clementi",
+    "exitCode": "Exit D",
+    "lat": 1.3140784143450015,
+    "lng": 103.76557011618358,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW23"
+    ]
+  },
+  {
+    "stationName": "Commonwealth",
+    "exitCode": "Exit A",
+    "lat": 1.3026481614077343,
+    "lng": 103.79795829226589,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW20"
+    ]
+  },
+  {
+    "stationName": "Commonwealth",
+    "exitCode": "Exit B",
+    "lat": 1.3027527769977458,
+    "lng": 103.79805788203096,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW20"
+    ]
+  },
+  {
+    "stationName": "Commonwealth",
+    "exitCode": "Exit C",
+    "lat": 1.3020770458031892,
+    "lng": 103.7987785726048,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW20"
+    ]
+  },
+  {
+    "stationName": "Commonwealth",
+    "exitCode": "Exit D",
+    "lat": 1.3020127193513336,
+    "lng": 103.7987202587723,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW20"
+    ]
+  },
+  {
+    "stationName": "Compassvale",
+    "exitCode": "Exit A",
+    "lat": 1.3943275215100395,
+    "lng": 103.90061646960031,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Compassvale",
+    "exitCode": "Exit B",
+    "lat": 1.394534172299889,
+    "lng": 103.90070659755264,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Coral Edge",
+    "exitCode": "Exit A",
+    "lat": 1.3936846522216244,
+    "lng": 103.91265223396981,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Coral Edge",
+    "exitCode": "Exit B",
+    "lat": 1.3939708071108299,
+    "lng": 103.91270874436744,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Cove",
+    "exitCode": "Exit A",
+    "lat": 1.3991243935090023,
+    "lng": 103.90592873577582,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Cove",
+    "exitCode": "Exit B",
+    "lat": 1.3993026566088154,
+    "lng": 103.90617601360019,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Dakota",
+    "exitCode": "Exit A",
+    "lat": 1.308814187524259,
+    "lng": 103.88930721534395,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC8"
+    ]
+  },
+  {
+    "stationName": "Dakota",
+    "exitCode": "Exit B",
+    "lat": 1.3080967504054488,
+    "lng": 103.88797933768159,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC8"
+    ]
+  },
+  {
+    "stationName": "Damai",
+    "exitCode": "Exit A",
+    "lat": 1.4052846134337436,
+    "lng": 103.90879222699208,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Damai",
+    "exitCode": "Exit B",
+    "lat": 1.4050460283087411,
+    "lng": 103.90861385602817,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Dhoby Ghaut",
+    "exitCode": "Exit A",
+    "lat": 1.2984450920481716,
+    "lng": 103.84678797178553,
+    "lines": [
+      "CC",
+      "NE",
+      "NS"
+    ],
+    "codes": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ]
+  },
+  {
+    "stationName": "Dhoby Ghaut",
+    "exitCode": "Exit B",
+    "lat": 1.2990558907089098,
+    "lng": 103.84522955892908,
+    "lines": [
+      "CC",
+      "NE",
+      "NS"
+    ],
+    "codes": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ]
+  },
+  {
+    "stationName": "Dhoby Ghaut",
+    "exitCode": "Exit C",
+    "lat": 1.299649242161315,
+    "lng": 103.8447478571907,
+    "lines": [
+      "CC",
+      "NE",
+      "NS"
+    ],
+    "codes": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ]
+  },
+  {
+    "stationName": "Dhoby Ghaut",
+    "exitCode": "Exit D",
+    "lat": 1.29993066561743,
+    "lng": 103.8450301318641,
+    "lines": [
+      "CC",
+      "NE",
+      "NS"
+    ],
+    "codes": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ]
+  },
+  {
+    "stationName": "Dhoby Ghaut",
+    "exitCode": "Exit E",
+    "lat": 1.2997484706698177,
+    "lng": 103.84537229423007,
+    "lines": [
+      "CC",
+      "NE",
+      "NS"
+    ],
+    "codes": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ]
+  },
+  {
+    "stationName": "Dhoby Ghaut",
+    "exitCode": "Exit F",
+    "lat": 1.299634891911056,
+    "lng": 103.84584231801777,
+    "lines": [
+      "CC",
+      "NE",
+      "NS"
+    ],
+    "codes": [
+      "NS24",
+      "NE6",
+      "CC1"
+    ]
+  },
+  {
+    "stationName": "Dover",
+    "exitCode": "Exit A",
+    "lat": 1.3114154334487695,
+    "lng": 103.7783047152878,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW22"
+    ]
+  },
+  {
+    "stationName": "Dover",
+    "exitCode": "Exit B",
+    "lat": 1.3116931916796435,
+    "lng": 103.7784647713041,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW22"
+    ]
+  },
+  {
+    "stationName": "Downtown",
+    "exitCode": "Exit A",
+    "lat": 1.2797734552829652,
+    "lng": 103.85264656001088,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT17"
+    ]
+  },
+  {
+    "stationName": "Downtown",
+    "exitCode": "Exit B",
+    "lat": 1.2796013182822525,
+    "lng": 103.85290812847026,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT17"
+    ]
+  },
+  {
+    "stationName": "Downtown",
+    "exitCode": "Exit C",
+    "lat": 1.2794443683916052,
+    "lng": 103.85315209196104,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT17"
+    ]
+  },
+  {
+    "stationName": "Downtown",
+    "exitCode": "Exit D",
+    "lat": 1.2791760407808874,
+    "lng": 103.85301375913124,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT17"
+    ]
+  },
+  {
+    "stationName": "Downtown",
+    "exitCode": "Exit E",
+    "lat": 1.2795279106323079,
+    "lng": 103.85247804639863,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT17"
+    ]
+  },
+  {
+    "stationName": "Downtown",
+    "exitCode": "Exit F",
+    "lat": 1.2797962396920595,
+    "lng": 103.85242774644063,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT17"
+    ]
+  },
+  {
+    "stationName": "Dt18",
+    "exitCode": "D",
+    "lat": 1.2826000004195686,
+    "lng": 103.84809999968618,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Dt18",
+    "exitCode": "E",
+    "lat": 1.282700000363803,
+    "lng": 103.84750000000379,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Dt4",
+    "exitCode": "1",
+    "lat": 1.3550632998007643,
+    "lng": 103.76869550039065,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Dt4",
+    "exitCode": "2",
+    "lat": 1.3548287003188688,
+    "lng": 103.7686516998054,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit A",
+    "lat": 1.2933705482768734,
+    "lng": 103.8563055547391,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit B",
+    "lat": 1.2929271873364572,
+    "lng": 103.85617567093513,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit C",
+    "lat": 1.2929043369195197,
+    "lng": 103.85585520377214,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit D",
+    "lat": 1.2926237434666497,
+    "lng": 103.85583375578965,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit E",
+    "lat": 1.2931288136602324,
+    "lng": 103.85556784106937,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit F",
+    "lat": 1.2938195073126744,
+    "lng": 103.85510463211058,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Esplanade",
+    "exitCode": "Exit G",
+    "lat": 1.2935864007363411,
+    "lng": 103.85492020244,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC3"
+    ]
+  },
+  {
+    "stationName": "Eunos",
+    "exitCode": "Exit A",
+    "lat": 1.3195172748993538,
+    "lng": 103.9028941378417,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW7"
+    ]
+  },
+  {
+    "stationName": "Eunos",
+    "exitCode": "Exit B",
+    "lat": 1.3195625452697972,
+    "lng": 103.90258207761774,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW7"
+    ]
+  },
+  {
+    "stationName": "Eunos",
+    "exitCode": "Exit C",
+    "lat": 1.3195299188012677,
+    "lng": 103.90321518697834,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW7"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit A",
+    "lat": 1.3354828221659554,
+    "lng": 103.96183679508403,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit A",
+    "lat": 1.3353217243389148,
+    "lng": 103.96194295822608,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit B",
+    "lat": 1.3352529442369512,
+    "lng": 103.96207528759587,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit C",
+    "lat": 1.3359509717156908,
+    "lng": 103.96216102186416,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit D",
+    "lat": 1.3348348883432715,
+    "lng": 103.96310068176199,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit E",
+    "lat": 1.3348633135054835,
+    "lng": 103.96212337687385,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit F",
+    "lat": 1.3347119482410732,
+    "lng": 103.96286574628039,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Expo",
+    "exitCode": "Exit G",
+    "lat": 1.3350193203868175,
+    "lng": 103.96304900743186,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "CG1",
+      "DT35"
+    ]
+  },
+  {
+    "stationName": "Fajar",
+    "exitCode": "Exit A",
+    "lat": 1.3844650711796456,
+    "lng": 103.77067551844488,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Farmway",
+    "exitCode": "Exit A",
+    "lat": 1.3972003445750807,
+    "lng": 103.88940744788181,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Farmway",
+    "exitCode": "Exit B",
+    "lat": 1.3971334775058415,
+    "lng": 103.88911501684758,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit A",
+    "lat": 1.312326909037027,
+    "lng": 103.85477274737836,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit B",
+    "lat": 1.313543965975699,
+    "lng": 103.85476376775568,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit C",
+    "lat": 1.311910678691349,
+    "lng": 103.85326682482192,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit D",
+    "lat": 1.3124536063930647,
+    "lng": 103.85297463523698,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit E",
+    "lat": 1.3118835372381634,
+    "lng": 103.85265097067983,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit F",
+    "lat": 1.3114220464813349,
+    "lng": 103.85319939114183,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit G",
+    "lat": 1.3122590364129927,
+    "lng": 103.85550098237228,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit H",
+    "lat": 1.3118835080609075,
+    "lng": 103.8560988521155,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Park",
+    "exitCode": "Exit I",
+    "lat": 1.311765877296202,
+    "lng": 103.85580665725489,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE8"
+    ]
+  },
+  {
+    "stationName": "Farrer Road",
+    "exitCode": "Exit A",
+    "lat": 1.31749372589551,
+    "lng": 103.80796523070785,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC20"
+    ]
+  },
+  {
+    "stationName": "Farrer Road",
+    "exitCode": "Exit B",
+    "lat": 1.3175520161722278,
+    "lng": 103.80738923455762,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC20"
+    ]
+  },
+  {
+    "stationName": "Fernvale",
+    "exitCode": "Exit A",
+    "lat": 1.3921582676260966,
+    "lng": 103.87626165389224,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Fort Canning",
+    "exitCode": "Exit A",
+    "lat": 1.2924060955782486,
+    "lng": 103.84417003419682,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT20"
+    ]
+  },
+  {
+    "stationName": "Fort Canning",
+    "exitCode": "Exit B",
+    "lat": 1.2928302759457175,
+    "lng": 103.84442503156531,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT20"
+    ]
+  },
+  {
+    "stationName": "Gardens By The Bay",
+    "exitCode": "Exit 1",
+    "lat": 1.280370755955639,
+    "lng": 103.86858673411133,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Gardens By The Bay",
+    "exitCode": "Exit 2",
+    "lat": 1.2788262233339731,
+    "lng": 103.86796876727624,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Gardens By The Bay",
+    "exitCode": "Exit 3",
+    "lat": 1.2783034399681215,
+    "lng": 103.86715412214197,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Geylang Bahru",
+    "exitCode": "Exit A",
+    "lat": 1.3215616987402512,
+    "lng": 103.87155560756929,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT24"
+    ]
+  },
+  {
+    "stationName": "Geylang Bahru",
+    "exitCode": "Exit B",
+    "lat": 1.3211091157953243,
+    "lng": 103.87179427142719,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT24"
+    ]
+  },
+  {
+    "stationName": "Great World",
+    "exitCode": "Exit 1",
+    "lat": 1.2933209760726394,
+    "lng": 103.83390463124832,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Great World",
+    "exitCode": "Exit 2",
+    "lat": 1.2928694999212986,
+    "lng": 103.83262710318911,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Great World",
+    "exitCode": "Exit 3",
+    "lat": 1.2938199765544345,
+    "lng": 103.83273405917555,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Great World",
+    "exitCode": "Exit 4",
+    "lat": 1.296029832789246,
+    "lng": 103.83303710057669,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Great World",
+    "exitCode": "Exit 5",
+    "lat": 1.2965525945647354,
+    "lng": 103.83340550437103,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Great World",
+    "exitCode": "Exit 6",
+    "lat": 1.293184344647582,
+    "lng": 103.83284101464868,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Gul Circle",
+    "exitCode": "Exit A",
+    "lat": 1.31903226656851,
+    "lng": 103.6604441438593,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW30"
+    ]
+  },
+  {
+    "stationName": "Gul Circle",
+    "exitCode": "Exit B",
+    "lat": 1.3188371831334533,
+    "lng": 103.65943494551723,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW30"
+    ]
+  },
+  {
+    "stationName": "Harbourfront",
+    "exitCode": "Exit A",
+    "lat": 1.2650850346118385,
+    "lng": 103.82250980721876,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE1",
+      "CC29"
+    ]
+  },
+  {
+    "stationName": "Harbourfront",
+    "exitCode": "Exit A",
+    "lat": 1.2660131831978316,
+    "lng": 103.82046835046091,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE1",
+      "CC29"
+    ]
+  },
+  {
+    "stationName": "Harbourfront",
+    "exitCode": "Exit B",
+    "lat": 1.2651546823431958,
+    "lng": 103.82050881113204,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE1",
+      "CC29"
+    ]
+  },
+  {
+    "stationName": "Harbourfront",
+    "exitCode": "Exit C",
+    "lat": 1.265259883734691,
+    "lng": 103.82253165162558,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE1",
+      "CC29"
+    ]
+  },
+  {
+    "stationName": "Harbourfront",
+    "exitCode": "Exit D",
+    "lat": 1.2659792549959068,
+    "lng": 103.82139885715415,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE1",
+      "CC29"
+    ]
+  },
+  {
+    "stationName": "Harbourfront",
+    "exitCode": "Exit E",
+    "lat": 1.2649719595912232,
+    "lng": 103.82158029169962,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE1",
+      "CC29"
+    ]
+  },
+  {
+    "stationName": "Havelock",
+    "exitCode": "Exit 1",
+    "lat": 1.2866767448179222,
+    "lng": 103.83383975335771,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Havelock",
+    "exitCode": "Exit 2",
+    "lat": 1.2869440669876508,
+    "lng": 103.8334951182318,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Havelock",
+    "exitCode": "Exit 3",
+    "lat": 1.2888435633535371,
+    "lng": 103.83336952027848,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Havelock",
+    "exitCode": "Exit 4",
+    "lat": 1.2901668941642899,
+    "lng": 103.83400349617219,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Havelock",
+    "exitCode": "Exit 5",
+    "lat": 1.289560964282313,
+    "lng": 103.8339619016366,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Haw Par Villa",
+    "exitCode": "Exit A",
+    "lat": 1.2830552735417646,
+    "lng": 103.7820063970724,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC25"
+    ]
+  },
+  {
+    "stationName": "Hillview",
+    "exitCode": "Exit A",
+    "lat": 1.3624742379450678,
+    "lng": 103.76768829010308,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT3"
+    ]
+  },
+  {
+    "stationName": "Hillview",
+    "exitCode": "Exit B",
+    "lat": 1.3620843399177323,
+    "lng": 103.76710845993587,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT3"
+    ]
+  },
+  {
+    "stationName": "Holland Village",
+    "exitCode": "Exit A",
+    "lat": 1.3112202657771888,
+    "lng": 103.79613910248287,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC21"
+    ]
+  },
+  {
+    "stationName": "Holland Village",
+    "exitCode": "Exit B",
+    "lat": 1.3110694836596164,
+    "lng": 103.79576910839042,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC21"
+    ]
+  },
+  {
+    "stationName": "Holland Village",
+    "exitCode": "Exit C",
+    "lat": 1.3107112013327236,
+    "lng": 103.79575377011341,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC21"
+    ]
+  },
+  {
+    "stationName": "Hougang",
+    "exitCode": "Exit A",
+    "lat": 1.370208578260921,
+    "lng": 103.89244572315859,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE14"
+    ]
+  },
+  {
+    "stationName": "Hougang",
+    "exitCode": "Exit B",
+    "lat": 1.3719461165527262,
+    "lng": 103.89297240097162,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE14"
+    ]
+  },
+  {
+    "stationName": "Hougang",
+    "exitCode": "Exit C",
+    "lat": 1.372141834832888,
+    "lng": 103.89197502913501,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE14"
+    ]
+  },
+  {
+    "stationName": "Jalan Besar",
+    "exitCode": "Exit A",
+    "lat": 1.304889894129293,
+    "lng": 103.8552961254143,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT22"
+    ]
+  },
+  {
+    "stationName": "Jalan Besar",
+    "exitCode": "Exit B",
+    "lat": 1.3054672798932725,
+    "lng": 103.85524456461457,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT22"
+    ]
+  },
+  {
+    "stationName": "Jelapang",
+    "exitCode": "Exit A",
+    "lat": 1.3868326995309255,
+    "lng": 103.76467679284494,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Joo Koon",
+    "exitCode": "Exit A",
+    "lat": 1.3275020844586545,
+    "lng": 103.67852070901132,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW29"
+    ]
+  },
+  {
+    "stationName": "Joo Koon",
+    "exitCode": "Exit B",
+    "lat": 1.3279561114378626,
+    "lng": 103.67864407707678,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW29"
+    ]
+  },
+  {
+    "stationName": "Jurong East",
+    "exitCode": "Exit A",
+    "lat": 1.3339896039381867,
+    "lng": 103.74175989830943,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS1",
+      "EW24"
+    ]
+  },
+  {
+    "stationName": "Jurong East",
+    "exitCode": "Exit B",
+    "lat": 1.3325262356481666,
+    "lng": 103.74264016298261,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS1",
+      "EW24"
+    ]
+  },
+  {
+    "stationName": "Jurong East",
+    "exitCode": "Exit C",
+    "lat": 1.3327486846258436,
+    "lng": 103.74276208165342,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS1",
+      "EW24"
+    ]
+  },
+  {
+    "stationName": "Jurong East",
+    "exitCode": "Exit D",
+    "lat": 1.3335813310891886,
+    "lng": 103.74229819330705,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS1",
+      "EW24"
+    ]
+  },
+  {
+    "stationName": "Kadaloor",
+    "exitCode": "Exit A",
+    "lat": 1.3998092631501848,
+    "lng": 103.91638745848152,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Kadaloor",
+    "exitCode": "Exit B",
+    "lat": 1.399411467180394,
+    "lng": 103.91651713032786,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Kaki Bukit",
+    "exitCode": "Exit A",
+    "lat": 1.3353112063695616,
+    "lng": 103.90940509862578,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT28"
+    ]
+  },
+  {
+    "stationName": "Kaki Bukit",
+    "exitCode": "Exit B",
+    "lat": 1.3349218903427178,
+    "lng": 103.90914627626276,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT28"
+    ]
+  },
+  {
+    "stationName": "Kallang",
+    "exitCode": "Exit A",
+    "lat": 1.3115404829755273,
+    "lng": 103.87173056416847,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW10"
+    ]
+  },
+  {
+    "stationName": "Kallang",
+    "exitCode": "Exit B",
+    "lat": 1.311781770543804,
+    "lng": 103.87158707586144,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW10"
+    ]
+  },
+  {
+    "stationName": "Kangkar",
+    "exitCode": "Exit A",
+    "lat": 1.3840745028734758,
+    "lng": 103.90214755814063,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Kangkar",
+    "exitCode": "Exit B",
+    "lat": 1.3837652031672463,
+    "lng": 103.90227636802918,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Katong Park",
+    "exitCode": "Exit 1",
+    "lat": 1.2975385117765033,
+    "lng": 103.88709207500811,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Katong Park",
+    "exitCode": "Exit 2",
+    "lat": 1.2983796827911394,
+    "lng": 103.88506921760501,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Keat Hong",
+    "exitCode": "Exit A",
+    "lat": 1.3784649670168292,
+    "lng": 103.74922684160637,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Kembangan",
+    "exitCode": "Exit A",
+    "lat": 1.3209237602820207,
+    "lng": 103.91294107940732,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW6"
+    ]
+  },
+  {
+    "stationName": "Kembangan",
+    "exitCode": "Exit B",
+    "lat": 1.3211521080554456,
+    "lng": 103.91289928874629,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW6"
+    ]
+  },
+  {
+    "stationName": "Kent Ridge",
+    "exitCode": "Exit A",
+    "lat": 1.2943158870094893,
+    "lng": 103.78446589536516,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC24"
+    ]
+  },
+  {
+    "stationName": "Kent Ridge",
+    "exitCode": "Exit B",
+    "lat": 1.292428115908549,
+    "lng": 103.78480963188217,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC24"
+    ]
+  },
+  {
+    "stationName": "Kent Ridge",
+    "exitCode": "Exit C",
+    "lat": 1.2939847851670137,
+    "lng": 103.784490451682,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC24"
+    ]
+  },
+  {
+    "stationName": "Kent Ridge",
+    "exitCode": "Exit D",
+    "lat": 1.2932188028411657,
+    "lng": 103.78453465663856,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC24"
+    ]
+  },
+  {
+    "stationName": "Khatib",
+    "exitCode": "Exit A",
+    "lat": 1.4170582124269768,
+    "lng": 103.83292241700968,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS14"
+    ]
+  },
+  {
+    "stationName": "Khatib",
+    "exitCode": "Exit B",
+    "lat": 1.4171434179297155,
+    "lng": 103.83270666774294,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS14"
+    ]
+  },
+  {
+    "stationName": "Khatib",
+    "exitCode": "Exit C",
+    "lat": 1.4175447068525804,
+    "lng": 103.83288691369441,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS14"
+    ]
+  },
+  {
+    "stationName": "Khatib",
+    "exitCode": "Exit D",
+    "lat": 1.4178690371168612,
+    "lng": 103.83323102003853,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS14"
+    ]
+  },
+  {
+    "stationName": "King Albert Park",
+    "exitCode": "Exit A",
+    "lat": 1.335537077669763,
+    "lng": 103.78303026021548,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT6"
+    ]
+  },
+  {
+    "stationName": "King Albert Park",
+    "exitCode": "Exit B",
+    "lat": 1.33597604551556,
+    "lng": 103.78456158478065,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT6"
+    ]
+  },
+  {
+    "stationName": "Kovan",
+    "exitCode": "Exit A",
+    "lat": 1.3597075887012466,
+    "lng": 103.8843074286358,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE13"
+    ]
+  },
+  {
+    "stationName": "Kovan",
+    "exitCode": "Exit B",
+    "lat": 1.3602056230632658,
+    "lng": 103.88472173212224,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE13"
+    ]
+  },
+  {
+    "stationName": "Kovan",
+    "exitCode": "Exit C",
+    "lat": 1.3600280101444633,
+    "lng": 103.88545057800044,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE13"
+    ]
+  },
+  {
+    "stationName": "Kranji",
+    "exitCode": "Exit A",
+    "lat": 1.4247391712175417,
+    "lng": 103.76201851559114,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS7"
+    ]
+  },
+  {
+    "stationName": "Kranji",
+    "exitCode": "Exit B",
+    "lat": 1.4248526446610568,
+    "lng": 103.76194060609642,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS7"
+    ]
+  },
+  {
+    "stationName": "Kranji",
+    "exitCode": "Exit C",
+    "lat": 1.4251259491570445,
+    "lng": 103.76175468556137,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS7"
+    ]
+  },
+  {
+    "stationName": "Kranji",
+    "exitCode": "Exit D",
+    "lat": 1.4251249593550084,
+    "lng": 103.76249677052948,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS7"
+    ]
+  },
+  {
+    "stationName": "Kupang",
+    "exitCode": "Exit A",
+    "lat": 1.3982841977600906,
+    "lng": 103.88113916979948,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Kupang",
+    "exitCode": "Exit B",
+    "lat": 1.3981587914724123,
+    "lng": 103.88113793620703,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Labrador Park",
+    "exitCode": "Exit A",
+    "lat": 1.2721069580543352,
+    "lng": 103.80235555366292,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC27"
+    ]
+  },
+  {
+    "stationName": "Lakeside",
+    "exitCode": "Exit A",
+    "lat": 1.3439833412621969,
+    "lng": 103.720448529393,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW26"
+    ]
+  },
+  {
+    "stationName": "Lakeside",
+    "exitCode": "Exit B",
+    "lat": 1.344081457519484,
+    "lng": 103.72107541274288,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW26"
+    ]
+  },
+  {
+    "stationName": "Lakeside",
+    "exitCode": "Exit C",
+    "lat": 1.3443041699686624,
+    "lng": 103.72171282700319,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW26"
+    ]
+  },
+  {
+    "stationName": "Lavender",
+    "exitCode": "Exit A",
+    "lat": 1.307169460472736,
+    "lng": 103.86304306290333,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW11"
+    ]
+  },
+  {
+    "stationName": "Lavender",
+    "exitCode": "Exit B",
+    "lat": 1.3076185391316715,
+    "lng": 103.86265031662273,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW11"
+    ]
+  },
+  {
+    "stationName": "Layar",
+    "exitCode": "Exit A",
+    "lat": 1.3920261721317324,
+    "lng": 103.88015973051905,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Layar",
+    "exitCode": "Exit B",
+    "lat": 1.3921445374146684,
+    "lng": 103.88014279914344,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Lentor",
+    "exitCode": "Exit 1",
+    "lat": 1.3854098299074886,
+    "lng": 103.8353599767011,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Lentor",
+    "exitCode": "Exit 2",
+    "lat": 1.3858909900868417,
+    "lng": 103.83582345202382,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Lentor",
+    "exitCode": "Exit 3",
+    "lat": 1.38460195423691,
+    "lng": 103.83739808002932,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Lentor",
+    "exitCode": "Exit 4",
+    "lat": 1.3836277515432962,
+    "lng": 103.83733866006392,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Lentor",
+    "exitCode": "Exit 5",
+    "lat": 1.384162375361772,
+    "lng": 103.83683953269572,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Little India",
+    "exitCode": "Exit A",
+    "lat": 1.3056052510392235,
+    "lng": 103.84936002946029,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE7",
+      "DT12"
+    ]
+  },
+  {
+    "stationName": "Little India",
+    "exitCode": "Exit B",
+    "lat": 1.306563555357783,
+    "lng": 103.84898508971142,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE7",
+      "DT12"
+    ]
+  },
+  {
+    "stationName": "Little India",
+    "exitCode": "Exit C",
+    "lat": 1.3063515540862423,
+    "lng": 103.84970482293288,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE7",
+      "DT12"
+    ]
+  },
+  {
+    "stationName": "Little India",
+    "exitCode": "Exit D",
+    "lat": 1.3068547371908685,
+    "lng": 103.84899998224137,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE7",
+      "DT12"
+    ]
+  },
+  {
+    "stationName": "Little India",
+    "exitCode": "Exit E",
+    "lat": 1.3074264443989476,
+    "lng": 103.85032215995454,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE7",
+      "DT12"
+    ]
+  },
+  {
+    "stationName": "Little India",
+    "exitCode": "Exit F",
+    "lat": 1.307683536558851,
+    "lng": 103.84830439913581,
+    "lines": [
+      "DT",
+      "NE"
+    ],
+    "codes": [
+      "NE7",
+      "DT12"
+    ]
+  },
+  {
+    "stationName": "Lorong Chuan",
+    "exitCode": "Exit A",
+    "lat": 1.3514391035751394,
+    "lng": 103.86493367346459,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC14"
+    ]
+  },
+  {
+    "stationName": "Lorong Chuan",
+    "exitCode": "Exit B",
+    "lat": 1.3517385379127682,
+    "lng": 103.86291829995642,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC14"
+    ]
+  },
+  {
+    "stationName": "Macpherson",
+    "exitCode": "Exit A",
+    "lat": 1.3266787588073006,
+    "lng": 103.88979333652624,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC10",
+      "DT26"
+    ]
+  },
+  {
+    "stationName": "Macpherson",
+    "exitCode": "Exit B",
+    "lat": 1.325855030181965,
+    "lng": 103.89066567522076,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC10",
+      "DT26"
+    ]
+  },
+  {
+    "stationName": "Macpherson",
+    "exitCode": "Exit C",
+    "lat": 1.32548152990651,
+    "lng": 103.89026256557356,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC10",
+      "DT26"
+    ]
+  },
+  {
+    "stationName": "Macpherson",
+    "exitCode": "Exit D",
+    "lat": 1.3251454586796771,
+    "lng": 103.88845483437636,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC10",
+      "DT26"
+    ]
+  },
+  {
+    "stationName": "Macpherson",
+    "exitCode": "Exit E",
+    "lat": 1.3261927775504818,
+    "lng": 103.88861521167733,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC10",
+      "DT26"
+    ]
+  },
+  {
+    "stationName": "Marina Bay",
+    "exitCode": "Exit 1",
+    "lat": 1.2773530329779264,
+    "lng": 103.85447003295413,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS27",
+      "CE2"
+    ]
+  },
+  {
+    "stationName": "Marina Bay",
+    "exitCode": "Exit 2",
+    "lat": 1.2761589313162336,
+    "lng": 103.85500333791994,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS27",
+      "CE2"
+    ]
+  },
+  {
+    "stationName": "Marina Bay",
+    "exitCode": "Exit 3",
+    "lat": 1.2754163658971882,
+    "lng": 103.85537174149034,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS27",
+      "CE2"
+    ]
+  },
+  {
+    "stationName": "Marina Bay",
+    "exitCode": "Exit 4",
+    "lat": 1.2736342091095512,
+    "lng": 103.85648883626318,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS27",
+      "CE2"
+    ]
+  },
+  {
+    "stationName": "Marina Bay",
+    "exitCode": "Exit 5",
+    "lat": 1.2746932644544062,
+    "lng": 103.85431950195625,
+    "lines": [
+      "CC",
+      "NS"
+    ],
+    "codes": [
+      "NS27",
+      "CE2"
+    ]
+  },
+  {
+    "stationName": "Marina South",
+    "exitCode": "Exit 1",
+    "lat": 1.2735748044859307,
+    "lng": 103.8615038787278,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marina South",
+    "exitCode": "Exit 2",
+    "lat": 1.2738599495197072,
+    "lng": 103.86177721011121,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marina South",
+    "exitCode": "Exit 3",
+    "lat": 1.273135205086787,
+    "lng": 103.86289430462864,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marina South",
+    "exitCode": "Exit 4",
+    "lat": 1.2755114146116426,
+    "lng": 103.86266850887442,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marina South Pier",
+    "exitCode": "Exit A",
+    "lat": 1.2705299895186322,
+    "lng": 103.86233005096989,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS28"
+    ]
+  },
+  {
+    "stationName": "Marina South Pier",
+    "exitCode": "Exit B",
+    "lat": 1.2714378371622164,
+    "lng": 103.86357966976392,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS28"
+    ]
+  },
+  {
+    "stationName": "Marine Parade",
+    "exitCode": "Exit 1",
+    "lat": 1.3020932936434937,
+    "lng": 103.9059103666293,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Parade",
+    "exitCode": "Exit 2",
+    "lat": 1.302531699392386,
+    "lng": 103.90459124473303,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Parade",
+    "exitCode": "Exit 3",
+    "lat": 1.303593996641583,
+    "lng": 103.90605286229047,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Parade",
+    "exitCode": "Exit 4",
+    "lat": 1.3045658550115677,
+    "lng": 103.90762749031286,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Parade",
+    "exitCode": "Exit 5",
+    "lat": 1.3055802189000016,
+    "lng": 103.90909370848797,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Parade",
+    "exitCode": "Exit 6",
+    "lat": 1.3042985347100633,
+    "lng": 103.90778792411058,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Terrace",
+    "exitCode": "Exit 1",
+    "lat": 1.3063987001480175,
+    "lng": 103.91505222707929,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Terrace",
+    "exitCode": "Exit 2",
+    "lat": 1.3057892098989736,
+    "lng": 103.91325299089799,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Terrace",
+    "exitCode": "Exit 3",
+    "lat": 1.3065792892039465,
+    "lng": 103.91308661583462,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Terrace",
+    "exitCode": "Exit 4",
+    "lat": 1.3068953217431258,
+    "lng": 103.91502013985657,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Terrace",
+    "exitCode": "Exit 5",
+    "lat": 1.307438278403651,
+    "lng": 103.91708914206795,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marine Terrace",
+    "exitCode": "Exit 6",
+    "lat": 1.3070628420288448,
+    "lng": 103.91694534600546,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Marsiling",
+    "exitCode": "Exit A",
+    "lat": 1.4328016943533108,
+    "lng": 103.77421049331159,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS8"
+    ]
+  },
+  {
+    "stationName": "Marsiling",
+    "exitCode": "Exit B",
+    "lat": 1.432751371720061,
+    "lng": 103.77441052069655,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS8"
+    ]
+  },
+  {
+    "stationName": "Marsiling",
+    "exitCode": "Exit C",
+    "lat": 1.4324695224000648,
+    "lng": 103.7738204510363,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS8"
+    ]
+  },
+  {
+    "stationName": "Marsiling",
+    "exitCode": "Exit D",
+    "lat": 1.4327513609845839,
+    "lng": 103.77399713337503,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS8"
+    ]
+  },
+  {
+    "stationName": "Marymount",
+    "exitCode": "Exit A",
+    "lat": 1.3489803864213659,
+    "lng": 103.83908795680053,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC16"
+    ]
+  },
+  {
+    "stationName": "Marymount",
+    "exitCode": "Exit B",
+    "lat": 1.3478660721730777,
+    "lng": 103.84005891807723,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC16"
+    ]
+  },
+  {
+    "stationName": "Mattar",
+    "exitCode": "Exit A",
+    "lat": 1.327251414091795,
+    "lng": 103.88273206724486,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT25"
+    ]
+  },
+  {
+    "stationName": "Mattar",
+    "exitCode": "Exit B",
+    "lat": 1.3264635221670715,
+    "lng": 103.88374838731283,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT25"
+    ]
+  },
+  {
+    "stationName": "Maxwell",
+    "exitCode": "Exit 1",
+    "lat": 1.2810342552625935,
+    "lng": 103.84416441347508,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Maxwell",
+    "exitCode": "Exit 2",
+    "lat": 1.2809194365909107,
+    "lng": 103.84489545926178,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Maxwell",
+    "exitCode": "Exit 3",
+    "lat": 1.2801915223809375,
+    "lng": 103.84291630554293,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 1",
+    "lat": 1.3727039723470345,
+    "lng": 103.83671675130967,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 2",
+    "lat": 1.3737197610491918,
+    "lng": 103.837031676998,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 3",
+    "lat": 1.3735320920974323,
+    "lng": 103.83746104124462,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 4",
+    "lat": 1.3712763229015377,
+    "lng": 103.83679597809743,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 5",
+    "lat": 1.3707773381548525,
+    "lng": 103.83676032658745,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 6",
+    "lat": 1.370896144193217,
+    "lng": 103.83630873474603,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mayflower",
+    "exitCode": "Exit 7",
+    "lat": 1.3713773076184756,
+    "lng": 103.83628496724023,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Meridian",
+    "exitCode": "Exit A",
+    "lat": 1.3966810501386635,
+    "lng": 103.90896583318727,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Meridian",
+    "exitCode": "Exit B",
+    "lat": 1.397121689799433,
+    "lng": 103.90886949615401,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Mountbatten",
+    "exitCode": "Exit A",
+    "lat": 1.3067527102284724,
+    "lng": 103.8825975357342,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC7"
+    ]
+  },
+  {
+    "stationName": "Mountbatten",
+    "exitCode": "Exit B",
+    "lat": 1.3060459256607546,
+    "lng": 103.88324829270354,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC7"
+    ]
+  },
+  {
+    "stationName": "Napier",
+    "exitCode": "Exit 1",
+    "lat": 1.3069359879223381,
+    "lng": 103.81948377777624,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Napier",
+    "exitCode": "Exit 2",
+    "lat": 1.3063449793684014,
+    "lng": 103.8195066211851,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Newton",
+    "exitCode": "Exit A",
+    "lat": 1.312597796688079,
+    "lng": 103.83788132539095,
+    "lines": [
+      "DT",
+      "NS"
+    ],
+    "codes": [
+      "NS21",
+      "DT11"
+    ]
+  },
+  {
+    "stationName": "Newton",
+    "exitCode": "Exit B",
+    "lat": 1.3120754621212656,
+    "lng": 103.83821906936093,
+    "lines": [
+      "DT",
+      "NS"
+    ],
+    "codes": [
+      "NS21",
+      "DT11"
+    ]
+  },
+  {
+    "stationName": "Newton",
+    "exitCode": "Exit C",
+    "lat": 1.313617269149807,
+    "lng": 103.83824238163545,
+    "lines": [
+      "DT",
+      "NS"
+    ],
+    "codes": [
+      "NS21",
+      "DT11"
+    ]
+  },
+  {
+    "stationName": "Nibong",
+    "exitCode": "Exit A",
+    "lat": 1.4117727733571026,
+    "lng": 103.90007380805265,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Nibong",
+    "exitCode": "Exit B",
+    "lat": 1.4119103237022979,
+    "lng": 103.90053155420699,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Nicoll Highway",
+    "exitCode": "Exit A",
+    "lat": 1.3001696897088442,
+    "lng": 103.8635059552432,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC5"
+    ]
+  },
+  {
+    "stationName": "Nicoll Highway",
+    "exitCode": "Exit B",
+    "lat": 1.2996607596837686,
+    "lng": 103.86415174770211,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC5"
+    ]
+  },
+  {
+    "stationName": "Novena",
+    "exitCode": "Exit A",
+    "lat": 1.321094868302358,
+    "lng": 103.84438933387052,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS20"
+    ]
+  },
+  {
+    "stationName": "Novena",
+    "exitCode": "Exit B",
+    "lat": 1.3198958860347805,
+    "lng": 103.84333973347628,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS20"
+    ]
+  },
+  {
+    "stationName": "Oasis",
+    "exitCode": "Exit A",
+    "lat": 1.4025071314475719,
+    "lng": 103.91264613306079,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Oasis",
+    "exitCode": "Exit B",
+    "lat": 1.4021037193748016,
+    "lng": 103.91275457379543,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "One-north",
+    "exitCode": "Exit A",
+    "lat": 1.2990274987228132,
+    "lng": 103.78690746632078,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC23"
+    ]
+  },
+  {
+    "stationName": "One-north",
+    "exitCode": "Exit B",
+    "lat": 1.3003594934794571,
+    "lng": 103.78792780616781,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC23"
+    ]
+  },
+  {
+    "stationName": "One-north",
+    "exitCode": "Exit C",
+    "lat": 1.2997146976063356,
+    "lng": 103.78756545620355,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC23"
+    ]
+  },
+  {
+    "stationName": "One-north",
+    "exitCode": "Exit D",
+    "lat": 1.3000747028842092,
+    "lng": 103.78778481055383,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC23"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 1",
+    "lat": 1.304892178137147,
+    "lng": 103.83252425937934,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 10",
+    "lat": 1.3040457054348609,
+    "lng": 103.83112657424772,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 11",
+    "lat": 1.3042179790540407,
+    "lng": 103.83049672354741,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 12",
+    "lat": 1.302857614748984,
+    "lng": 103.8306630989529,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 13",
+    "lat": 1.3022992113235183,
+    "lng": 103.83212482963054,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 2",
+    "lat": 1.3043543985604196,
+    "lng": 103.8326196115145,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 3",
+    "lat": 1.304161137655932,
+    "lng": 103.83277079650809,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 4",
+    "lat": 1.3045604741192454,
+    "lng": 103.83203980088224,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 5",
+    "lat": 1.303944717459933,
+    "lng": 103.83202381515746,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 6",
+    "lat": 1.3036476952659275,
+    "lng": 103.83232091515383,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 7",
+    "lat": 1.3031675344788836,
+    "lng": 103.83217160123877,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 8",
+    "lat": 1.303445719589311,
+    "lng": 103.83178613555991,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard",
+    "exitCode": "Exit 9",
+    "lat": 1.3036655162164055,
+    "lng": 103.83150686184108,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS22"
+    ]
+  },
+  {
+    "stationName": "Orchard Boulevard",
+    "exitCode": "Exit 1",
+    "lat": 1.3036239533903895,
+    "lng": 103.82363789843602,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Orchard Boulevard",
+    "exitCode": "Exit 2",
+    "lat": 1.3024633242845058,
+    "lng": 103.82389561211956,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 1",
+    "lat": 1.2816024282435041,
+    "lng": 103.83865770171187,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 2",
+    "lat": 1.2816753456885712,
+    "lng": 103.8389348372173,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 3",
+    "lat": 1.280993276156108,
+    "lng": 103.83978923248007,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 4",
+    "lat": 1.280213353869118,
+    "lng": 103.84038678709574,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 5",
+    "lat": 1.2789469557328974,
+    "lng": 103.83954924144093,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 6",
+    "lat": 1.27905123851202,
+    "lng": 103.83853725196758,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 7",
+    "lat": 1.2810220177189033,
+    "lng": 103.83864019518941,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Outram Park",
+    "exitCode": "Exit 8",
+    "lat": 1.2823216309524463,
+    "lng": 103.83811712967395,
+    "lines": [
+      "EW",
+      "NE"
+    ],
+    "codes": [
+      "EW16",
+      "NE3"
+    ]
+  },
+  {
+    "stationName": "Pasir Panjang",
+    "exitCode": "Exit A",
+    "lat": 1.276003232785054,
+    "lng": 103.79203018692041,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC26"
+    ]
+  },
+  {
+    "stationName": "Pasir Ris",
+    "exitCode": "Exit A",
+    "lat": 1.3728419690805276,
+    "lng": 103.94933342664457,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW1"
+    ]
+  },
+  {
+    "stationName": "Pasir Ris",
+    "exitCode": "Exit B",
+    "lat": 1.372886236352008,
+    "lng": 103.94913694034909,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW1"
+    ]
+  },
+  {
+    "stationName": "Paya Lebar",
+    "exitCode": "Exit A",
+    "lat": 1.3182159921500778,
+    "lng": 103.89278832410525,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW8",
+      "CC9"
+    ]
+  },
+  {
+    "stationName": "Paya Lebar",
+    "exitCode": "Exit B",
+    "lat": 1.3183474668988477,
+    "lng": 103.89221716863163,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW8",
+      "CC9"
+    ]
+  },
+  {
+    "stationName": "Paya Lebar",
+    "exitCode": "Exit C",
+    "lat": 1.3181492854313128,
+    "lng": 103.8917211215916,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW8",
+      "CC9"
+    ]
+  },
+  {
+    "stationName": "Paya Lebar",
+    "exitCode": "Exit D",
+    "lat": 1.3165877194692752,
+    "lng": 103.89207769924559,
+    "lines": [
+      "CC",
+      "EW"
+    ],
+    "codes": [
+      "EW8",
+      "CC9"
+    ]
+  },
+  {
+    "stationName": "Pending",
+    "exitCode": "Exit A",
+    "lat": 1.376297117193637,
+    "lng": 103.77132784229688,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Petir",
+    "exitCode": "Exit A",
+    "lat": 1.37760322809516,
+    "lng": 103.76679301496294,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Phoenix",
+    "exitCode": "Exit A",
+    "lat": 1.378614068213967,
+    "lng": 103.75825247510643,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Pioneer",
+    "exitCode": "Exit A",
+    "lat": 1.3373446269204403,
+    "lng": 103.69715537341133,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW28"
+    ]
+  },
+  {
+    "stationName": "Pioneer",
+    "exitCode": "Exit B",
+    "lat": 1.3378316280054785,
+    "lng": 103.69712945287633,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW28"
+    ]
+  },
+  {
+    "stationName": "Potong Pasir",
+    "exitCode": "Exit A",
+    "lat": 1.3328013522428703,
+    "lng": 103.86896644470293,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE10"
+    ]
+  },
+  {
+    "stationName": "Potong Pasir",
+    "exitCode": "Exit B",
+    "lat": 1.3311481407339933,
+    "lng": 103.86933323936297,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE10"
+    ]
+  },
+  {
+    "stationName": "Potong Pasir",
+    "exitCode": "Exit C",
+    "lat": 1.3310667109798315,
+    "lng": 103.86870389318757,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE10"
+    ]
+  },
+  {
+    "stationName": "Promenade",
+    "exitCode": "Exit A",
+    "lat": 1.2917116609988615,
+    "lng": 103.86067361130195,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC4",
+      "DT15"
+    ]
+  },
+  {
+    "stationName": "Promenade",
+    "exitCode": "Exit B",
+    "lat": 1.2938620878762646,
+    "lng": 103.86013688440227,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC4",
+      "DT15"
+    ]
+  },
+  {
+    "stationName": "Promenade",
+    "exitCode": "Exit C",
+    "lat": 1.2941027563615055,
+    "lng": 103.86023648411177,
+    "lines": [
+      "CC",
+      "DT"
+    ],
+    "codes": [
+      "CC4",
+      "DT15"
+    ]
+  },
+  {
+    "stationName": "Punggol",
+    "exitCode": "Exit A",
+    "lat": 1.405339576226845,
+    "lng": 103.90230599665618,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE17"
+    ]
+  },
+  {
+    "stationName": "Punggol",
+    "exitCode": "Exit B",
+    "lat": 1.4051862417636451,
+    "lng": 103.90259819698754,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE17"
+    ]
+  },
+  {
+    "stationName": "Punggol",
+    "exitCode": "Exit C",
+    "lat": 1.4043006257297816,
+    "lng": 103.90211563918285,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE17"
+    ]
+  },
+  {
+    "stationName": "Punggol",
+    "exitCode": "Exit D",
+    "lat": 1.404438336178063,
+    "lng": 103.90179852436347,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE17"
+    ]
+  },
+  {
+    "stationName": "Punggol Point",
+    "exitCode": "Exit A",
+    "lat": 1.4169147679142875,
+    "lng": 103.90681779233337,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Punggol Point",
+    "exitCode": "Exit B",
+    "lat": 1.4166640679409692,
+    "lng": 103.9066933049236,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Queenstown",
+    "exitCode": "Exit A",
+    "lat": 1.2942472621509544,
+    "lng": 103.80618277713309,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW19"
+    ]
+  },
+  {
+    "stationName": "Queenstown",
+    "exitCode": "Exit B",
+    "lat": 1.2943299089060527,
+    "lng": 103.80631147275847,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW19"
+    ]
+  },
+  {
+    "stationName": "Queenstown",
+    "exitCode": "Exit C",
+    "lat": 1.2954462560700986,
+    "lng": 103.80558472989604,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW19"
+    ]
+  },
+  {
+    "stationName": "Queenstown",
+    "exitCode": "Exit D",
+    "lat": 1.2953829305261282,
+    "lng": 103.80549220488795,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW19"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit A",
+    "lat": 1.2841251477036855,
+    "lng": 103.85143835365814,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit B",
+    "lat": 1.2846068745370232,
+    "lng": 103.85147997829907,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit C",
+    "lat": 1.2836305207274084,
+    "lng": 103.8515625354869,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit D",
+    "lat": 1.283641390877421,
+    "lng": 103.85135321456237,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit E",
+    "lat": 1.2832115821243628,
+    "lng": 103.8515225951546,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit F",
+    "lat": 1.2825385749191898,
+    "lng": 103.85096090209325,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit G",
+    "lat": 1.2850168973017784,
+    "lng": 103.85147813199741,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit H",
+    "lat": 1.285258281201247,
+    "lng": 103.85162171586596,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit I",
+    "lat": 1.282382307297459,
+    "lng": 103.85143330239858,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Raffles Place",
+    "exitCode": "Exit J",
+    "lat": 1.28262623356678,
+    "lng": 103.85129603343073,
+    "lines": [
+      "EW",
+      "NS"
+    ],
+    "codes": [
+      "NS26",
+      "EW14"
+    ]
+  },
+  {
+    "stationName": "Ranggung",
+    "exitCode": "Exit A",
+    "lat": 1.3841763860698961,
+    "lng": 103.89732172381714,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Ranggung",
+    "exitCode": "Exit B",
+    "lat": 1.3841048834051197,
+    "lng": 103.8972239380547,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Redhill",
+    "exitCode": "Exit A",
+    "lat": 1.2893707046735148,
+    "lng": 103.81699445855267,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW18"
+    ]
+  },
+  {
+    "stationName": "Redhill",
+    "exitCode": "Exit B",
+    "lat": 1.2894858753609895,
+    "lng": 103.81724937307973,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW18"
+    ]
+  },
+  {
+    "stationName": "Renjong",
+    "exitCode": "Exit A",
+    "lat": 1.3866979558885189,
+    "lng": 103.89040916173235,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Renjong",
+    "exitCode": "Exit B",
+    "lat": 1.386814144215554,
+    "lng": 103.89043819212365,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Riviera",
+    "exitCode": "Exit A",
+    "lat": 1.3943256111183955,
+    "lng": 103.91626309852711,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Riviera",
+    "exitCode": "Exit B",
+    "lat": 1.3945590659696856,
+    "lng": 103.91593547052074,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Rochor",
+    "exitCode": "Exit A",
+    "lat": 1.3034041065355197,
+    "lng": 103.85237502163348,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT13"
+    ]
+  },
+  {
+    "stationName": "Rochor",
+    "exitCode": "Exit B",
+    "lat": 1.304214777033743,
+    "lng": 103.85310433564943,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT13"
+    ]
+  },
+  {
+    "stationName": "Rumbia",
+    "exitCode": "Exit A",
+    "lat": 1.3913404864174224,
+    "lng": 103.9060187916516,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Rumbia",
+    "exitCode": "Exit B",
+    "lat": 1.3914142417871276,
+    "lng": 103.90610581936582,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Sam Kee",
+    "exitCode": "Exit A",
+    "lat": 1.4097025000417631,
+    "lng": 103.90503857100495,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Sam Kee",
+    "exitCode": "Exit B",
+    "lat": 1.4098276724417222,
+    "lng": 103.9047922799363,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Samudera",
+    "exitCode": "Exit A",
+    "lat": 1.4158653604828477,
+    "lng": 103.90191150962721,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Samudera",
+    "exitCode": "Exit B",
+    "lat": 1.41590585709171,
+    "lng": 103.90236156011096,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Segar",
+    "exitCode": "Exit A",
+    "lat": 1.3878115559952267,
+    "lng": 103.76940991480218,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Sembawang",
+    "exitCode": "Exit A",
+    "lat": 1.4488373194331288,
+    "lng": 103.82010973575841,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS11"
+    ]
+  },
+  {
+    "stationName": "Sembawang",
+    "exitCode": "Exit B",
+    "lat": 1.4487682603258423,
+    "lng": 103.81979020457172,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS11"
+    ]
+  },
+  {
+    "stationName": "Sembawang",
+    "exitCode": "Exit C",
+    "lat": 1.44915683716069,
+    "lng": 103.81975896600352,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS11"
+    ]
+  },
+  {
+    "stationName": "Sembawang",
+    "exitCode": "Exit D",
+    "lat": 1.448927331537594,
+    "lng": 103.82040156029227,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS11"
+    ]
+  },
+  {
+    "stationName": "Sengkang",
+    "exitCode": "Exit A",
+    "lat": 1.3918291197182173,
+    "lng": 103.89540572075428,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE16"
+    ]
+  },
+  {
+    "stationName": "Sengkang",
+    "exitCode": "Exit B",
+    "lat": 1.3917956376620702,
+    "lng": 103.89563689436537,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE16"
+    ]
+  },
+  {
+    "stationName": "Sengkang",
+    "exitCode": "Exit C",
+    "lat": 1.3908815860944936,
+    "lng": 103.89520939988465,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE16"
+    ]
+  },
+  {
+    "stationName": "Sengkang",
+    "exitCode": "Exit D",
+    "lat": 1.3923708436315307,
+    "lng": 103.89570545661016,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE16"
+    ]
+  },
+  {
+    "stationName": "Senja",
+    "exitCode": "Exit A",
+    "lat": 1.3828754471752023,
+    "lng": 103.76232576657173,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit A",
+    "lat": 1.3494816802550018,
+    "lng": 103.87395739539099,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit B",
+    "lat": 1.3498337382561254,
+    "lng": 103.87364132190379,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit C",
+    "lat": 1.350595104421425,
+    "lng": 103.87369401449845,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit D",
+    "lat": 1.3499015921064987,
+    "lng": 103.87432194657637,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit E",
+    "lat": 1.3508202454303972,
+    "lng": 103.87290211634077,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit F",
+    "lat": 1.3509482779369533,
+    "lng": 103.87144934034903,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit G",
+    "lat": 1.3507901994138853,
+    "lng": 103.87286669539574,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Serangoon",
+    "exitCode": "Exit H",
+    "lat": 1.3497276995143592,
+    "lng": 103.873546495734,
+    "lines": [
+      "CC",
+      "NE"
+    ],
+    "codes": [
+      "NE12",
+      "CC13"
+    ]
+  },
+  {
+    "stationName": "Shenton Way",
+    "exitCode": "Exit 1",
+    "lat": 1.2774620583356546,
+    "lng": 103.85183570738151,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Shenton Way",
+    "exitCode": "Exit 2",
+    "lat": 1.2770030544242335,
+    "lng": 103.85091509462848,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Shenton Way",
+    "exitCode": "Exit 3",
+    "lat": 1.277629581126691,
+    "lng": 103.85012877107079,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Shenton Way",
+    "exitCode": "Exit 4",
+    "lat": 1.2776559417698303,
+    "lng": 103.85103408604942,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Shenton Way",
+    "exitCode": "Exit 5",
+    "lat": 1.2771436461188985,
+    "lng": 103.85180797805077,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Shenton Way",
+    "exitCode": "Exit 6",
+    "lat": 1.2779292050949722,
+    "lng": 103.84989322327651,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Siglap",
+    "exitCode": "Exit 1",
+    "lat": 1.3088503155584577,
+    "lng": 103.9287926248893,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Siglap",
+    "exitCode": "Exit 2",
+    "lat": 1.309776570718989,
+    "lng": 103.92858629687198,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Siglap",
+    "exitCode": "Exit 3",
+    "lat": 1.310589222582442,
+    "lng": 103.93124593288341,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Siglap",
+    "exitCode": "Exit 4",
+    "lat": 1.3102017218908424,
+    "lng": 103.9312910608542,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Simei",
+    "exitCode": "Exit A",
+    "lat": 1.3426617945337078,
+    "lng": 103.953818676297,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW3"
+    ]
+  },
+  {
+    "stationName": "Sixth Avenue",
+    "exitCode": "Exit A",
+    "lat": 1.330780469946184,
+    "lng": 103.79656608212053,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT7"
+    ]
+  },
+  {
+    "stationName": "Sixth Avenue",
+    "exitCode": "Exit B",
+    "lat": 1.3315213014357175,
+    "lng": 103.7968481782287,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT7"
+    ]
+  },
+  {
+    "stationName": "Somerset",
+    "exitCode": "Exit A",
+    "lat": 1.3000284884873998,
+    "lng": 103.83839932657575,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS23"
+    ]
+  },
+  {
+    "stationName": "Somerset",
+    "exitCode": "Exit B",
+    "lat": 1.300766518771738,
+    "lng": 103.838458985164,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS23"
+    ]
+  },
+  {
+    "stationName": "Somerset",
+    "exitCode": "Exit C",
+    "lat": 1.3004362205899318,
+    "lng": 103.83876558428138,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS23"
+    ]
+  },
+  {
+    "stationName": "Somerset",
+    "exitCode": "Exit D",
+    "lat": 1.3002411386798598,
+    "lng": 103.83973414808479,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS23"
+    ]
+  },
+  {
+    "stationName": "Soo Teck",
+    "exitCode": "Exit A",
+    "lat": 1.4050149248670734,
+    "lng": 103.897029921817,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Soo Teck",
+    "exitCode": "Exit B",
+    "lat": 1.4052448994991427,
+    "lng": 103.89740857212135,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "South View",
+    "exitCode": "Exit A",
+    "lat": 1.3803176569910298,
+    "lng": 103.74510113107972,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Springleaf",
+    "exitCode": "Exit 1",
+    "lat": 1.3987872483653485,
+    "lng": 103.81800341495403,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Springleaf",
+    "exitCode": "Exit 2",
+    "lat": 1.3978208040575055,
+    "lng": 103.81839060713808,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Springleaf",
+    "exitCode": "Exit 3",
+    "lat": 1.3976841788785623,
+    "lng": 103.81808162380058,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Stadium",
+    "exitCode": "Exit A",
+    "lat": 1.3025110877234043,
+    "lng": 103.87439998828935,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC6"
+    ]
+  },
+  {
+    "stationName": "Stadium",
+    "exitCode": "Exit B",
+    "lat": 1.3033702260202458,
+    "lng": 103.87622623397485,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC6"
+    ]
+  },
+  {
+    "stationName": "Stevens",
+    "exitCode": "Exit 1",
+    "lat": 1.319951635106423,
+    "lng": 103.82572837817727,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT10"
+    ]
+  },
+  {
+    "stationName": "Stevens",
+    "exitCode": "Exit 2",
+    "lat": 1.3188288961882542,
+    "lng": 103.82601359358057,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT10"
+    ]
+  },
+  {
+    "stationName": "Stevens",
+    "exitCode": "Exit 3",
+    "lat": 1.3194704609951542,
+    "lng": 103.82499157064271,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT10"
+    ]
+  },
+  {
+    "stationName": "Stevens",
+    "exitCode": "Exit 4",
+    "lat": 1.321519904255611,
+    "lng": 103.82588286965881,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT10"
+    ]
+  },
+  {
+    "stationName": "Stevens",
+    "exitCode": "Exit 5",
+    "lat": 1.320937743414412,
+    "lng": 103.8263225771446,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT10"
+    ]
+  },
+  {
+    "stationName": "Sumang",
+    "exitCode": "Exit A",
+    "lat": 1.4083684310204716,
+    "lng": 103.89833568007762,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Sumang",
+    "exitCode": "Exit B",
+    "lat": 1.4084879018383736,
+    "lng": 103.8987571239555,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tai Seng",
+    "exitCode": "Exit A",
+    "lat": 1.3359140849264504,
+    "lng": 103.88762743726211,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC11"
+    ]
+  },
+  {
+    "stationName": "Tai Seng",
+    "exitCode": "Exit B",
+    "lat": 1.3346208772307528,
+    "lng": 103.88821406777215,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC11"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit A",
+    "lat": 1.3537640125402173,
+    "lng": 103.94476631210706,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit B",
+    "lat": 1.3535390816670922,
+    "lng": 103.94508956333436,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit C",
+    "lat": 1.353398312649212,
+    "lng": 103.9449039578947,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit D",
+    "lat": 1.354870574817919,
+    "lng": 103.94367818203155,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit E",
+    "lat": 1.355853444764249,
+    "lng": 103.94265881069441,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit F",
+    "lat": 1.3541939276064219,
+    "lng": 103.94265368187834,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines",
+    "exitCode": "Exit G",
+    "lat": 1.3545963387281112,
+    "lng": 103.94272349669535,
+    "lines": [
+      "DT",
+      "EW"
+    ],
+    "codes": [
+      "EW2",
+      "DT32"
+    ]
+  },
+  {
+    "stationName": "Tampines East",
+    "exitCode": "Exit A",
+    "lat": 1.356460761667418,
+    "lng": 103.95454044078075,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT33"
+    ]
+  },
+  {
+    "stationName": "Tampines East",
+    "exitCode": "Exit B",
+    "lat": 1.3555882263947188,
+    "lng": 103.95517001422066,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT33"
+    ]
+  },
+  {
+    "stationName": "Tampines East",
+    "exitCode": "Exit C",
+    "lat": 1.3555531715017815,
+    "lng": 103.95570471137918,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT33"
+    ]
+  },
+  {
+    "stationName": "Tampines East",
+    "exitCode": "Exit D",
+    "lat": 1.3569701935566743,
+    "lng": 103.95571743792196,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT33"
+    ]
+  },
+  {
+    "stationName": "Tampines West",
+    "exitCode": "Exit A",
+    "lat": 1.3456305876139147,
+    "lng": 103.93819674000568,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT31"
+    ]
+  },
+  {
+    "stationName": "Tampines West",
+    "exitCode": "Exit B",
+    "lat": 1.3449991975144835,
+    "lng": 103.93894850378165,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT31"
+    ]
+  },
+  {
+    "stationName": "Tan Kah Kee",
+    "exitCode": "Exit A",
+    "lat": 1.3253330690801757,
+    "lng": 103.80779911907287,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT8"
+    ]
+  },
+  {
+    "stationName": "Tan Kah Kee",
+    "exitCode": "Exit B",
+    "lat": 1.3261461588254935,
+    "lng": 103.80780087370651,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT8"
+    ]
+  },
+  {
+    "stationName": "Tanah Merah",
+    "exitCode": "Exit A",
+    "lat": 1.3268577483881843,
+    "lng": 103.94579472792945,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW4"
+    ]
+  },
+  {
+    "stationName": "Tanah Merah",
+    "exitCode": "Exit B",
+    "lat": 1.3270612758143558,
+    "lng": 103.9457230415822,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW4"
+    ]
+  },
+  {
+    "stationName": "Tanjong Katong",
+    "exitCode": "Exit 1",
+    "lat": 1.2990386927771713,
+    "lng": 103.89704545419403,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tanjong Katong",
+    "exitCode": "Exit 2",
+    "lat": 1.2990161196075827,
+    "lng": 103.89769313140535,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tanjong Katong",
+    "exitCode": "Exit 3",
+    "lat": 1.300229200662339,
+    "lng": 103.89771528877114,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit A",
+    "lat": 1.2764085007399384,
+    "lng": 103.84483401420995,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit B",
+    "lat": 1.2766717422526974,
+    "lng": 103.8465445904738,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit C",
+    "lat": 1.2760892299950208,
+    "lng": 103.84653355796422,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit D",
+    "lat": 1.276064828263426,
+    "lng": 103.84690880020437,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit E",
+    "lat": 1.2762591011325783,
+    "lng": 103.84709579119706,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit F",
+    "lat": 1.2773794881071403,
+    "lng": 103.84692758023486,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit G",
+    "lat": 1.277784540365026,
+    "lng": 103.8469531475443,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit H",
+    "lat": 1.2754509043453175,
+    "lng": 103.8464450884119,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Pagar",
+    "exitCode": "Exit I",
+    "lat": 1.2764479679167846,
+    "lng": 103.84565600388527,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW15"
+    ]
+  },
+  {
+    "stationName": "Tanjong Rhu",
+    "exitCode": "Exit 1",
+    "lat": 1.296459488281608,
+    "lng": 103.87347790491667,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tanjong Rhu",
+    "exitCode": "Exit 2",
+    "lat": 1.2982000462876002,
+    "lng": 103.8736026871191,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Teck Lee",
+    "exitCode": "Exit A",
+    "lat": 1.4128757347357002,
+    "lng": 103.90678152950578,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Teck Lee",
+    "exitCode": "Exit B",
+    "lat": 1.41292900309077,
+    "lng": 103.90651078993365,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Teck Whye",
+    "exitCode": "Exit A",
+    "lat": 1.3765641949369936,
+    "lng": 103.75382610234246,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Telok Ayer",
+    "exitCode": "Exit A",
+    "lat": 1.2818873892355847,
+    "lng": 103.84850654389615,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT18"
+    ]
+  },
+  {
+    "stationName": "Telok Ayer",
+    "exitCode": "Exit B",
+    "lat": 1.2824972750387271,
+    "lng": 103.84877332815995,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT18"
+    ]
+  },
+  {
+    "stationName": "Telok Ayer",
+    "exitCode": "Exit C",
+    "lat": 1.282250664264074,
+    "lng": 103.84884165606141,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT18"
+    ]
+  },
+  {
+    "stationName": "Telok Blangah",
+    "exitCode": "Exit A",
+    "lat": 1.2707212262114045,
+    "lng": 103.80988373092025,
+    "lines": [
+      "CC"
+    ],
+    "codes": [
+      "CC28"
+    ]
+  },
+  {
+    "stationName": "Thanggam",
+    "exitCode": "Exit A",
+    "lat": 1.3971980359239675,
+    "lng": 103.87556636438234,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Thanggam",
+    "exitCode": "Exit B",
+    "lat": 1.3971924583386544,
+    "lng": 103.87568683695845,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tiong Bahru",
+    "exitCode": "Exit A",
+    "lat": 1.285759455898818,
+    "lng": 103.82699059514609,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW17"
+    ]
+  },
+  {
+    "stationName": "Tiong Bahru",
+    "exitCode": "Exit B",
+    "lat": 1.286361941390426,
+    "lng": 103.8274964133934,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW17"
+    ]
+  },
+  {
+    "stationName": "Toa Payoh",
+    "exitCode": "Exit A",
+    "lat": 1.3323764420302064,
+    "lng": 103.84772380431387,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS19"
+    ]
+  },
+  {
+    "stationName": "Toa Payoh",
+    "exitCode": "Exit B",
+    "lat": 1.3323155366467678,
+    "lng": 103.847577567476,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS19"
+    ]
+  },
+  {
+    "stationName": "Toa Payoh",
+    "exitCode": "Exit C",
+    "lat": 1.3329941018374794,
+    "lng": 103.84731977363178,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS19"
+    ]
+  },
+  {
+    "stationName": "Toa Payoh",
+    "exitCode": "Exit D",
+    "lat": 1.3332787459863253,
+    "lng": 103.84651740615568,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS19"
+    ]
+  },
+  {
+    "stationName": "Tongkang",
+    "exitCode": "Exit A",
+    "lat": 1.3891801609980827,
+    "lng": 103.88596211411945,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tongkang",
+    "exitCode": "Exit B",
+    "lat": 1.3893790079485524,
+    "lng": 103.88608435738307,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Tuas Crescent",
+    "exitCode": "Exit A",
+    "lat": 1.3207638171122238,
+    "lng": 103.64895874126714,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW31"
+    ]
+  },
+  {
+    "stationName": "Tuas Crescent",
+    "exitCode": "Exit B",
+    "lat": 1.3212435963986766,
+    "lng": 103.64928678910867,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW31"
+    ]
+  },
+  {
+    "stationName": "Tuas Link",
+    "exitCode": "Exit A",
+    "lat": 1.3404268992051425,
+    "lng": 103.63724572002151,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW33"
+    ]
+  },
+  {
+    "stationName": "Tuas Link",
+    "exitCode": "Exit B",
+    "lat": 1.3409400722685778,
+    "lng": 103.63684066747358,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW33"
+    ]
+  },
+  {
+    "stationName": "Tuas West Road",
+    "exitCode": "Exit A",
+    "lat": 1.3298724241392643,
+    "lng": 103.63928434470874,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW32"
+    ]
+  },
+  {
+    "stationName": "Tuas West Road",
+    "exitCode": "Exit B",
+    "lat": 1.3301823302320677,
+    "lng": 103.6397907112947,
+    "lines": [
+      "EW"
+    ],
+    "codes": [
+      "EW32"
+    ]
+  },
+  {
+    "stationName": "Ubi",
+    "exitCode": "Exit A",
+    "lat": 1.3299508282897736,
+    "lng": 103.89987669085686,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT27"
+    ]
+  },
+  {
+    "stationName": "Ubi",
+    "exitCode": "Exit B",
+    "lat": 1.329830770674731,
+    "lng": 103.89858557091625,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT27"
+    ]
+  },
+  {
+    "stationName": "Upper Changi",
+    "exitCode": "Exit A",
+    "lat": 1.3418611973421342,
+    "lng": 103.9613284805394,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT34"
+    ]
+  },
+  {
+    "stationName": "Upper Changi",
+    "exitCode": "Exit A",
+    "lat": 1.3420065422681042,
+    "lng": 103.96096063018997,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT34"
+    ]
+  },
+  {
+    "stationName": "Upper Changi",
+    "exitCode": "Exit B",
+    "lat": 1.3410376791225642,
+    "lng": 103.96147626842628,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT34"
+    ]
+  },
+  {
+    "stationName": "Upper Changi",
+    "exitCode": "Exit C",
+    "lat": 1.3419926673422482,
+    "lng": 103.96161727307985,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT34"
+    ]
+  },
+  {
+    "stationName": "Upper Changi",
+    "exitCode": "Exit D",
+    "lat": 1.3408404740643267,
+    "lng": 103.96104308070888,
+    "lines": [
+      "DT"
+    ],
+    "codes": [
+      "DT34"
+    ]
+  },
+  {
+    "stationName": "Upper Thomson",
+    "exitCode": "Exit 1",
+    "lat": 1.354833644682351,
+    "lng": 103.8319161968925,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Upper Thomson",
+    "exitCode": "Exit 2",
+    "lat": 1.3557365747065533,
+    "lng": 103.8318330090042,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Upper Thomson",
+    "exitCode": "Exit 3",
+    "lat": 1.3541445663788472,
+    "lng": 103.83392459060627,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Upper Thomson",
+    "exitCode": "Exit 4",
+    "lat": 1.3535030102965167,
+    "lng": 103.83379386731406,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Upper Thomson",
+    "exitCode": "Exit 5",
+    "lat": 1.3544178218637264,
+    "lng": 103.83263517825011,
+    "lines": [
+      "TE"
+    ],
+    "codes": [
+      "TE-FB"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 1",
+    "lat": 1.4366968752462377,
+    "lng": 103.78573562446458,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 2",
+    "lat": 1.436673114687528,
+    "lng": 103.7865080837622,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 3",
+    "lat": 1.4372433670398619,
+    "lng": 103.78710822541109,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 4",
+    "lat": 1.4375403735797483,
+    "lng": 103.78800546566868,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 5",
+    "lat": 1.4358439359358868,
+    "lng": 103.78896432811273,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 6",
+    "lat": 1.4348151751388867,
+    "lng": 103.78908910975163,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands",
+    "exitCode": "Exit 7",
+    "lat": 1.4344955258377818,
+    "lng": 103.78797676882189,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS9"
+    ]
+  },
+  {
+    "stationName": "Woodlands North",
+    "exitCode": "Exit 1",
+    "lat": 1.4479365024965063,
+    "lng": 103.7854290806745,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodlands North",
+    "exitCode": "Exit 2",
+    "lat": 1.4490472997072523,
+    "lng": 103.78510227142458,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodlands South",
+    "exitCode": "Exit 1",
+    "lat": 1.4273020172478001,
+    "lng": 103.79302746334568,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodlands South",
+    "exitCode": "Exit 2",
+    "lat": 1.4276049641345527,
+    "lng": 103.79341369273166,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodlands South",
+    "exitCode": "Exit 3",
+    "lat": 1.4274267600356203,
+    "lng": 103.7945604978579,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodlands South",
+    "exitCode": "Exit 4",
+    "lat": 1.4266842408027618,
+    "lng": 103.7944238317872,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodlands South",
+    "exitCode": "Exit 5",
+    "lat": 1.4258433869092755,
+    "lng": 103.79436521102042,
+    "lines": [
+      "MRT"
+    ],
+    "codes": []
+  },
+  {
+    "stationName": "Woodleigh",
+    "exitCode": "Exit A",
+    "lat": 1.3385106544114485,
+    "lng": 103.87094060456803,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE11"
+    ]
+  },
+  {
+    "stationName": "Woodleigh",
+    "exitCode": "Exit B",
+    "lat": 1.3385831494601297,
+    "lng": 103.87050846814451,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE11"
+    ]
+  },
+  {
+    "stationName": "Woodleigh",
+    "exitCode": "Exit C",
+    "lat": 1.339867219941902,
+    "lng": 103.87105380415785,
+    "lines": [
+      "NE"
+    ],
+    "codes": [
+      "NE11"
+    ]
+  },
+  {
+    "stationName": "Yew Tee",
+    "exitCode": "Exit A",
+    "lat": 1.3976554793526916,
+    "lng": 103.74719516647077,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS5"
+    ]
+  },
+  {
+    "stationName": "Yew Tee",
+    "exitCode": "Exit B",
+    "lat": 1.3980677680600264,
+    "lng": 103.74732988003458,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS5"
+    ]
+  },
+  {
+    "stationName": "Yew Tee",
+    "exitCode": "Exit C",
+    "lat": 1.3970007717306616,
+    "lng": 103.74743189325034,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS5"
+    ]
+  },
+  {
+    "stationName": "Yew Tee",
+    "exitCode": "Exit D",
+    "lat": 1.3972725119722809,
+    "lng": 103.74711143100039,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS5"
+    ]
+  },
+  {
+    "stationName": "Yio Chu Kang",
+    "exitCode": "Exit A",
+    "lat": 1.3816444074306995,
+    "lng": 103.84483419549113,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS15"
+    ]
+  },
+  {
+    "stationName": "Yio Chu Kang",
+    "exitCode": "Exit B",
+    "lat": 1.381547520536042,
+    "lng": 103.84494684754169,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS15"
+    ]
+  },
+  {
+    "stationName": "Yio Chu Kang",
+    "exitCode": "Exit C",
+    "lat": 1.3819536213060495,
+    "lng": 103.84464576043435,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS15"
+    ]
+  },
+  {
+    "stationName": "Yishun",
+    "exitCode": "Exit A",
+    "lat": 1.429397167315948,
+    "lng": 103.83478360318439,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS13"
+    ]
+  },
+  {
+    "stationName": "Yishun",
+    "exitCode": "Exit B",
+    "lat": 1.4296362919100813,
+    "lng": 103.83486553346143,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS13"
+    ]
+  },
+  {
+    "stationName": "Yishun",
+    "exitCode": "Exit C",
+    "lat": 1.4291168143137056,
+    "lng": 103.8350908427129,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS13"
+    ]
+  },
+  {
+    "stationName": "Yishun",
+    "exitCode": "Exit D",
+    "lat": 1.4291065074428853,
+    "lng": 103.83486348521703,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS13"
+    ]
+  },
+  {
+    "stationName": "Yishun",
+    "exitCode": "Exit E",
+    "lat": 1.4296655971646168,
+    "lng": 103.83564365493329,
+    "lines": [
+      "NS"
+    ],
+    "codes": [
+      "NS13"
+    ]
+  }
+]

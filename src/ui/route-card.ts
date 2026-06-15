@@ -28,11 +28,14 @@ function routeTypeLabel(t: string): string {
 
 // ─── Card Template ────────────────────────────────────────────────────────────
 
-function buildCard(r: RouteIndexEntry, selectedId: string | null, distStr?: string): string {
+function buildCard(r: RouteIndexEntry, selectedId: string | null, distStr?: string, staggerIdx?: number): string {
   const color = ROUTE_COLORS[r.type] ?? '#22c55e'
   const gradient = ROUTE_GRADIENT[r.type] ?? ''
   const isActive = r.id === selectedId
   const distBadge = distStr ? `<span class="card-distance-badge">${distStr}</span>` : ''
+  // Chunk 8: stagger entrance index
+  const staggerStyle = staggerIdx !== undefined ? ` style="--route-color:${color};--i:${staggerIdx}"` : ` style="--route-color:${color}"`
+  const enterClass = staggerIdx !== undefined ? ' card-enter' : ''
 
   // Use pre-generated thumbnail if in index, else Mapbox Static URL, else gradient
   const prebuilt = (r as RouteIndexEntry & { thumbnail?: string }).thumbnail
@@ -55,8 +58,8 @@ function buildCard(r: RouteIndexEntry, selectedId: string | null, distStr?: stri
   }[r.lighting] ?? svg('Lamp', 13)
 
   return `
-    <div class="route-card${isActive ? ' active' : ''}"
-         style="--route-color:${color}"
+    <div class="route-card${isActive ? ' active' : ''}${enterClass}"
+         ${staggerStyle}
          data-route-id="${r.id}"
          role="button"
          tabindex="0"
@@ -89,11 +92,12 @@ function buildShelf(
   routes: RouteIndexEntry[],
   selectedId: string | null,
   distMap?: Map<string, string>,
+  staggerBase?: number, // Chunk 8: global index offset for stagger
 ): string {
   if (routes.length === 0) return ''
   const cards = routes
     .slice(0, 20) // max 20 per shelf to keep performance
-    .map((r) => buildCard(r, selectedId, distMap?.get(r.id)))
+    .map((r, i) => buildCard(r, selectedId, distMap?.get(r.id), (staggerBase ?? 0) + i))
     .join('')
 
   return `
@@ -174,7 +178,7 @@ export function renderRouteCards(
           <span class="shelf-count">${routes.length}</span>
         </div>
         <div class="shelf-scroll">
-          ${routes.map((r) => buildCard(r, selectedId)).join('')}
+          ${routes.map((r, i) => buildCard(r, selectedId, undefined, i)).join('')}
         </div>
       </div>`
     wireCardEvents(containerEl, onSelect)

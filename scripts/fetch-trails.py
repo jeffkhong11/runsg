@@ -227,6 +227,23 @@ TRAILS = [
             [103.9168, 1.4124]
         ],
         "real_distance_km": 4.5
+    },
+    {
+        "id": "marina-bay-uterus-loop",
+        "name": "Marina Bay Uterus Loop",
+        "region": "south",
+        "type": "road",
+        "difficulty": "easy",
+        "lighting": "well-lit",
+        "loop": True,
+        "elevation_gain_m": 0,
+        "surface": {"tarmac": 0.70, "boardwalk": 0.30, "trail": 0.00}, 
+        "description": "A fully paved scenic road route along Marina Bay, Kallang, Stadium and Gardens by the Bay",
+        "tags": ["urban", "flat", "road", "paved"],
+        "gpx_file": "Marina_Bay_Uterus_Route.gpx",
+        "waypoints": [],
+        "fallback_coordinates": [],
+        "real_distance_km": 14.0
     }
 ]
 

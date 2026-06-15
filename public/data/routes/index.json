@@ -1,106 +1,5 @@
 [
   {
-    "id": "marina-bay-loop",
-    "name": "Marina Bay Loop",
-    "region": "central",
-    "type": "road",
-    "distance_km": 4.31,
-    "elevation_gain_m": 15,
-    "elevation_profile": [],
-    "difficulty": "easy",
-    "surface": {
-      "tarmac": 0.9,
-      "boardwalk": 0.1
-    },
-    "lighting": "well-lit",
-    "loop": true,
-    "description": "A flat, scenic 5km loop around Marina Bay. Pass the Merlion, Helix Bridge, ArtScience Museum, and Gardens by the Bay. Ideal for evening runs with iconic skyline views.",
-    "tags": [
-      "urban",
-      "flat",
-      "scenic",
-      "night-run",
-      "marina-bay",
-      "loop"
-    ],
-    "source": "ors",
-    "images": [],
-    "bounds": [
-      1.2773,
-      103.8543,
-      1.2866,
-      103.8694
-    ],
-    "thumbnail": "data/images/routes/marina-bay-loop.png"
-  },
-  {
-    "id": "sentosa-boardwalk-run",
-    "name": "Sentosa Boardwalk Run",
-    "region": "south",
-    "type": "road",
-    "distance_km": 2.04,
-    "elevation_gain_m": 25,
-    "elevation_profile": [],
-    "difficulty": "easy",
-    "surface": {
-      "tarmac": 0.5,
-      "boardwalk": 0.5
-    },
-    "lighting": "well-lit",
-    "loop": false,
-    "description": "From VivoCity across the Sentosa Boardwalk to Palawan Beach and back. A unique run with harbour views and a beach finish.",
-    "tags": [
-      "boardwalk",
-      "beach",
-      "sentosa",
-      "coastal",
-      "scenic"
-    ],
-    "source": "ors",
-    "images": [],
-    "bounds": [
-      1.2497,
-      103.8215,
-      1.2642,
-      103.8301
-    ],
-    "thumbnail": "data/images/routes/sentosa-boardwalk-run.png"
-  },
-  {
-    "id": "upper-seletar-loop",
-    "name": "Upper Seletar Reservoir Loop",
-    "region": "north",
-    "type": "mixed",
-    "distance_km": 3.81,
-    "elevation_gain_m": 55,
-    "elevation_profile": [],
-    "difficulty": "moderate",
-    "surface": {
-      "tarmac": 0.4,
-      "boardwalk": 0.1,
-      "trail": 0.5
-    },
-    "lighting": "partial",
-    "loop": true,
-    "description": "A peaceful reservoir loop in the north. Mix of paved paths and forest trails, with views of the rocket tower and surrounding nature reserve.",
-    "tags": [
-      "reservoir",
-      "mixed",
-      "nature",
-      "loop",
-      "quiet"
-    ],
-    "source": "ors",
-    "images": [],
-    "bounds": [
-      1.398,
-      103.805,
-      1.408,
-      103.818
-    ],
-    "thumbnail": "data/images/routes/upper-seletar-loop.png"
-  },
-  {
     "id": "pcn-coastal-park-connector",
     "name": "Coastal Park Connector",
     "region": "east",
@@ -173,8 +72,7 @@
       103.97525070133528,
       1.3730211256001754,
       104.03164774177479
-    ],
-    "thumbnail": "data/images/routes/pcn-coastal-park-connector.png"
+    ]
   },
   {
     "id": "pcn-east-coast-park",
@@ -250,8 +148,7 @@
       103.91478591607765,
       1.3169313477993103,
       103.97525069055482
-    ],
-    "thumbnail": "data/images/routes/pcn-east-coast-park.png"
+    ]
   },
   {
     "id": "pcn-punggol-waterway",
@@ -1033,8 +930,7 @@
       103.96660982407526,
       1.391751601298911,
       103.9884675228971
-    ],
-    "thumbnail": "data/images/routes/pcn-loyang-park-connector.png"
+    ]
   },
   {
     "id": "pcn-rowers-bay-to-tpe",
@@ -1259,8 +1155,7 @@
       103.88928879223519,
       1.3619523246536656,
       103.89577270846509
-    ],
-    "thumbnail": "data/images/routes/pcn-hougang-avenue-3-pc.png"
+    ]
   },
   {
     "id": "pcn-serangoon-park-connector",
@@ -2165,8 +2060,7 @@
       103.79524230958538,
       1.4451315764882997,
       103.81198711108784
-    ],
-    "thumbnail": "data/images/routes/pcn-woodlands-ave-12-pc.png"
+    ]
   },
   {
     "id": "pcn-play-corridor",
@@ -2223,8 +2117,7 @@
       103.92645947544102,
       1.329406099698333,
       103.93451121162563
-    ],
-    "thumbnail": "data/images/routes/pcn-play-corridor.png"
+    ]
   },
   {
     "id": "pcn-yishun-park-connector",
@@ -3546,8 +3439,7 @@
       103.80039282478783,
       1.2969254699328532,
       103.8052453441069
-    ],
-    "thumbnail": "data/images/routes/pcn-alexandra-queensway-pc.png"
+    ]
   },
   {
     "id": "pcn-simei-park-connector",
@@ -4089,8 +3981,7 @@
       103.9248134958737,
       1.3657478396751312,
       103.93120120406455
-    ],
-    "thumbnail": "data/images/routes/pcn-tampines-park-connector-east---section-2.png"
+    ]
   },
   {
     "id": "pcn-choa-chu-kang-pc-kje-to-brickland-rd\r\nchoa-chu-k",
@@ -4243,8 +4134,7 @@
       103.8939171224409,
       1.3208255089690026,
       103.91284073691851
-    ],
-    "thumbnail": "data/images/routes/pcn-sims-avenue-pc.png"
+    ]
   },
   {
     "id": "pcn-henderson-park-connector",
@@ -5158,8 +5048,7 @@
       103.91896213844014,
       1.336611490129983,
       103.93384128214427
-    ],
-    "thumbnail": "data/images/routes/pcn-bedok-town-park.png"
+    ]
   },
   {
     "id": "pcn-sengkang-riverside-park-2",
@@ -5470,8 +5359,7 @@
       103.74588142365748,
       1.40509609566533,
       103.75254171646195
-    ],
-    "thumbnail": "data/images/routes/pcn-pang-sua-pc-stagmont-ring---choa-chu-kang-way.png"
+    ]
   },
   {
     "id": "pcn-kallang-riverside-park",
@@ -5874,8 +5762,7 @@
       103.75998983899852,
       1.3632856971074578,
       103.76781306655556
-    ],
-    "thumbnail": "data/images/routes/pcn-hillview-pc.png"
+    ]
   },
   {
     "id": "pcn-bishan-ang-mo-kio-park-pond-gardens",
@@ -6644,8 +6531,7 @@
       103.81751445870687,
       1.4026863256790194,
       103.82777702239576
-    ],
-    "thumbnail": "data/images/routes/pcn-springleaf-park-connector.png"
+    ]
   },
   {
     "id": "pcn-west-coast-park-connector-west---section-2",
@@ -7914,8 +7800,7 @@
       103.94804128611244,
       1.3818790479049474,
       103.9532583719392
-    ],
-    "thumbnail": "data/images/routes/pcn-pasir-ris-park-4.png"
+    ]
   },
   {
     "id": "pcn-choa-chu-kang-park-connector",
@@ -8282,8 +8167,7 @@
       103.7438178459696,
       1.3924337593534486,
       103.74954612256842
-    ],
-    "thumbnail": "data/images/routes/pcn-chua-chu-kang-north-pc.png"
+    ]
   },
   {
     "id": "pcn-adam-pc",
@@ -8824,8 +8708,7 @@
       103.85030391457221,
       1.3689514799332763,
       103.85327392500541
-    ],
-    "thumbnail": "data/images/routes/pcn-ang-mo-kio-ave-8-pc.png"
+    ]
   },
   {
     "id": "pcn-punggol-promenade-punggol-point-walk",
@@ -8962,8 +8845,7 @@
       103.88498211958438,
       1.3339156066736464,
       103.88926847882136
-    ],
-    "thumbnail": "data/images/routes/pcn-balam-pc.png"
+    ]
   },
   {
     "id": "pcn-ang-mo-kio-park-connector",
@@ -9119,6 +9001,136 @@
     ]
   },
   {
+    "id": "punggol-waterway-pcn",
+    "name": "Punggol Waterway PCN",
+    "region": "north",
+    "type": "pcn",
+    "distance_km": 3.83,
+    "elevation_gain_m": 10,
+    "elevation_profile": [],
+    "difficulty": "easy",
+    "surface": {
+      "tarmac": 0.85,
+      "boardwalk": 0.15
+    },
+    "lighting": "well-lit",
+    "loop": true,
+    "description": "A popular HDB-town running loop along the Punggol Waterway. Flat, well-lit, with multiple water points. A favourite for weeknight group runs.",
+    "tags": [
+      "pcn",
+      "waterway",
+      "flat",
+      "well-lit",
+      "family-friendly"
+    ],
+    "source": "ors",
+    "images": [],
+    "bounds": [
+      1.399,
+      103.9057,
+      1.4083,
+      103.92
+    ]
+  },
+  {
+    "id": "sentosa-boardwalk-run",
+    "name": "Sentosa Boardwalk Run",
+    "region": "south",
+    "type": "road",
+    "distance_km": 2.04,
+    "elevation_gain_m": 25,
+    "elevation_profile": [],
+    "difficulty": "easy",
+    "surface": {
+      "tarmac": 0.5,
+      "boardwalk": 0.5
+    },
+    "lighting": "well-lit",
+    "loop": false,
+    "description": "From VivoCity across the Sentosa Boardwalk to Palawan Beach and back. A unique run with harbour views and a beach finish.",
+    "tags": [
+      "boardwalk",
+      "beach",
+      "sentosa",
+      "coastal",
+      "scenic"
+    ],
+    "source": "ors",
+    "images": [],
+    "bounds": [
+      1.2497,
+      103.8215,
+      1.2642,
+      103.8301
+    ]
+  },
+  {
+    "id": "upper-seletar-loop",
+    "name": "Upper Seletar Reservoir Loop",
+    "region": "north",
+    "type": "mixed",
+    "distance_km": 3.81,
+    "elevation_gain_m": 55,
+    "elevation_profile": [],
+    "difficulty": "moderate",
+    "surface": {
+      "tarmac": 0.4,
+      "boardwalk": 0.1,
+      "trail": 0.5
+    },
+    "lighting": "partial",
+    "loop": true,
+    "description": "A peaceful reservoir loop in the north. Mix of paved paths and forest trails, with views of the rocket tower and surrounding nature reserve.",
+    "tags": [
+      "reservoir",
+      "mixed",
+      "nature",
+      "loop",
+      "quiet"
+    ],
+    "source": "ors",
+    "images": [],
+    "bounds": [
+      1.398,
+      103.805,
+      1.408,
+      103.818
+    ]
+  },
+  {
+    "id": "bishan-amk-pcn",
+    "name": "Bishan–Ang Mo Kio Park PCN",
+    "region": "central",
+    "type": "pcn",
+    "distance_km": 2.42,
+    "elevation_gain_m": 12,
+    "elevation_profile": [],
+    "difficulty": "easy",
+    "surface": {
+      "tarmac": 0.8,
+      "boardwalk": 0.15,
+      "trail": 0.05
+    },
+    "lighting": "well-lit",
+    "loop": true,
+    "description": "A lush riverside loop through the naturalized Kallang River section of Bishan-AMK Park. Flat tarmac paths, playground stops, and dog-watching opportunities.",
+    "tags": [
+      "pcn",
+      "park",
+      "flat",
+      "family-friendly",
+      "riverside"
+    ],
+    "source": "ors",
+    "images": [],
+    "bounds": [
+      1.36,
+      103.8472,
+      1.37,
+      103.851
+    ]
+  },
+  {
     "id": "macritchie-loop",
     "name": "MacRitchie Reservoir Loop",
     "region": "central",
@@ -9191,80 +9203,25 @@
       103.80595,
       1.35729,
       103.8365
-    ],
-    "thumbnail": "data/images/routes/macritchie-loop.png"
+    ]
   },
   {
     "id": "bukit-timah-trail",
     "name": "Bukit Timah Summit Trail",
     "region": "central",
     "type": "trail",
-    "distance_km": 1.21,
+    "distance_km": 0.96,
     "elevation_gain_m": 290,
     "elevation_profile": [
-      118.9,
-      124.6,
-      126.8,
-      128.8,
-      145.4,
-      152.0,
-      164.0,
-      156.4,
-      153.0,
-      153.0,
-      153.0,
-      153.0,
-      154.2,
-      159.9,
-      161.0,
-      161.0,
-      161.0,
-      161.0,
-      161.0,
-      161.0,
-      171.2,
-      173.2,
-      175.6,
-      178.0,
-      161.2,
-      159.5,
-      159.8,
-      160.0,
-      160.7,
-      161.1,
-      157.0,
-      168.0,
-      170.9,
-      171.5,
-      171.8,
-      171.5,
-      170.9,
-      168.0,
-      157.0,
-      152.1,
-      151.8,
-      151.0,
-      149.5,
-      148.0,
-      146.5,
-      146.3,
-      147.1,
-      147.2,
-      146.9,
-      147.6,
-      149.6,
-      149.5,
-      149.5,
-      149.5,
-      153.0,
-      156.4,
-      164.0,
-      152.0,
-      145.4,
-      128.8,
-      126.8,
-      124.6,
-      118.9
+      30.0,
+      37.2,
+      42.6,
+      45.0,
+      43.6,
+      39.0,
+      32.1,
+      24.7,
+      18.6
     ],
     "difficulty": "hard",
     "surface": {
@@ -9282,13 +9239,13 @@
       "forest",
       "hard"
     ],
-    "source": "ors",
+    "source": "osm",
     "images": [],
     "bounds": [
-      1.35245,
-      103.774558,
-      1.355225,
-      103.777513
+      1.3528,
+      103.7738,
+      1.3555,
+      103.7763
     ]
   },
   {
@@ -9296,53 +9253,51 @@
     "name": "Southern Ridges",
     "region": "south",
     "type": "trail",
-    "distance_km": 6.67,
-    "elevation_gain_m": 180,
+    "distance_km": 6.19,
+    "elevation_gain_m": 321,
     "elevation_profile": [
-      3.5,
-      7.0,
-      5.1,
-      10.7,
-      21.2,
-      23.0,
-      39.0,
-      39.0,
-      70.0,
-      70.0,
-      70.0,
-      68.8,
-      90.0,
-      40.0,
-      36.0,
-      41.7,
-      39.0,
-      43.0,
-      56.0,
-      63.0,
-      56.0,
-      56.0,
-      35.4,
-      31.3,
-      41.7,
-      38.0,
-      37.0,
-      36.0,
-      33.7,
-      34.4,
-      35.9,
-      29.0,
-      23.0,
-      17.0,
-      15.0,
-      26.9,
-      11.6,
-      15.0,
-      50.0,
-      48.9,
-      48.6,
-      48.0,
-      56.3,
-      66.0
+      53.2,
+      42.3,
+      33.4,
+      33.3,
+      43.2,
+      52.5,
+      49.9,
+      59.8,
+      66.9,
+      67.8,
+      63.6,
+      61.2,
+      59.3,
+      44.6,
+      45.0,
+      43.9,
+      38.3,
+      37.5,
+      30.6,
+      16.2,
+      24.6,
+      39.8,
+      38.9,
+      61.5,
+      52.8,
+      61.2,
+      70.8,
+      90.9,
+      78.5,
+      78.4,
+      82.7,
+      77.5,
+      92.8,
+      85.1,
+      84.2,
+      82.8,
+      83.7,
+      73.9,
+      63.2,
+      51.5,
+      34.8,
+      10.5
     ],
     "difficulty": "moderate",
     "surface": {
@@ -9360,13 +9315,13 @@
       "scenic",
       "city-views"
     ],
-    "source": "ors",
+    "source": "gpx",
     "images": [],
     "bounds": [
-      1.26619,
-      103.791126,
-      1.28356,
-      103.818423
+      1.26588,
+      103.78984,
+      1.28776,
+      103.8216
     ]
   },
   {
@@ -9443,8 +9398,7 @@
       103.75214,
       1.42582,
       103.83241
-    ],
-    "thumbnail": "data/images/routes/rail-corridor.png"
+    ]
   },
   {
     "id": "coney-island-loop",
@@ -9523,6 +9477,82 @@
       103.91403,
       1.41736,
       103.93109
+    ]
+  },
+  {
+    "id": "marina-bay-uterus-loop",
+    "name": "Marina Bay Uterus Loop",
+    "region": "south",
+    "type": "road",
+    "distance_km": 13.49,
+    "elevation_gain_m": 397,
+    "elevation_profile": [
+      15.2,
+      13.9,
+      14.4,
+      18.4,
+      24.2,
+      17.7,
+      8.2,
+      26.4,
+      13.1,
+      6.6,
+      0.0,
+      0.0,
+      17.4,
+      13.4,
+      12.6,
+      13.9,
+      12.6,
+      12.3,
+      11.1,
+      10.8,
+      12.4,
+      13.0,
+      16.9,
+      14.9,
+      11.6,
+      13.9,
+      10.1,
+      10.8,
+      8.0,
+      8.0,
+      10.4,
+      9.4,
+      28.6,
+      9.9,
+      12.7,
+      13.1,
+      8.4,
+      0.0,
+      9.6,
+      10.1,
+      17.1,
+      15.9,
+      15.2
+    ],
+    "difficulty": "easy",
+    "surface": {
+      "tarmac": 0.7,
+      "boardwalk": 0.3,
+      "trail": 0.0
+    },
+    "lighting": "well-lit",
+    "loop": true,
+    "description": "A fully paved scenic road route along Marina Bay, Kallang, Stadium and Gardens by the Bay",
+    "tags": [
+      "urban",
+      "flat",
+      "road",
+      "paved"
+    ],
+    "source": "gpx",
+    "images": [],
+    "bounds": [
+      1.28012,
+      103.85285,
+      1.31005,
+      103.87409
     ]
   }
 ]
